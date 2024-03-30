@@ -4,6 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600;700&display=swap" rel="stylesheet">
   <title>Lucas Rocha</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -12,24 +16,51 @@
   <article class="estrutura">
     <div class="sidebar-container">
       <div class="sidebar-content">
-        <p class="foto">FOTO</p>
+        <figure class="foto">
+          <img src="img/lucas02.png" alt="">
+        </figure>
         <h1>Lucas Rocha</h1>
-        <p>Desenvolvedor Web</p>
+        <h3>Desenvolvedor Web</h3>
         <hr>
-        <span>e-mail</span>
-        <p>lucas@exemplo.com</p>
-        <span>telefone</span>
-        <p>85 99999-9999</p>
-        <span>aniversário</span>
-        <p>00/00/0000</p>
-        <span>local</span>
-        <p>Fortaleza</p>
+        <div class="contato-list">
+          <i class="fa-solid fa-envelope"></i>
+          <div>
+            <span>e-mail</span>
+            <p>lucas@exemplo.com</p>
+          </div>
+          <i class="fa-solid fa-phone"></i>
+          <div>
+            <span>telefone</span>
+            <p>+55 (85) 9.9999-9999</p>
+          </div>
+          <i class="fa-solid fa-location-dot"></i>
+          <div>
+            <span>local</span>
+            <p>Fortaleza</p>
+          </div>
+          <i class="fa-solid fa-cake-candles"></i>
+          <div>
+            <span>aniversário</span>
+            <p>00/00/0000</p>
+          </div>
+        </div>
         <nav>
           <ul class="redes">
-            <li>Facebook</li>
-            <li>X</li>
-            <li>Instagram</li>
-            <li>GitHub</li>
+            <li>
+              <a href="#" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -37,10 +68,18 @@
     <section class="content">
       <nav>
         <ul class="nav-bar">
-          <li>Sobre</li>
-          <li>Resumo</li>
-          <li>Portfólio</li>
-          <li>Contato</li>
+          <li>
+            <a href="#">Sobre</a>
+          </li>
+          <li>
+            <a href="#">Resumo</a>
+          </li>
+          <li>
+            <a href="#">Portfólio</a>
+          </li>
+          <li>
+            <a href="#">Contato</a>
+          </li>
         </ul>
       </nav>
       <div class="header">
@@ -52,15 +91,17 @@
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam dolores, sit molestiae, voluptatem ex eius provident ea, hic facere voluptate aperiam. Quod, nostrum asperiores officia dolore ab mollitia qui culpa!
         </p>
       </div>
-      <div class="servico">
+      <div class="servicos-container">
         <h2>Serviços</h2>
-        <div>
-          <h3>Desenvolvimento web</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, commodi!</p>
-        </div>
-        <div>
-          <h3>Designer web</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, commodi!</p>
+        <div class="servicos-content">
+          <div class="servico-item">
+            <h3>Desenvolvedor web</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, commodi!</p>
+          </div>
+          <div class="servico-item">
+            <h3>Web Designer</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, commodi!</p>
+          </div>
         </div>
       </div>
       <div class="ferramentas">
@@ -68,6 +109,7 @@
         <p>HTML</p>
         <p>CSS</p>
         <p>JavaScript</p>
+        <p>React</p>
       </div>
     </section>
   </article>
