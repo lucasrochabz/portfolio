@@ -34,12 +34,13 @@ p {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: auto 3fr;
+  grid-template-columns: auto 2fr;
+  gap: 1rem;
 }
 
 .sidebar-container {
-  /* border: 2px solid black; */
-  margin: 2rem 2rem;
+  border: 2px solid black;
+  margin: 2rem 0;
   align-self: self-start;
   border-radius: 4px;
 }
@@ -106,8 +107,8 @@ p {
 }
 
 .content {
-  margin: 2rem 2rem;
-  /* border: 2px solid black; */
+  margin: 2rem 0;
+  border: 2px solid black;
   border-radius: 4px;
 }
 
@@ -130,6 +131,45 @@ p {
 
 .header {
   padding: 1rem 2rem;
+}
+
+.experiencia-container {
+  padding: 1rem 2rem;
+}
+
+.empresa {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.empresa-ano {
+  position: absolute;
+  top: 16px;
+  left: 100px;
+  text-align: left;
+  width: 80px;
+}
+
+.formacao-container {
+  padding: 0 2rem;
+}
+
+.curso-lista {
+  display: flex;
+  gap: 1rem;
+}
+
+.curso {
+  background-color: #333;
+  color: #fff;
+  border-radius: 4px;
+  padding: 1rem;
 }
 
 .servicos-container {
