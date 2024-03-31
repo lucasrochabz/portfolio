@@ -13,14 +13,14 @@
 </head>
 
 <body>
-  <article class="estrutura">
-    <div class="sidebar-container">
-      <div class="sidebar-content">
+  <main class="estrutura">
+    <article class="sidebar">
+      <aside class="sidebar-container">
         <figure class="foto">
           <img src="img/lucas02.png" alt="">
         </figure>
-        <h1>Lucas Rocha</h1>
-        <h3>Desenvolvedor Web</h3>
+        <h1 class="subtitulo">Lucas Rocha</h1>
+        <h3>Desenvolvedor Web Front-End</h3>
         <hr>
         <div class="contato-list">
           <i class="fa-solid fa-envelope"></i>
@@ -63,9 +63,10 @@
             </li>
           </ul>
         </nav>
-      </div>
-    </div>
-    <section class="content">
+      </aside>
+    </article>
+
+    <article class="content">
       <nav>
         <ul class="nav-bar">
           <li>
@@ -85,24 +86,26 @@
           </li>
         </ul>
       </nav>
-      <div class="header" id="sobre">
-        <h2>Sobre</h2>
+
+      <section class="sobre" id="sobre">
+        <h2 class="subtitulo">Sobre</h2>
         <p>
           Olá, sou Lucas Rocha &#x1F44B;. Um <strong>apaixonado</strong> Desenvolvedor Web Front-End, dedicado a transformar ideias em realidade digital. Especializado em criar interfaces responsivas e acessíveis para uma experiência de usuário <strong>excepcional</strong>.
         </p>
         <p>
           Meu objetivo é construir sites de forma <strong>funcional</strong>, fácil de usar e ao mesmo tempo <strong>atraente</strong>. Estou ansioso para colaborar em seu próximo projeto. Sinta-se à vontade para entrar em contato comigo e discutir suas ideias!
         </p>
-      </div>
+        <hr>
+      </section>
 
-      <div class="experiencia-container" id="experiencia">
-        <h2>Experiência</h2>
+      <section class="experiencia" id="experiencia">
+        <h2 class="subtitulo">Experiência</h2>
         <p>
           Desenvolvo projetos utilizando tecnologias como <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong> para aplicativos web.
         </p>
         <div class="empresa">
-          <h3>Empresa</h3>
-          <span class="empresa-ano">2023</span>
+          <h3>Empresa - 2023</h3>
+          <!-- <span class="empresa-ano">2023</span> -->
           <h3>Função</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, nemo.</p>
           <ul class="habilidades">
@@ -112,8 +115,8 @@
           </ul>
         </div>
         <div class="empresa">
-          <h3>Empresa</h3>
-          <span class="empresa-ano">2023</span>
+          <h3>Empresa - 2023</h3>
+          <!-- <span class="empresa-ano">2023</span> -->
           <h3>Função</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, nemo.</p>
           <ul class="habilidades">
@@ -122,10 +125,11 @@
             <li>JavaScript</li>
           </ul>
         </div>
-      </div>
+        <hr>
+      </section>
 
-      <section class="formacao-container" id="formacao">
-        <h2>Formação</h2>
+      <section class="formacao" id="formacao">
+        <h2 class="subtitulo">Formação</h2>
         <p>
           Com <strong>formação acadêmica</strong> na área da construção civil, trago uma base sólida de <strong>habilidades</strong> para minha atuação no campo da tecnologia. Além disso, mantenho-me <strong>atualizado</strong> por meio de cursos intensivos, tanto presenciais quanto online.
         </p>
@@ -141,24 +145,26 @@
             <span>Digital College</span>
           </li>
         </ul>
+        <hr>
       </section>
 
-      <div class="servicos-container" id="servicos">
-        <h2>Serviços</h2>
-        <div class="servicos-content">
-          <div class="servico-item">
+      <section class="servicos" id="servicos">
+        <h2 class="subtitulo">Serviços</h2>
+        <div class="servicos-container">
+          <div class="servicos-item">
             <h3>Desenvolvedor Web Front-End</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, commodi!</p>
           </div>
-          <div class="servico-item">
+          <div class="servicos-item">
             <h3>Web Designer</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, commodi!</p>
           </div>
         </div>
-      </div>
+        <hr>
+      </section>
 
       <section class="ferramentas" id="ferramentas">
-        <h2>Ferramentas</h2>
+        <h2 class="subtitulo">Ferramentas</h2>
         <div class="ferramentas-container">
           <div class="ferramentas-item">
             <div>
@@ -184,8 +190,9 @@
           </div>
         </div>
       </section>
-    </section>
-  </article>
+    </article>
+  </main>
+
   <footer>
     <p>&copy; Lucas Rocha 2024 - Alguns direitos reservados.</p>
   </footer>
