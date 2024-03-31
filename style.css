@@ -118,15 +118,19 @@ p {
   /* border: 2px solid blue; */
   padding: 1rem 2rem;
   /* font-weight: bold; */
+  text-transform: uppercase;
+  font-weight: bold;
+  
 }
 
 .nav-bar a {
-  color: black;
+  /* color: black; */
+  color: #0062b9;
   transition: 0.3s;
 }
 
 .nav-bar a:hover {
-  color: #0062b9;;
+  color: #000;;
 }
 
 .header {
@@ -193,6 +197,18 @@ p {
 .ferramentas {
   /* border: 2px solid blue; */
   padding: 1rem 2rem;
+}
+
+.ferramentas-container {
+  gap: 1rem;
+  display: flex;
+}
+
+.ferramentas-item {
+  border-radius: 4px;
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
 }
 
 footer {
