@@ -37,6 +37,74 @@ p strong {
   color: #141414;
 }
 
+.menu {
+  background-color: #141414;
+  border-bottom: 1px solid #333;
+}
+
+.menu-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.titulo-menu {
+  font-size: 2rem;
+  color: #f5f5f5;
+  position: relative;
+}
+
+.titulo-menu span::after {
+  content: '';
+  display: block;
+  background: linear-gradient(#29b6f8, #0a67dd);
+  left: 65px;
+  width: 40px;
+  height: 4px;
+  position: absolute;
+}
+
+.titulo-menu span {
+  font-weight: 400;
+}
+
+.nav-bar {
+  display: flex;
+  gap: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.nav-bar a {
+  color: #f5f5f5;
+  transition: 0.3s;
+  position: relative;
+}
+
+.nav-bar a::after {
+  content: '';
+  bottom: -4px;
+  left: 0;
+  display: block;
+  height: 2px;
+  width: 0px;
+  background-color: #141414;
+  transition: 0.3s;
+  position: absolute;
+}
+
+.nav-bar a:hover {
+  color: #0062b9;
+}
+
+.nav-bar a:hover::after {
+  width: 100%;
+  background-color: #0062b9;
+}
+
 .estrutura {
   max-width: 1200px;
   margin: 0 auto;
@@ -47,7 +115,6 @@ p strong {
 .sidebar {
   align-self: self-start;
   border-radius: 4px;
-
 }
 
 .sidebar-container {
@@ -117,42 +184,6 @@ p strong {
 
 .core-container {
   border-radius: 4px;
-}
-
-.nav-bar {
-  display: flex;
-  gap: 1rem;
-  padding: 2rem 2rem;
-  text-transform: uppercase;
-  font-weight: bold;
-  border-bottom: 4px solid #f5f5f5;
-}
-
-.nav-bar a {
-  color: #0062b9;
-  transition: 0.3s;
-  position: relative;
-}
-
-.nav-bar a::after {
-  content: '';
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-  display: block;
-  height: 2px;
-  width: 0px;
-  background-color: #000;
-  transition: 0.3s;
-}
-
-.nav-bar a:hover {
-  color: #000;
-}
-
-.nav-bar a:hover::after {
-  width: 100%;
-  background-color: #000;
 }
 
 .subtitulo {
@@ -357,8 +388,7 @@ p strong {
 
 .tecnologias-lista li {
   padding: 0.5rem 1rem;
-  background-color: #fff;
-  color: #000;
+  background-color: #f5f5f5;
   border-radius: 4px;
   align-self: start;
   margin-top: 1rem;
@@ -414,4 +444,19 @@ footer {
 .lightbox-close:hover {
   background-color: #fff;
   color: #000;
+}
+
+[data-tab="content"] {
+  animation: show-right .5s forwards;
+}
+
+@keyframes show-right {
+  from {
+    opacity: 0;
+    transform: translate3d(-150px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 }
