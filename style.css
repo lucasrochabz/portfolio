@@ -60,7 +60,7 @@ p strong {
 .titulo-menu span::after {
   content: '';
   display: block;
-  background: linear-gradient(#29b6f8, #0a67dd);
+  background: linear-gradient(to right, #29b6f8, #0a67dd);
   left: 65px;
   width: 40px;
   height: 4px;
@@ -109,7 +109,7 @@ p strong {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: auto 2fr;
+  grid-template-columns: 1fr 2fr;
 }
 
 .sidebar {
@@ -125,7 +125,7 @@ p strong {
   width: 150px;
   height: 150px;
   overflow: hidden;
-  border-radius: 4px;
+  border-radius: 50%;
   background-color: #0062b9;
   margin: 0 auto;
   cursor: pointer;
@@ -161,6 +161,7 @@ p strong {
 .contato-list span {
   text-transform: uppercase;
   font-size: 0.8rem;
+  font-weight: bold;
 }
 
 .redes {
@@ -186,22 +187,29 @@ p strong {
   border-radius: 4px;
 }
 
-.subtitulo {
+.titulo {
   font-size: 2rem;
   position: relative;
   color: #10284e;
   z-index: 1;
 }
 
+.subtitulo {
+  font-size: 2rem;
+  color: #10284e;
+  position: relative;
+  z-index: 1;
+}
+
 .subtitulo::after {
   content: '';
-  display: block;
-  width: 15%;
-  height: 1rem;
+  display: inline-block;
+  width: 0.8rem;
+  height: 0.5rem;
   background-color: #fec641;
   position: absolute;
-  bottom: 0px;
-  left: -5px;
+  bottom: 6px;
+  margin-left: 0px;
   z-index: -1;
 }
 
@@ -408,6 +416,7 @@ footer {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(5px);
   z-index: 10;
 }
 
@@ -446,14 +455,29 @@ footer {
   color: #000;
 }
 
-[data-tab="content"] {
+[data-tab="sidebar"] {
   animation: show-right .5s forwards;
+}
+
+[data-tab="core"] {
+  animation: show-left .5s forwards;
 }
 
 @keyframes show-right {
   from {
     opacity: 0;
     transform: translate3d(-150px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes show-left {
+  from {
+    opacity: 0;
+    transform: translate3d(150px, 0, 0);
   }
   to {
     opacity: 1;
