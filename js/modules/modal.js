@@ -9,15 +9,16 @@ export default function initModal() {
     
     lightboxImage.setAttribute('src', imageUrl)
     lightbox.style.display = 'flex'
+
   }
+
+  fotoPerfil.addEventListener('click', ampliarFoto);
+  fotoPerfil.addEventListener('touchstart', ampliarFoto);
   
   function fecharFoto() {
     lightbox.style.display = 'none'
   }
-  
-  fotoPerfil.addEventListener('click', ampliarFoto);
-  fotoPerfil.addEventListener('touch', ampliarFoto);
 
   lightboxClose.addEventListener('click', fecharFoto);
-  lightboxClose.addEventListener('touch', fecharFoto);
+  lightboxClose.addEventListener('touchstart', fecharFoto);
 }
