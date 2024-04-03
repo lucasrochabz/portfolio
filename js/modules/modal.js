@@ -18,4 +18,5 @@ export default function initModal() {
   }
   
   lightboxClose.addEventListener('click', fecharFoto)
+  lightboxClose.addEventListener('touch', fecharFoto)
 }
