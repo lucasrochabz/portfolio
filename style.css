@@ -74,6 +74,7 @@ p strong {
 
 .nav-bar {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
   text-transform: uppercase;
   font-weight: bold;
@@ -491,13 +492,22 @@ footer {
   .estrutura {
     flex-direction: column;
   }
+  .menu-container {
+    gap: 1rem;
+  }
   .sidebar {
     display: flex;
     justify-content: center;
   }
   .sidebar-container {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 2rem;
+    padding: 1rem;
+  }
+  .lightbox-image {
+    max-width: 250px;
   }
 }
 
@@ -505,12 +515,6 @@ footer {
   /* body {
     background-color: red;
   } */
-  .menu-container {
-    gap: 1rem;
-  }
-  .nav-bar{
-    flex-wrap: wrap;
-  }
   .foto {
     width: 100px;
     height: 100px;
