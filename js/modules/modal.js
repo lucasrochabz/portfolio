@@ -9,7 +9,6 @@ export default function initModal() {
     
     lightboxImage.setAttribute('src', imageUrl)
     lightbox.style.display = 'flex'
-
   }
 
   fotoPerfil.addEventListener('click', ampliarFoto);
