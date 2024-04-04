@@ -1,3 +1,6 @@
+@import './css/modal.css';
+/* @import './css/menu-mobile.css'; */
+
 * {
   margin: 0;
   padding: 0;
@@ -14,10 +17,6 @@ img {
   object-fit: cover;
 
   max-width: 100%;
-}
-
-hr {
-  margin-top: 1.5rem;
 }
 
 a {
@@ -111,17 +110,14 @@ p strong {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  /* display: grid; */
-  /* grid-template-columns: 1fr 2fr; */
 }
 
 .sidebar {
-  /* align-self: self-start; */
   border-radius: 4px;
 }
 
 .sidebar-container {
-  padding: 2rem 2rem;
+  padding: 2rem;
 }
 
 .foto {
@@ -314,7 +310,6 @@ p strong {
   color: #a3a3a3;
 }
 
-
 .curso::before {
   content: '';
   display: block;
@@ -411,53 +406,6 @@ footer {
   padding: 2rem;
 }
 
-.lightbox {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  backdrop-filter: blur(5px);
-  z-index: 10;
-}
-
-.lightbox-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-}
-
-.foto-ampliada {
-  border-radius: 4px;
-  background-color: #0062b9;
-}
-
-.lightbox-image {
-  max-width: 350px;
-  object-fit: cover;
-}
-
-.lightbox-close {
-  position: absolute;
-  top: 1rem;
-  right: 2rem;
-  font-size: 1.5rem;
-  color: #fff;
-  border: 1px solid #fff;
-  padding: 0.25rem 0.5rem;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.lightbox-close:hover {
-  background-color: #fff;
-  color: #000;
-}
-
 [data-tab="sidebar"] {
   animation: show-right .5s forwards;
 }
@@ -491,6 +439,13 @@ footer {
 @media (max-width: 800px) {
   .estrutura {
     flex-direction: column;
+    margin: 0;
+  }
+  .curso {
+    flex: 0;
+  }
+  p {
+    font-size: 1.25rem;
   }
   .menu-container {
     gap: 1rem;
@@ -512,9 +467,6 @@ footer {
 }
 
 @media (max-width: 400px) {
-  /* body {
-    background-color: red;
-  } */
   .foto {
     width: 100px;
     height: 100px;
@@ -527,8 +479,8 @@ footer {
   footer {
     padding: 1rem;
   }
-  .sobre, .formacao, .servicos, .experiencia, .tecnologias {
-    padding: 0;
+  .empresa {
+    grid-template-columns: 1fr;
   }
   .curso-lista {
     flex-direction: column;
