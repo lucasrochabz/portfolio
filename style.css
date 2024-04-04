@@ -411,7 +411,7 @@ footer {
 }
 
 [data-tab="core"] {
-  animation: show-left .5s forwards;
+  animation: show-right .5s forwards;
 }
 
 @keyframes show-right {
@@ -425,7 +425,7 @@ footer {
   }
 }
 
-@keyframes show-left {
+/* @keyframes show-left {
   from {
     opacity: 0;
     transform: translate3d(150px, 0, 0);
@@ -434,7 +434,7 @@ footer {
     opacity: 1;
     transform: translate3d(0, 0, 0);
   }
-}
+} */
 
 @media (max-width: 800px) {
   .estrutura {
