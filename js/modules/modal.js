@@ -5,8 +5,8 @@ export default function initModal() {
   const lightboxClose = document.querySelector('.lightbox-close');
   
   function ampliarFoto(event) {
-    const imageUrl = document.querySelector('img').getAttribute('data-src')
-    
+    const imageUrl = document.querySelector('.profile-picture').getAttribute('data-src')
+  
     lightboxImage.setAttribute('src', imageUrl)
     lightbox.style.display = 'flex'
   }

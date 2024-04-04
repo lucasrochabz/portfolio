@@ -172,6 +172,7 @@ p strong {
 
 .core {
   background-color: #fff;
+  padding: 1rem 0;
 }
 
 .core-container {
@@ -421,6 +422,9 @@ footer {
   .estrutura {
     flex-direction: column;
     margin: 0;
+  }
+  .sobre, .formacao, .servicos, .experiencia, .tecnologias {
+    padding: 1rem;
   }
   .curso {
     flex: 0;
