@@ -1,5 +1,5 @@
 @import './css/modal.css';
-/* @import './css/menu-mobile.css'; */
+@import './css/menu-mobile.css';
 
 * {
   margin: 0;
@@ -73,7 +73,7 @@ p strong {
   display: block;
   height: 2px;
   width: 0px;
-  background-color: #141414;
+  /* background-color: #141414; */
   transition: 0.3s;
   position: absolute;
 }
@@ -419,6 +419,20 @@ footer {
 }
 
 @media (max-width: 800px) {
+  .nav-bar {
+    display: none;
+  }
+
+  .nav-bar li {
+    padding: 1rem 0.8rem;
+  }
+
+  .nav-bar a::after {
+    content: none;
+  }
+  .nav-bar a:hover {
+    color: initial;
+  }
   .estrutura {
     flex-direction: column;
     margin: 0;
