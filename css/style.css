@@ -52,7 +52,7 @@ p strong {
   padding: 1.5rem 1rem;
 }
 
-.nav-bar {
+.navbar {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
@@ -60,13 +60,13 @@ p strong {
   font-weight: bold;
 }
 
-.nav-bar a {
+.navbar a {
   color: #f5f5f5;
   transition: 0.3s;
   position: relative;
 }
 
-.nav-bar a::after {
+.navbar a::after {
   content: '';
   bottom: -4px;
   left: 0;
@@ -78,11 +78,11 @@ p strong {
   position: absolute;
 }
 
-.nav-bar a:hover {
+.navbar a:hover {
   color: #0062b9;
 }
 
-.nav-bar a:hover::after {
+.navbar a:hover::after {
   width: 100%;
   background-color: #0062b9;
 }
@@ -419,18 +419,18 @@ footer {
 }
 
 @media (max-width: 800px) {
-  .nav-bar {
+  .navbar {
     display: none;
   }
 
-  .nav-bar li {
+  .navbar li {
     padding: 1rem 0.8rem;
   }
 
-  .nav-bar a::after {
+  .navbar a::after {
     content: none;
   }
-  .nav-bar a:hover {
+  .navbar a:hover {
     color: initial;
   }
   .estrutura {
