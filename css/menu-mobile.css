@@ -39,10 +39,11 @@
     display: none;
     position: absolute;
     background: #0062b9;
-    /* width: 160px; */
     z-index: 200;
     top: 0;
+    right: 0;
     padding: 100px 0 20px 0;
+    border-radius: 4px;
     box-shadow: -2px 2px 2px 0 rgba(0, 0, 0, .5);
   }
   [data-menu="list"].active {
