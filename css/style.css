@@ -469,6 +469,9 @@ footer {
 }
 
 @media (max-width: 400px) {
+  .logo {
+    height: 32px;
+  }
   .foto {
     width: 100px;
     height: 100px;

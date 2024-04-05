@@ -1,6 +1,9 @@
 export default function initMenuMobile() {
   const menuButton = document.querySelector('[data-menu="button"]');
   const menuList = document.querySelector('[data-menu="list"]');
+
+  // APAGAR ///////////////////////////////
+  const menu = document.querySelector('.menu')
   
   menuButton.addEventListener('click', (event) => {
     event.stopPropagation();

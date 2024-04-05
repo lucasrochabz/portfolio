@@ -12,12 +12,10 @@ export default function initModal() {
   }
 
   fotoPerfil.addEventListener('click', ampliarFoto);
-  fotoPerfil.addEventListener('touchstart', ampliarFoto);
   
   function fecharFoto() {
     lightbox.style.display = 'none'
   }
 
   lightboxClose.addEventListener('click', fecharFoto);
-  lightboxClose.addEventListener('touchstart', fecharFoto);
 }
