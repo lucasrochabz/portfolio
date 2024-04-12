@@ -161,11 +161,10 @@ p strong {
 
 .core {
   background-color: #fff;
-  padding: 1rem 0;
 }
 
 .titulo {
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #10284e;
   margin: 0.5rem 0;
   text-align: center;
@@ -190,7 +189,8 @@ p strong {
 }
 
 .sobre {
-  padding: 1rem 2rem;
+  padding: 2rem;
+  /* background-color: green; */
 }
 
 .sobre p {
@@ -198,7 +198,8 @@ p strong {
 }
 
 .formacao {
-  padding: 1rem 2rem;
+  padding: 2rem;
+  /* background-color: chocolate; */
 }
 
 .formacao p {
@@ -253,7 +254,8 @@ p strong {
 }
 
 .servicos {
-  padding: 1rem 2rem;
+  padding: 2rem;
+  background-color: green;
 }
 
 .servicos-container {
@@ -280,7 +282,8 @@ p strong {
 }
 
 .experiencia {
-  padding: 1rem 2rem;
+  padding: 2rem;
+  background-color: chocolate;
 }
 
 .experiencia p {
@@ -331,7 +334,8 @@ p strong {
 }
 
 .tecnologias {
-  padding: 1rem 2rem;
+  padding: 2rem;
+  background-color: green;
 }
 
 .tecnologias-container {
