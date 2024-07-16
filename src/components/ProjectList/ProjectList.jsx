@@ -22,7 +22,7 @@ export const ProjectList = () => {
 
   return (
     <>
-      <section className="project-list">
+      <section id="projetos" className="project-list">
         {projects.map((project, index) => (
           <ProjectCard key={index} project={project} />
         ))}

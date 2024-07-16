@@ -1,0 +1,25 @@
+.about {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+/* .about img {
+  display: block;
+  max-width: 100%;
+} */
+
+.about figure {
+  height: 500px;
+  width: 500px;
+  background-color: cornflowerblue;
+  border-radius: 10px;
+}
+
+.about-content a {
+  text-decoration: none;
+  display: block;
+  margin-top: 1rem;
+}

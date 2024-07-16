@@ -21,3 +21,7 @@
   flex-wrap: wrap;
   gap: 1rem;
 }
+
+.nav-bar a {
+  text-decoration: none;
+}

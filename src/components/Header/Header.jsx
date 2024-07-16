@@ -9,7 +9,9 @@ export const Header = () => {
           <nav>
             <ul className="nav-bar">
               <li>Sobre</li>
-              <li>Formação</li>
+              <li>
+                <a href="#projetos">Projetos</a>
+              </li>
               <li>Serviços</li>
               <li>Experiência</li>
               <li>Tecnologias</li>
