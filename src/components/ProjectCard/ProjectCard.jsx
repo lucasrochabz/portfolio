@@ -9,9 +9,20 @@ export const ProjectCard = ({ project }) => {
         </figure>
 
         <div className="project-card-info">
-          <p>{project.name}</p>
-          <button>Clique aqui</button>
-          <button>Clique aqui</button>
+          <h2>{project.name}</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,
+            exercitationem.
+          </p>
+          <ul className="card-tools-list">
+            {project.tools.map((tool, index) => (
+              <li key={index}>{tool}</li>
+            ))}
+          </ul>
+          <div className="controls">
+            <button>GitHub</button>
+            <button>Site</button>
+          </div>
         </div>
       </div>
     </>

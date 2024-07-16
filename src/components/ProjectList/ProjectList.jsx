@@ -6,14 +6,17 @@ export const ProjectList = () => {
     {
       image: 'imagem1',
       name: 'Nome do Projeto 1',
+      tools: ['HTML', 'CSS', 'JavaScript'],
     },
     {
       image: 'imagem2',
       name: 'Nome do Projeto 2',
+      tools: ['HTML', 'CSS', 'JavaScript'],
     },
     {
       image: 'imagem3',
       name: 'Nome do Projeto 3',
+      tools: ['HTML', 'CSS', 'JavaScript'],
     },
   ];
 
