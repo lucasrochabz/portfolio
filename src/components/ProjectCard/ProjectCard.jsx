@@ -19,9 +19,9 @@ export const ProjectCard = ({ project }) => {
               <li key={index}>{tool}</li>
             ))}
           </ul>
-          <div className="controls">
-            <button>GitHub</button>
-            <button>Site</button>
+          <div className="external-links">
+            <a href="#">GitHub</a>
+            <a href="#">Site</a>
           </div>
         </div>
       </div>

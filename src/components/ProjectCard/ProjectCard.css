@@ -1,7 +1,7 @@
 .project-card {
   display: flex;
   justify-content: center;
-  border: 1px solid #000;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
   padding: 2rem;
   gap: 1rem;
   flex-wrap: wrap;
@@ -10,8 +10,8 @@
 }
 
 .project-card figure {
-  height: 200px;
-  width: 200px;
+  height: 250px;
+  width: 250px;
   background-color: cornflowerblue;
   border-radius: 5px;
 }
@@ -33,4 +33,19 @@
   color: #fff;
   padding: 0.5rem 1rem;
   border-radius: 5px;
+}
+
+.external-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.external-links a {
+  text-decoration: none;
+  color: #000;
+  transition: 0.3s;
+}
+
+.external-links a:hover {
+  border-bottom: 1px solid #000;
 }
