@@ -8,20 +8,23 @@ export const ProjectCard = ({ project }) => {
           <h2>{project.image}</h2>
         </figure>
 
-        <div className="project-card-info">
-          <h2>{project.name}</h2>
+        <div className="card-info">
+          <h2 className="project-title">{project.name}</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,
-            exercitationem.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia
+            ipsa nihil non facilis, voluptatibus atque dolor adipisci est
+            architecto animi!
           </p>
-          <ul className="card-tools-list">
-            {project.tools.map((tool, index) => (
-              <li key={index}>{tool}</li>
-            ))}
-          </ul>
-          <div className="external-links">
-            <a href="#">GitHub</a>
-            <a href="#">Site</a>
+          <div className="tools-container">
+            <ul className="card-tools-list">
+              {project.tools.map((tool, index) => (
+                <li key={index}>{tool}</li>
+              ))}
+            </ul>
+            <div className="external-links">
+              <a href="#">Site</a>
+              <a href="#">Repositório</a>
+            </div>
           </div>
         </div>
       </div>
