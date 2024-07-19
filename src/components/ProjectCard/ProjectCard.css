@@ -10,9 +10,14 @@
 
 .project-card figure {
   width: 448px;
-  height: 272px;
-  background-color: cornflowerblue;
   border-radius: 5px;
+  overflow: hidden;
+}
+
+.project-card img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
 }
 
 .card-info {
@@ -64,14 +69,14 @@
   align-items: end;
 }
 
-/* .external-links a {
+.external-links a {
   text-decoration: none;
   font-size: 1.3rem;
   font-weight: bold;
   color: #000;
   transition: 0.3s;
   border-bottom: 1px solid transparent;
-} */
+}
 
 .external-links a {
   text-decoration: none;

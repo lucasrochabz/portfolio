@@ -1,3 +1,5 @@
+// import React from 'react';
+import teste from './../../assets/projeto-portfolio.png';
 import './ProjectCard.css';
 
 export const ProjectCard = ({ project }) => {
@@ -5,7 +7,7 @@ export const ProjectCard = ({ project }) => {
     <>
       <div className="project-card">
         <figure>
-          <h2>{project.image}</h2>
+          <img src={teste} alt="" />
         </figure>
 
         <div className="card-info">

@@ -8,7 +8,7 @@ export const Contact = () => {
 
   return (
     <>
-      <div className="contact-container">
+      <div className="contact-container" id="contact">
         <form className="form-contact">
           <div className="form-top">
             <div className="input-top">
@@ -36,6 +36,13 @@ export const Contact = () => {
             Enviar Mensagem
           </button>
         </form>
+        <div className="social-links">
+          <ul>
+            <li>LinkedIn</li>
+            <li>GitHub</li>
+            <li>Instagram</li>
+          </ul>
+        </div>
       </div>
     </>
   );
