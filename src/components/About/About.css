@@ -1,8 +1,7 @@
-.about {
+.about-container {
   display: flex;
-  gap: 4rem;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
   padding: 2rem 0;
 }
 
@@ -11,15 +10,21 @@
   max-width: 100%;
 } */
 
-.about figure {
+.about-container figure {
   height: 500px;
   width: 500px;
   background-color: cornflowerblue;
   border-radius: 10px;
 }
 
-.about-content a {
+.about-info a {
   text-decoration: none;
   display: block;
   margin-top: 1rem;
+}
+
+.abount {
+  display: flex;
+  gap: 4rem;
+  margin-top: 2rem;
 }

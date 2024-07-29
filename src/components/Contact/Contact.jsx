@@ -8,7 +8,20 @@ export const Contact = () => {
 
   return (
     <>
-      <div className="contact-container" id="contact">
+      <section className="contact-container" id="contact">
+        <div className="contact-info">
+          <h2>Entre em contato</h2>
+
+          <div className="contact-item">
+            <h3>Redes sociais</h3>
+            <ul className="social-links">
+              <li>LinkedIn</li>
+              <li>GitHub</li>
+              <li>Instagram</li>
+            </ul>
+          </div>
+        </div>
+
         <form className="form-contact">
           <div className="form-top">
             <div className="input-top">
@@ -36,14 +49,7 @@ export const Contact = () => {
             Enviar Mensagem
           </button>
         </form>
-        <div className="social-links">
-          <ul>
-            <li>LinkedIn</li>
-            <li>GitHub</li>
-            <li>Instagram</li>
-          </ul>
-        </div>
-      </div>
+      </section>
     </>
   );
 };

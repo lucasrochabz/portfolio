@@ -1,4 +1,3 @@
-// import React from 'react';
 import teste from './../../assets/projeto-portfolio.png';
 import './ProjectCard.css';
 
