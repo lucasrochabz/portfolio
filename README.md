@@ -1,25 +1,8 @@
-# Portfólio - v1.0<br/>
-<div align="center">
-  <img  src="./img/projeto-portfolio.png" alt="Demo" />
-</div>
+# React + Vite
 
-<br/>
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Resumo
+Currently, two official plugins are available:
 
-Portfólio pessoal que apresenta alguns dos meus projetos no GitHub, bem como meu currículo e habilidades técnicas.<br/>
-<a href="https://lucasrochabz.github.io/portfolio/" target="_blank">Clique e confira.</a>
-
-Tecnologias utilizadas:
-
-- HTML5
-- CSS3
-- JavaScript
-
-## Recursos
-
-**📷 Lightbox**
-
-**📜 Smooth Scroll**
-
-**📱 Totalmente responsivo**
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
