@@ -10,7 +10,7 @@ export const ProjectCard = ({ project }) => {
         </figure>
 
         <div className={styles['card-info']}>
-          <h2 className={styles['project-title']}>{project.name}</h2>
+          <h2 className="title">{project.name}</h2>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia
             ipsa nihil non facilis, voluptatibus atque dolor adipisci est

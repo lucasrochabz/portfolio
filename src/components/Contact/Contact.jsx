@@ -15,9 +15,25 @@ export const Contact = () => {
           <div className={styles['contact-item']}>
             <h3>Redes sociais</h3>
             <ul className={styles['social-links']}>
-              <li>LinkedIn</li>
-              <li>GitHub</li>
-              <li>Instagram</li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/lucas-bezerra-rocha"
+                  target="blank"
+                >
+                  LinkedIn
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/lucasrochabz" target="blank">
+                  GitHub
+                </a>
+              </li>
+
+              <li>
+                <a href="https://www.instagram.com/lucasrochabz" target="blank">
+                  Instagram
+                </a>
+              </li>
             </ul>
           </div>
         </div>
