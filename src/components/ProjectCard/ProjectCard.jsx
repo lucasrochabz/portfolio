@@ -1,21 +1,22 @@
-import projeto from './../../assets/projeto-portfolio.png';
 import styles from './ProjectCard.module.css';
 
 export const ProjectCard = ({ project }) => {
+  const images = import.meta.glob('/src/assets/images/*', {
+    eager: true,
+  });
+
+  const imagePath = images[`/src/assets/images/${project.image}`]?.default;
+
   return (
     <>
       <div className={styles['project-card']}>
         <figure>
-          <img src={projeto} alt="" />
+          <img src={imagePath} alt={imagePath} />
         </figure>
 
         <div className={styles['card-info']}>
           <h2 className="title">{project.name}</h2>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia
-            ipsa nihil non facilis, voluptatibus atque dolor adipisci est
-            architecto animi!
-          </p>
+          <p>{project.text}</p>
           <div className={styles['tools-container']}>
             <ul className={styles['card-tools-list']}>
               {project.tools.map((tool, index) => (
