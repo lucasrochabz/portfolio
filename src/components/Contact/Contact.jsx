@@ -1,4 +1,4 @@
-import './Contact.css';
+import styles from './Contact.module.css';
 
 export const Contact = () => {
   const handleBtnMessage = (event) => {
@@ -8,13 +8,13 @@ export const Contact = () => {
 
   return (
     <>
-      <section className="contact-container" id="contact">
-        <div className="contact-info">
+      <section className={styles['contact-container']} id="contact">
+        <div className={styles['contact-info']}>
           <h2>Entre em contato</h2>
 
-          <div className="contact-item">
+          <div className={styles['contact-item']}>
             <h3>Redes sociais</h3>
-            <ul className="social-links">
+            <ul className={styles['social-links']}>
               <li>LinkedIn</li>
               <li>GitHub</li>
               <li>Instagram</li>
@@ -22,14 +22,14 @@ export const Contact = () => {
           </div>
         </div>
 
-        <form className="form-contact">
-          <div className="form-top">
-            <div className="input-top">
+        <form className={styles['form-contact']}>
+          <div className={styles['form-top']}>
+            <div className={styles['input-top']}>
               <label htmlFor="name">Nome</label>
               <input type="text" id="name" placeholder="Seu nome" />
             </div>
 
-            <div className="input-top">
+            <div className={styles['input-top']}>
               <label htmlFor="phone">Telefone</label>
               <input type="text" id="phone" placeholder="(85) 99999-9999" />
             </div>
@@ -45,7 +45,10 @@ export const Contact = () => {
             placeholder="O que você precisa?"
           ></textarea>
 
-          <button className="btn-send-message" onClick={handleBtnMessage}>
+          <button
+            className={styles['btn-send-message']}
+            onClick={handleBtnMessage}
+          >
             Enviar Mensagem
           </button>
         </form>

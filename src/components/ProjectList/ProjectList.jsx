@@ -1,5 +1,5 @@
 import { ProjectCard } from '../ProjectCard/ProjectCard';
-import './ProjectList.css';
+import styles from './ProjectList.module.css';
 
 export const ProjectList = () => {
   const projects = [
@@ -22,7 +22,7 @@ export const ProjectList = () => {
 
   return (
     <>
-      <section id="projetos" className="project-list">
+      <section id="projetos" className={styles['project-list']}>
         {projects.map((project, index) => (
           <ProjectCard key={index} project={project} />
         ))}
