@@ -1,26 +1,17 @@
 .contact-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto;
   justify-content: center;
+  gap: 2rem;
 }
 
 .form-contact {
+  display: grid;
   width: 650px;
-  /* border: 1px solid cornflowerblue; */
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  padding: 2rem;
+  grid-template-columns: 1fr;
 }
 
-.form-contact input {
-  font-size: 1rem;
-  padding: 0.8rem;
-  margin-bottom: 1rem;
-  border: 1px solid #000;
-  border-radius: 5px;
-}
-
-.form-contact textarea {
+.textarea {
   font-size: 1rem;
   padding: 0.8rem;
   min-height: 9rem;
@@ -30,36 +21,7 @@
 
 .form-top {
   display: flex;
-  gap: 1rem;
-}
-
-.input-top {
-  display: flex;
   flex-direction: column;
-  flex: 1;
-}
-
-.btn-send-message {
-  display: flex;
-  align-self: flex-start;
-  padding: 1rem 2rem;
-  margin-top: 1rem;
-  border-radius: 5px;
-  background-color: cornflowerblue;
-  border: 1px solid #000;
-  cursor: pointer;
-  font-weight: bold;
-  font-size: 1rem;
-  transition: 0.3s;
-}
-
-.btn-send-message:hover {
-  background-color: #000;
-  color: cornflowerblue;
-}
-
-.contact-info {
-  padding: 2rem;
 }
 
 .contact-item h3 {
@@ -68,7 +30,6 @@
 }
 
 .contact-info ul {
-  list-style: none;
   display: flex;
   gap: 1rem;
   font-size: 1rem;

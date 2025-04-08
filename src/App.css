@@ -19,6 +19,10 @@ a {
   color: inherit;
 }
 
+ul {
+  list-style: none;
+}
+
 .title {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 2rem;

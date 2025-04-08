@@ -1,3 +1,5 @@
+import { Input } from '../Input/Input';
+import { Button } from '../Button/Button';
 import styles from './Contact.module.css';
 
 export const Contact = () => {
@@ -38,35 +40,34 @@ export const Contact = () => {
           </div>
         </div>
 
-        <form className={styles['form-contact']}>
+        <form className={styles['form-contact']} onSubmit={handleBtnMessage}>
           <div className={styles['form-top']}>
-            <div className={styles['input-top']}>
-              <label htmlFor="name">Nome</label>
-              <input type="text" id="name" placeholder="Seu nome" />
-            </div>
+            <Input label="Nome" type="text" id="name" placeholder="Seu nome" />
 
-            <div className={styles['input-top']}>
-              <label htmlFor="phone">Telefone</label>
-              <input type="text" id="phone" placeholder="(85) 99999-9999" />
-            </div>
+            <Input
+              label="Telefone"
+              type="text"
+              id="phone"
+              placeholder="(85) 9.9999-9999"
+            />
           </div>
 
-          <label htmlFor="email">Email</label>
-          <input type="text" id="email" placeholder="contato@email.com" />
+          <Input
+            label="E-mail"
+            type="text"
+            id="email"
+            placeholder="contato@email.com"
+          />
 
           <label htmlFor="message">Mensagem</label>
           <textarea
+            className={styles.textarea}
             name="message"
             id="message"
             placeholder="O que você precisa?"
           ></textarea>
 
-          <button
-            className={styles['btn-send-message']}
-            onClick={handleBtnMessage}
-          >
-            Enviar Mensagem
-          </button>
+          <Button>Enviar mensagem</Button>
         </form>
       </section>
     </>
