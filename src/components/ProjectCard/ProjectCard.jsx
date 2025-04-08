@@ -24,8 +24,12 @@ export const ProjectCard = ({ project }) => {
               ))}
             </ul>
             <div className={styles['external-links']}>
-              <a href="#">Site</a>
-              <a href="#">Repositório</a>
+              <a href={project.site} target="blank">
+                Site
+              </a>
+              <a href={project.repository} target="blank">
+                Repositório
+              </a>
             </div>
           </div>
         </div>
