@@ -23,6 +23,10 @@ ul {
   list-style: none;
 }
 
+button {
+  cursor: pointer;
+}
+
 .title {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 2rem;

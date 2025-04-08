@@ -1,8 +1,27 @@
-.contact-container {
+.contact {
   display: grid;
   grid-template-columns: auto auto;
   justify-content: center;
   gap: 2rem;
+}
+
+.list {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.list li {
+  cursor: pointer;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 0.4rem 0.8rem;
+  transition: 0.3s;
+}
+
+.list li:hover {
+  background-color: #000;
+  color: #eee;
 }
 
 .form-contact {
@@ -17,34 +36,4 @@
   min-height: 9rem;
   border: 1px solid #000;
   border-radius: 5px;
-}
-
-.form-top {
-  display: flex;
-  flex-direction: column;
-}
-
-.contact-item h3 {
-  margin-top: 1rem;
-  font-size: 1.2rem;
-}
-
-.contact-info ul {
-  display: flex;
-  gap: 1rem;
-  font-size: 1rem;
-  margin-top: 0.5rem;
-}
-
-.contact-info li {
-  cursor: pointer;
-  border: 1px solid #000;
-  border-radius: 5px;
-  padding: 0.4rem 0.8rem;
-  transition: 0.3s;
-}
-
-.contact-info li:hover {
-  background-color: #000;
-  color: #eee;
 }
