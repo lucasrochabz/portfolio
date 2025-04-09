@@ -3,21 +3,15 @@ import styles from './About.module.css';
 export const About = () => {
   return (
     <>
-      <div className={styles['about-container']} id="about">
-        <div className="about-text">
-          <h2>Criando soluções para o futuro.</h2>
-        </div>
-        <div className={styles.abount}>
-          <div className={styles['about-info']}>
-            <h2>Lucas Rocha</h2>
-            <h3>Desenvolvedor Web Front-end</h3>
-            <a href="#">Ver mais</a>
-          </div>
-          <figure>
-            <h4>Foto</h4>
-          </figure>
-        </div>
-      </div>
+      <section className={styles.about} id="about">
+        <p>- Olá, eu sou o Lucas Rocha 👋</p>
+        <h2>Desenvolvedor Web</h2>
+        <h2>Full Stack</h2>
+        <span>
+          Olá e bem vindos. Desenvolvedor Full Stack criativo de Fortaleza
+          apaixonado por criar experiências memoráveis.
+        </span>
+      </section>
     </>
   );
 };

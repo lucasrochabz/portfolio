@@ -15,7 +15,7 @@ export const ProjectCard = ({ project }) => {
         </figure>
 
         <div className={styles['card-info']}>
-          <h2 className="title">{project.name}</h2>
+          <h2 className="subtitle">{project.name}</h2>
           <p>{project.text}</p>
           <div className={styles['tools-container']}>
             <ul className={styles['card-tools-list']}>

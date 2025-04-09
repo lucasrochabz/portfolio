@@ -2,25 +2,27 @@
   display: grid;
   grid-template-columns: auto auto;
   justify-content: center;
-  gap: 2rem;
+  gap: 4rem;
 }
 
 .list {
   display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   gap: 1rem;
   margin-top: 0.5rem;
 }
 
 .list li {
   cursor: pointer;
-  border: 1px solid #000;
+  border: 1px solid var(--black-color);
   border-radius: 5px;
-  padding: 0.4rem 0.8rem;
+  padding: 0.5rem 1rem;
   transition: 0.3s;
 }
 
 .list li:hover {
-  background-color: #000;
+  background-color: var(--black-color);
   color: #eee;
 }
 
@@ -34,6 +36,6 @@
   font-size: 1rem;
   padding: 0.8rem;
   min-height: 9rem;
-  border: 1px solid #000;
+  border: 1px solid var(--black-color);
   border-radius: 5px;
 }

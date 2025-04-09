@@ -4,9 +4,16 @@
   box-sizing: border-box;
 }
 
+:root {
+  --bg-color: #eee;
+  --white-color: #f7f7f7;
+  --blue-color: #6495ed;
+  --black-color: #000;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #eee;
+  background-color: var(--bg-color);
 }
 
 img {
@@ -28,6 +35,11 @@ button {
 }
 
 .title {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 3rem;
+}
+
+.subtitle {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 2rem;
 }

@@ -1,7 +1,7 @@
 .project-card {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background-color: #fff;
+  background-color: var(--white-color);
   gap: 2rem;
   padding: 2rem;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
@@ -43,7 +43,7 @@
 }
 
 .card-tools-list li {
-  color: #000;
+  color: var(--black-color);
   border-radius: 5px;
   font-size: 1.1rem;
 }
@@ -55,7 +55,7 @@
   height: 0.5rem;
   margin-right: 0.5rem;
   margin-bottom: 0.15rem;
-  background-color: cornflowerblue;
+  background-color: var(--blue-color);
 }
 
 .external-links {
@@ -68,15 +68,15 @@
   text-decoration: none;
   font-size: 1.3rem;
   font-weight: bold;
-  color: #000;
+  color: var(--black-color);
   transition: 0.3s;
   border-bottom: 1px solid transparent;
 }
 
 .external-links a {
   text-decoration: none;
-  color: #000;
-  border: 1px solid cornflowerblue;
+  color: var(--black-color);
+  border: 1px solid var(--blue-color);
   font-weight: bold;
   font-size: 1.2rem;
   padding: 0.4rem 0.8rem;
@@ -85,6 +85,6 @@
 }
 
 .external-links a:hover {
-  background-color: cornflowerblue;
-  color: #fff;
+  background-color: var(--blue-color);
+  color: var(--white-color);
 }
