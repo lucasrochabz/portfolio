@@ -1,19 +1,19 @@
 .about {
-  max-width: 1200px;
-  height: 60vh;
+  height: 65vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 2rem auto;
 }
 
-.about p {
-  font-size: 1.2srem;
+.about p, span {
+  font-size: 1.2rem;
 }
 
 .about h2 {
-  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 4rem;
-  margin: 1rem;
+}
+
+.about span {
+  margin-top: 2rem;
 }

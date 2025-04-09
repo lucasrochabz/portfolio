@@ -11,6 +11,10 @@ export const About = () => {
           Olá e bem vindos. Desenvolvedor Full Stack criativo de Fortaleza
           apaixonado por criar experiências memoráveis.
         </span>
+        <span>
+          Olá e bem vindos. Desenvolvedor Full Stack criativo de Fortaleza
+          apaixonado por criar experiências memoráveis.
+        </span>
       </section>
     </>
   );

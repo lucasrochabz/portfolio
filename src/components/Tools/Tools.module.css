@@ -1,6 +1,6 @@
 .tools {
   background-color: var(--black-color);
-  color: var(--white-color);
+  color: var(--bg-color);
   overflow: hidden;
   padding: 3rem 0;
 }

@@ -5,7 +5,7 @@ export const Header = () => {
     <>
       <header className={styles['header-bg']}>
         <div className={styles.header}>
-          <h2>Lucas Rocha</h2>
+          <h2 className={styles.logo}>LucasRocha</h2>
 
           <nav>
             <ul className={styles.nav}>
@@ -14,9 +14,6 @@ export const Header = () => {
               </li>
               <li>
                 <a href="#projetos">Projetos</a>
-              </li>
-              <li>
-                <a href="#contact">Contato</a>
               </li>
             </ul>
           </nav>

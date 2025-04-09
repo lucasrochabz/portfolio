@@ -13,7 +13,7 @@ export const App = () => {
       <About />
       <Tools />
       <ProjectList />
-      <Contact />
+      {/* <Contact /> */}
       <Footer />
     </>
   );
