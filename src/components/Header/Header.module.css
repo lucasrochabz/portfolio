@@ -23,5 +23,5 @@
 }
 
 .nav a:hover {
-  color: cornflowerblue;
+  color: var(--blue-color);
 }
