@@ -1,19 +1,36 @@
 .about {
-  height: 65vh;
-  display: flex;
-  flex-direction: column;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr auto;
   align-items: center;
-  justify-content: center;
+  gap: 4rem;
+  height: 650px;
+  margin: 0 auto;
 }
 
-.about p, span {
-  font-size: 1.2rem;
-}
-
-.about h2 {
+.content h2 {
   font-size: 4rem;
 }
 
-.about span {
-  margin-top: 2rem;
+.content p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.sticker {
+  width: 350px;
+  background-color: #1c93ff;
+  border-radius: 60% 60% 60% 0% / 40% 40% 40% 100%;
+  padding: 2rem;
+}
+
+.sticker img {
+  border-radius: 50%;
+  filter: drop-shadow(5px -10px 0 var(--black-color)) drop-shadow(-10px 0px 0 var(--black-color));
+  transform: rotate(-3deg);
+  transition: transform 0.3s ease;
+}
+
+.sticker img:hover {
+  transform: rotate(3deg) scale(1.05);
 }
