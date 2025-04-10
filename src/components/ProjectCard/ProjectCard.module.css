@@ -1,8 +1,8 @@
 .project-card {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto 1fr;
+  gap: 4rem;
   background-color: var(--white-color);
-  gap: 2rem;
   border-radius: 10px;
   border: 1px solid #222;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 1);
@@ -50,7 +50,8 @@
 .links a {
   background-color: var(--blue-color);
   color: var(--black-color);
-  font-size: 1.5rem;
+  text-transform:uppercase;
+  font-size: 1.2rem;
   font-weight: bold;
   border: 1px solid var(--black-color);
   border-radius: 100px;
