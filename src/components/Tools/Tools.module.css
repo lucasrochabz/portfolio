@@ -2,7 +2,7 @@
   background-color: var(--black-color);
   color: var(--bg-color);
   overflow: hidden;
-  padding: 3rem 0;
+  padding: 1rem 0;
 }
 
 .marquee {

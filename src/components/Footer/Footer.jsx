@@ -8,22 +8,22 @@ export const Footer = () => {
           <h2>lucas@example.com</h2>
 
           <ul className={styles.list}>
-            <li className={styles.top}>Links rápidos</li>
-            <li>
-              <a href="#about">Sobre</a>
-            </li>
-            <li>
-              <a href="#projetos">Projetos</a>
-            </li>
-          </ul>
-
-          <ul className={styles.list}>
             <li className={styles.top}>Siga</li>
             <li>
               <a href="#">LinkedIn</a>
             </li>
             <li>
               <a href="#">GitHub</a>
+            </li>
+          </ul>
+
+          <ul className={styles.list}>
+            <li className={styles.top}>Links rápidos</li>
+            <li>
+              <a href="#about">Sobre</a>
+            </li>
+            <li>
+              <a href="#projetos">Projetos</a>
             </li>
           </ul>
         </div>

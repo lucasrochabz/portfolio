@@ -5,7 +5,7 @@ export const Header = () => {
     <>
       <header className={styles['header-bg']}>
         <div className={styles.header}>
-          <h2 className={styles.logo}>LucasRocha</h2>
+          <h2 className={styles.logo}>Lucas Rocha</h2>
 
           <nav>
             <ul className={styles.nav}>

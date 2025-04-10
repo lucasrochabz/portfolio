@@ -14,23 +14,23 @@ export const ProjectCard = ({ project }) => {
           <img src={imagePath} alt={imagePath} />
         </figure>
 
-        <div className={styles['card-info']}>
+        <div className={styles.info}>
           <h2 className="subtitle">{project.name}</h2>
           <p>{project.text}</p>
-          <div className={styles['tools-container']}>
-            <ul className={styles['card-tools-list']}>
-              {project.tools.map((tool, index) => (
-                <li key={index}>{tool}</li>
-              ))}
-            </ul>
-            <div className={styles['external-links']}>
-              <a href={project.site} target="blank">
-                Site
-              </a>
-              <a href={project.repository} target="blank">
-                Repositório
-              </a>
-            </div>
+
+          <ul className={styles.list}>
+            {project.tools.map((tool, index) => (
+              <li key={index}>{tool}</li>
+            ))}
+          </ul>
+
+          <div className={styles.links}>
+            <a href={project.site} target="blank">
+              Site ↗
+            </a>
+            <a href={project.repository} target="blank">
+              Repositório ↗
+            </a>
           </div>
         </div>
       </div>
