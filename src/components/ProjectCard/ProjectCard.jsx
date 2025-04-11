@@ -9,7 +9,7 @@ export const ProjectCard = ({ project }) => {
 
   return (
     <>
-      <div className={styles['project-card']}>
+      <div className={styles.card}>
         <figure>
           <img src={imagePath} alt={imagePath} />
         </figure>

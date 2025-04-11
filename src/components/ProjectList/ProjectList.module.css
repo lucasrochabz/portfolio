@@ -5,3 +5,9 @@
   gap: 4rem;
   margin: 4rem auto;
 }
+
+@media (max-width: 800px) {
+  .project-list {
+    padding: 0 1rem;
+  }
+}

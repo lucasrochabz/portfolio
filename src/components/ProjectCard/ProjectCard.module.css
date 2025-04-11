@@ -1,6 +1,6 @@
-.project-card {
+.card {
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: 450px 1fr;
   gap: 4rem;
   background-color: var(--white-color);
   border-radius: 10px;
@@ -9,13 +9,13 @@
   padding: 2rem;
 }
 
-.project-card figure {
-  width: 448px;
+.card figure {
+  width: 100%;
   border-radius: 5px;
   overflow: hidden;
 }
 
-.project-card img {
+.card img {
   display: block;
   max-width: 100%;
   object-fit: cover;
@@ -33,6 +33,7 @@
 
 .list {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
 }
 
@@ -68,4 +69,11 @@
   content: '↗';
   display: inline-block;
   margin-left: 10px;
+}
+
+@media (max-width: 800px) {
+  .card {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
 }
