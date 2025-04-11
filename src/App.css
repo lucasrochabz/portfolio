@@ -9,10 +9,10 @@
 
 :root {
   --bg-color: #eee;
-  --white-color: #f7f7f7;
-  --gray-color: #525252;
-  --blue-color: #6495ed;
   --black-color: #000;
+  --white-color: #f7f7f7;
+  --blue-color: #1c93ff;
+  --gray-color: #525252;
 }
 
 body {

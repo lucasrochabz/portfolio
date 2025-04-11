@@ -1,6 +1,6 @@
 .header-bg {
   padding: 2rem 0;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 1);
+  border-bottom: 2px solid var(--black-color);
 }
 
 .header {
@@ -23,7 +23,7 @@
 
 .nav a {
   padding: 0.5rem 1rem;
-  border: 1px solid var(--black-color);
+  border: 2px solid var(--black-color);
   border-radius: 100px;
   transition: 0.3s;
   outline: none;

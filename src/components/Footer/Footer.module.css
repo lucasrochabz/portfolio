@@ -1,6 +1,6 @@
 .container-bg {
   background-color: var(--black-color);
-  color: #525252;
+  color: var(--gray-color);
 }
 
 .content {
@@ -30,7 +30,7 @@
 .footer {
   color: var(--gray-color);
   text-align: center;
-  border-top: 1px solid var(--gray-color);
+  border-top: 2px solid var(--gray-color);
   padding: 2rem 0;
   margin: 0 auto;
 }

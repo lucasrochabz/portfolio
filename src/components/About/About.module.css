@@ -19,7 +19,7 @@
 
 .sticker {
   width: 350px;
-  background-color: #1c93ff;
+  background-color: var(--blue-color);
   border-radius: 60% 60% 60% 0% / 40% 40% 40% 100%;
   padding: 2rem;
 }
