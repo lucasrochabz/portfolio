@@ -8,6 +8,20 @@
   margin: 0 auto;
 }
 
+.content span {
+  font-size: 1.5rem;
+}
+
+.content span::before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  background-color: var(--black-color);
+  width: 30px;
+  height: 2px;
+}
+
 .content h2 {
   font-size: 4rem;
 }
@@ -34,16 +48,6 @@
 
 .sticker img:hover {
   transform: rotate(3deg) scale(1.05);
-}
-
-.paragraph::before {
-  content: '';
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 10px;
-  background-color: var(--black-color);
-  width: 30px;
-  height: 2px;
 }
 
 .email {

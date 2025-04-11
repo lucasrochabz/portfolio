@@ -9,7 +9,7 @@ export const About = () => {
           <img src={lucas} alt="Lucas" />
         </figure>
         <div className={styles.content}>
-          <p className={styles.paragraph}>Olá, eu sou Lucas Rocha 👋</p>
+          <span>Olá, eu sou Lucas Rocha 👋</span>
           <h2>Desenvolvedor Web</h2>
           <h2>Full Stack</h2>
           <p>
