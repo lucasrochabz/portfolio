@@ -63,3 +63,9 @@
   background-color: var(--black-color);
   color: var(--bg-color);
 }
+
+.links a::after {
+  content: '↗';
+  display: inline-block;
+  margin-left: 10px;
+}

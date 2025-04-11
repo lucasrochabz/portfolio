@@ -26,10 +26,10 @@ export const ProjectCard = ({ project }) => {
 
           <div className={styles.links}>
             <a href={project.site} target="blank">
-              Site ↗
+              Site
             </a>
             <a href={project.repository} target="blank">
-              Repositório ↗
+              Repositório
             </a>
           </div>
         </div>

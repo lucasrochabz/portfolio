@@ -17,7 +17,7 @@ const projects = [
     text: 'Este projeto é a API de um e-commerce, desenvolvida com Node.js e Express, fornecendo uma comunicação eficiente entre o front-end e o banco de dados. A API gerencia operações essenciais, como autenticação de usuários, gerenciamento de produtos, controle de estoque e processamento de pedidos, garantindo uma experiência de compra fluida e segura.',
     tools: ['Node.js', 'Express', 'MySQL', 'Json Web Token', 'Bcrypt'],
     image: 'bodega-api.png',
-    site: '#',
+    site: 'https://bodega-api-production.up.railway.app/api/docs/',
     repository: 'https://github.com/lucasrochabz/bodega-api',
   },
   {

@@ -9,15 +9,17 @@ export const About = () => {
           <img src={lucas} alt="Lucas" />
         </figure>
         <div className={styles.content}>
-          <p>- Olá, eu sou o Lucas Rocha 👋</p>
+          <p className={styles.paragraph}>Olá, eu sou Lucas Rocha 👋</p>
           <h2>Desenvolvedor Web</h2>
           <h2>Full Stack</h2>
           <p>
-            Olá e bem vindos. Desenvolvedor Full Stack criativo de Fortaleza
-            apaixonado por criar experiências memoráveis. Olá e bem vindos.
-            Desenvolvedor Full Stack criativo de Fortaleza apaixonado por criar
-            experiências memoráveis.
+            Sejam bem-vindos! Sou de Fortaleza, CE, crio interfaces modernas
+            aliadas a soluções robustas e escaláveis para a web, sempre buscando
+            entregar valor e inovação em cada projeto.
           </p>
+          <a className={styles.email} href="mailto:lucas@example.com">
+            Entre em contato
+          </a>
         </div>
       </section>
     </>
