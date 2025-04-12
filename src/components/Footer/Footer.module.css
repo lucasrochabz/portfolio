@@ -6,13 +6,14 @@
 .content {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 2rem 0;
 }
 
 .item {
   display: flex;
   justify-content: space-between;
   font-size: 1.2rem;
-  padding: 2rem 0;
+  padding-bottom: 2rem;
 }
 
 .list {
@@ -31,8 +32,7 @@
   color: var(--gray-color);
   text-align: center;
   border-top: 2px solid var(--gray-color);
-  padding: 2rem 0;
-  margin: 0 auto;
+  padding-top: 2rem;
 }
 
 @media (max-width: 800px) {

@@ -1,9 +1,9 @@
 import { Header } from './components/Header';
 import { About } from './components/About';
-import { Tools } from './components/Tools/Tools';
+import { Stacks } from './components/Stacks';
 import { ProjectList } from './components/ProjectList';
-import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
+import { Contact } from './components/Contact';
 import './App.css';
 
 export const App = () => {
@@ -11,9 +11,8 @@ export const App = () => {
     <>
       <Header />
       <About />
-      <Tools />
+      <Stacks />
       <ProjectList />
-      {/* <Contact /> */}
       <Footer />
     </>
   );

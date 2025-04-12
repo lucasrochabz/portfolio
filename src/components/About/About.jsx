@@ -17,7 +17,7 @@ export const About = () => {
             aliadas a soluções robustas e escaláveis para a web, sempre buscando
             entregar valor e inovação em cada projeto.
           </p>
-          <a className={styles.email} href="mailto:lucas@example.com">
+          <a className={styles.email} href="mailto:lucasbezerrar@gmail.com">
             Entre em contato
           </a>
         </div>

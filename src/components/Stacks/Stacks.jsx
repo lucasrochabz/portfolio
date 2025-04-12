@@ -1,6 +1,6 @@
-import styles from './Tools.module.css';
+import styles from './Stacks.module.css';
 
-const tools = [
+const stacks = [
   'HTML',
   'CSS',
   'JavaScript',
@@ -10,13 +10,13 @@ const tools = [
   'MySQL',
 ];
 
-export const Tools = () => {
-  const toolsList = tools.concat(tools);
+export const Stacks = () => {
+  const stacksList = stacks.concat(stacks);
 
   return (
-    <section className={styles.tools}>
+    <section className={styles.stacks}>
       <div className={styles.marquee}>
-        {toolsList.map((item, index) => (
+        {stacksList.map((item, index) => (
           <h2 key={index}>{item}</h2>
         ))}
       </div>

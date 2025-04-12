@@ -1,8 +1,43 @@
-# React + Vite
+## Portfolio v2.0
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Imagem do projeto](docs/portfolio01.png)
+![Imagem do projeto](docs/portfolio02.png)
 
-Currently, two official plugins are available:
+### Sobre
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Este projeto é um Portfólio...
+
+### Tecnologias
+
+- **JavaScript**: Linguagem de programação utilizada no projeto.
+- **React**: Biblioteca JavaScript para criação de interfaces de usuário.
+- **React Router**: Gerenciamento de rotas na aplicação.
+- **HTML**: Linguagem de marcação utilizada para estruturar as páginas do projeto.
+- **CSS**: Linguagem de estilos utilizada para a estilização da interface.
+
+### Requisitos
+
+- Node na versão versão 22.12 ou superior
+- NPM na versão 10.9 ou superior.
+
+### Como instalar?
+
+1. Faça o clone do projeto.
+2. Abra o terminal e navegue até a pasta do projeto.
+3. Faça uma cópia do arquivo **.env.example**:
+   ```bash
+   cp .env.example .env
+   ```
+4. Edite o arquivo **.env** com os valores apropriados para o seu ambiente.
+5. Instale as dependências usando o comando:
+   ```bash
+   npm install
+   ```
+6. Inicie o servidor localmente com o comando:
+   ```bash
+   npm run dev
+   ```
+
+### Encontrou algum problema?
+
+Abra uma [issue](https://github.com/lucasrochabz/portifolio/issues) com sua sugestão ou crítica.
