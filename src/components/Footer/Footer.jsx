@@ -5,11 +5,10 @@ export const Footer = () => {
     <footer className={styles['container-bg']}>
       <section className={styles.content}>
         <div className={styles.item}>
-          <h2>lucas@example.com</h2>
+          <h2>lucasbezerrar@gmail.com</h2>
 
           <ul className={styles.list}>
             <li className={styles.top}>Siga</li>
-
             <li>
               <a
                 href="https://www.linkedin.com/in/lucas-bezerra-rocha"

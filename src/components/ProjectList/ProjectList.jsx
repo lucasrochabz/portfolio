@@ -29,15 +29,6 @@ const projects = [
     site: '#',
     repository: 'https://github.com/lucasrochabz/portfolio',
   },
-  {
-    id: 4,
-    name: 'Nome do Projeto',
-    text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia ipsa nihil non facilis, voluptatibus atque dolor adipisci est architecto animi!',
-    tools: ['HTML', 'CSS', 'JavaScript'],
-    image: 'projeto.png',
-    site: '#',
-    repository: '#',
-  },
 ];
 
 export const ProjectList = () => {
