@@ -60,7 +60,6 @@
 .links a {
   background-color: var(--blue-color);
   color: var(--black-color);
-  text-transform:uppercase;
   font-size: 1.2rem;
   font-weight: bold;
   border: 2px solid var(--black-color);
