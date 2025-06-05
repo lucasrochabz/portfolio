@@ -3,7 +3,6 @@ import { About } from './components/About';
 import { Stacks } from './components/Stacks';
 import { ProjectList } from './components/ProjectList';
 import { Footer } from './components/Footer';
-import { Contact } from './components/Contact';
 import './App.css';
 
 export const App = () => {

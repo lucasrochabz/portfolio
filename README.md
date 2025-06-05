@@ -1,7 +1,6 @@
-## Portfolio v2.0
+## Portfolio v2.0.0
 
-![Imagem do projeto](docs/portfolio01.png)
-![Imagem do projeto](docs/portfolio02.png)
+![Imagem do projeto](./src/assets/images/projeto.png)
 
 ### Sobre
 

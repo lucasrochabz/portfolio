@@ -3,7 +3,7 @@ import styles from './ProjectList.module.css';
 
 const projects = [
   {
-    id: 2,
+    id: 1,
     name: 'Bodega',
     text: 'Este projeto é uma simulação de e-commerce, desenvolvido com JavaScript e React no front-end, proporcionando uma experiência de compra online completa e eficiente.',
     tools: ['JavaScript', 'React', 'React Router'],
@@ -12,7 +12,7 @@ const projects = [
     repository: 'https://github.com/lucasrochabz/bodega',
   },
   {
-    id: 3,
+    id: 2,
     name: 'Bodega API',
     text: 'Este projeto é a API de um e-commerce, desenvolvida com Node.js e Express, fornecendo uma comunicação eficiente entre o front-end e o banco de dados. A API gerencia operações essenciais, como autenticação de usuários, gerenciamento de produtos, controle de estoque e processamento de pedidos, garantindo uma experiência de compra fluida e segura.',
     tools: ['Node.js', 'Express', 'MySQL', 'Json Web Token', 'Bcrypt'],
@@ -21,7 +21,16 @@ const projects = [
     repository: 'https://github.com/lucasrochabz/bodega-api',
   },
   {
-    id: 1,
+    id: 3,
+    name: 'News Scraper',
+    text: 'Este projeto é uma aplicação de extração e exibição de manchetes das últimas notícias de um portal, utilizando Python com BeautifulSoup para web scraping e JavaScript para renderização dinâmica no navegador.',
+    tools: ['JavaScript', 'Python', 'BeautifulSoup', 'HTML', 'CSS'],
+    image: 'bodega-api.png',
+    site: 'https://lucasrochabz.github.io/news-scraper/',
+    repository: 'https://github.com/lucasrochabz/news-scraper',
+  },
+  {
+    id: 4,
     name: 'Portfólio',
     text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia ipsa nihil non facilis, voluptatibus atque dolor adipisci est architecto animi!',
     tools: ['JavaScript', 'React', 'HTML', 'CSS'],
