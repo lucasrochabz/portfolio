@@ -1,6 +1,6 @@
 import styles from './Footer.module.css';
 
-export const Footer = () => {
+const Footer = () => {
   return (
     <footer className={styles['container-bg']}>
       <section className={styles.content}>
@@ -48,3 +48,5 @@ export const Footer = () => {
     </footer>
   );
 };
+
+export default Footer;

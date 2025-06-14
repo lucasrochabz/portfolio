@@ -1,6 +1,6 @@
 import styles from './Header.module.css';
 
-export const Header = () => {
+const Header = () => {
   return (
     <>
       <header className={styles['header-bg']}>
@@ -22,3 +22,5 @@ export const Header = () => {
     </>
   );
 };
+
+export default Header;

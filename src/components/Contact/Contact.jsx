@@ -1,8 +1,8 @@
-import { Input } from '../Input/Input';
-import { Button } from '../Button/Button';
+import { Input } from '../Input';
+import { Button } from '../Button';
 import styles from './Contact.module.css';
 
-export const Contact = () => {
+const Contact = () => {
   const handleBtnMessage = (event) => {
     event.preventDefault();
     console.log('clicou');
@@ -68,3 +68,5 @@ export const Contact = () => {
     </>
   );
 };
+
+export default Contact;

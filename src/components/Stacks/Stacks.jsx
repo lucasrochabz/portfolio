@@ -10,7 +10,7 @@ const stacks = [
   'MySQL',
 ];
 
-export const Stacks = () => {
+const Stacks = () => {
   const stacksList = stacks.concat(stacks);
 
   return (
@@ -23,3 +23,5 @@ export const Stacks = () => {
     </section>
   );
 };
+
+export default Stacks;

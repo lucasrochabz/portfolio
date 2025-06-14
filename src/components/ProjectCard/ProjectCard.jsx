@@ -1,6 +1,6 @@
 import styles from './ProjectCard.module.css';
 
-export const ProjectCard = ({ project }) => {
+const ProjectCard = ({ project }) => {
   const images = import.meta.glob('/src/assets/images/*', {
     eager: true,
   });
@@ -37,3 +37,5 @@ export const ProjectCard = ({ project }) => {
     </>
   );
 };
+
+export default ProjectCard;

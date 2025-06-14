@@ -3,9 +3,8 @@ import { About } from './components/About';
 import { Stacks } from './components/Stacks';
 import { ProjectList } from './components/ProjectList';
 import { Footer } from './components/Footer';
-import './App.css';
 
-export const App = () => {
+const App = () => {
   return (
     <>
       <Header />
@@ -16,3 +15,5 @@ export const App = () => {
     </>
   );
 };
+
+export default App;
