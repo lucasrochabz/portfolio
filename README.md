@@ -1,10 +1,10 @@
 ## Portfolio v2.0.0
 
-![Imagem do projeto](./src/assets/images/projeto.png)
+![Imagem do projeto](./src/assets/images/projeto-portfolio.png)
 
 ### Sobre
 
-Este projeto é um Portfólio...
+Este projeto é meu portfólio como desenvolvedor, onde apresento um pouco sobre minha trajetória, minhas habilidades e alguns dos projetos que desenvolvi. A ideia é reunir em um só lugar tudo o que representa minha evolução como profissional e minhas principais criações no mundo da programação.
 
 ### Tecnologias
 
@@ -36,6 +36,31 @@ Este projeto é um Portfólio...
    ```bash
    npm run dev
    ```
+
+### Estrutura do projeto
+
+```bash
+portfolio/
+├── public/
+│   └── lucas01.png
+│
+├── src/
+│   ├── assets/
+│   │   └── images/
+│   │
+│   ├── components/
+│   ├── App.css
+│   ├── App.jsx
+│   └── main.jsx
+│
+├── .eslintrc
+├── .gitignore
+├── index.html
+├── package-lock.json
+├── package.json
+├── README.md
+└── vite.config.js
+```
 
 ### Encontrou algum problema?
 
