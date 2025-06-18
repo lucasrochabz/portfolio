@@ -1,0 +1,13 @@
+.project-list {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  margin: 4rem auto;
+}
+
+@media (max-width: 800px) {
+  .project-list {
+    padding: 0 1rem;
+  }
+}

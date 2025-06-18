@@ -1,0 +1,21 @@
+.stacks {
+  background-color: var(--black-color);
+  color: var(--bg-color);
+  overflow: hidden;
+  padding: 1rem 0;
+}
+
+.marquee {
+  display: flex;
+  gap: 8rem;
+  animation: scrollLeft 30s linear infinite;
+}
+
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%)
+  }
+}

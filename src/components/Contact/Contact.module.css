@@ -1,0 +1,41 @@
+.contact {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.list li {
+  cursor: pointer;
+  border: 1px solid var(--black-color);
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  transition: 0.3s;
+}
+
+.list li:hover {
+  background-color: var(--black-color);
+  color: #eee;
+}
+
+.form-contact {
+  display: grid;
+  width: 650px;
+  grid-template-columns: 1fr;
+}
+
+.textarea {
+  font-size: 1rem;
+  padding: 0.8rem;
+  min-height: 9rem;
+  border: 1px solid var(--black-color);
+  border-radius: 5px;
+}
