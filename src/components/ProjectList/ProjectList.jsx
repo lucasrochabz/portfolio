@@ -35,7 +35,7 @@ const projects = [
     text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia ipsa nihil non facilis, voluptatibus atque dolor adipisci est architecto animi!',
     tools: ['JavaScript', 'React', 'HTML', 'CSS'],
     image: 'projeto-portfolio.png',
-    site: '#',
+    site: 'https://portfolio-lucasrochabz.vercel.app/',
     repository: 'https://github.com/lucasrochabz/portfolio',
   },
 ];
