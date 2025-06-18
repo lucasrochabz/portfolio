@@ -1,6 +1,6 @@
-import styles from './Stacks.module.css';
+import styles from './Marquee.module.css';
 
-const stacks = [
+const techStacks = [
   'HTML',
   'CSS',
   'JavaScript',
@@ -10,13 +10,13 @@ const stacks = [
   'MySQL',
 ];
 
-const Stacks = () => {
-  const stacksList = stacks.concat(stacks);
+const Marquee = () => {
+  const repeatedStacks = techStacks.concat(techStacks);
 
   return (
     <section className={styles.stacks}>
       <div className={styles.marquee}>
-        {stacksList.map((item, index) => (
+        {repeatedStacks.map((item, index) => (
           <h2 key={index}>{item}</h2>
         ))}
       </div>
@@ -24,4 +24,4 @@ const Stacks = () => {
   );
 };
 
-export default Stacks;
+export default Marquee;

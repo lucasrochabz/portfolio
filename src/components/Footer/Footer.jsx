@@ -4,9 +4,9 @@ const Footer = () => {
   return (
     <footer className={styles['container-bg']}>
       <section className={styles.content}>
-        <div className={styles.item}>
-          <h2>lucasbezerrar@gmail.com</h2>
+        <h2>lucasbezerrar@gmail.com</h2>
 
+        <div className={styles.item}>
           <ul className={styles.list}>
             <li className={styles.top}>Siga</li>
             <li>
@@ -17,11 +17,13 @@ const Footer = () => {
                 LinkedIn
               </a>
             </li>
+
             <li>
               <a href="https://github.com/lucasrochabz" target="blank">
                 GitHub
               </a>
             </li>
+
             <li>
               <a href="https://www.instagram.com/lucasrochabz" target="blank">
                 Instagram
@@ -31,9 +33,11 @@ const Footer = () => {
 
           <ul className={styles.list}>
             <li className={styles.top}>Links rápidos</li>
+
             <li>
               <a href="#about">Sobre</a>
             </li>
+
             <li>
               <a href="#projetos">Projetos</a>
             </li>
