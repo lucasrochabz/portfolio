@@ -43,6 +43,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
+
         <div className={styles.footer}>
           <p>
             Copyright &copy; 2025 Lucas Rocha. Todos os direitos reservados.
