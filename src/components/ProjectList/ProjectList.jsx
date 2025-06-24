@@ -32,7 +32,7 @@ const projects = [
   {
     id: 4,
     name: 'Portfólio',
-    text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia ipsa nihil non facilis, voluptatibus atque dolor adipisci est architecto animi!',
+    text: 'Este projeto é uma aplicação de extração e exibição de manchetes das últimas notícias de um portal, utilizando Python com BeautifulSoup para web scraping e JavaScript para renderização dinâmica no navegador.',
     tools: ['JavaScript', 'React', 'HTML', 'CSS'],
     image: 'projeto-portfolio.png',
     site: 'https://portfolio-lucasrochabz.vercel.app/',
