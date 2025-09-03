@@ -2,13 +2,19 @@
   background-color: var(--black-color);
   color: var(--bg-color);
   overflow: hidden;
-  padding: 1rem 0;
+  padding: 2rem 0;
+  margin-bottom: 5rem;
 }
 
 .marquee {
   display: flex;
   gap: 8rem;
   animation: scrollLeft 30s linear infinite;
+}
+
+.marquee span {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 @keyframes scrollLeft {

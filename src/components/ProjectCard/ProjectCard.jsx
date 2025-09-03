@@ -16,13 +16,13 @@ const ProjectCard = ({ project }) => {
 
         <div className={styles.info}>
           <h2 className="subtitle">{project.name}</h2>
-          <p>{project.text}</p>
-
           <ul className={styles.list}>
             {project.tools.map((tool, index) => (
               <li key={index}>{tool}</li>
             ))}
           </ul>
+
+          <p>{project.text}</p>
 
           <div className={styles.links}>
             <a href={project.site} target="blank">

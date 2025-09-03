@@ -9,7 +9,7 @@
 
 :root {
   --bg-color: #eee;
-  --black-color: #000;
+  --black-color: #0C2340;
   --white-color: #f7f7f7;
   --blue-color: #1c93ff;
   --gray-color: #525252;
@@ -47,5 +47,6 @@ button {
 
 .subtitle {
   font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 3rem;
+  font-size: 2.25rem;
+  line-height: 1.1;
 }

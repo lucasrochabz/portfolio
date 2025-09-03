@@ -1,6 +1,9 @@
 .header-bg {
   padding: 2rem 0;
+  background-color: var(--black-color);
+  color: var(--white-color);
   border-bottom: 2px solid var(--black-color);
+  margin-bottom: 5rem;
 }
 
 .header {
