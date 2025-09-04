@@ -5,9 +5,18 @@ export const About = () => {
   return (
     <>
       <section className={styles.about} id="about">
-        <figure className={styles.sticker}>
-          <img src={lucas} alt="Lucas" />
-        </figure>
+        <div className={styles.gridContainer}>
+          <div className={`${styles.item} ${styles.item1}`}>
+            <img src={lucas} alt="Lucas" />
+          </div>
+          <div className={styles.item}>
+            <img src={lucas} alt="Lucas" />
+          </div>
+          <div className={styles.item}>
+            <img src={lucas} alt="Lucas" />
+          </div>
+        </div>
+
         <div className={styles.content}>
           <span>Olá, eu sou Lucas Rocha 👋</span>
           <h2>Desenvolvedor Web</h2>
