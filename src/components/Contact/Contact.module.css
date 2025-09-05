@@ -23,7 +23,7 @@
 
 .list li:hover {
   background-color: var(--black-color);
-  color: #eee;
+  color: var(--bg-color);
 }
 
 .form-contact {

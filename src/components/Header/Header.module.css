@@ -8,10 +8,10 @@
 .header {
   max-width: 1200px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
-  flex-wrap: wrap;
   margin: 0 auto;
 }
 
@@ -19,23 +19,23 @@
   font-size: 2rem;
 }
 
-.nav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.nav a {
-  border: 1px solid var(--white-color);
-  border-radius: 100px;
+.header a {
+  background-color: var(--yellow-color);
+  color: var(--black-color);
+  border: 1px solid transparent;
+  font-weight: 600;
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
+  border-radius: 5px;
   outline: none;
   transition: 0.3s;
   padding: 0.5rem 1rem;
 }
 
-.nav a:hover, nav a:focus {
+.header a:hover, nav a:focus {
   background-color: var(--black-color);
-  color: var(--bg-color);
+  color: var(--yellow-color);
+  border: 1px solid var(--yellow-color);
 }
 
 @media (max-width: 800px) {

@@ -39,7 +39,7 @@
 }
 
 .email {
-  background-color: #ffc627;
+  background-color: var(--yellow-color);
   color: var(--black-color);
   font-size: 1.125rem;
   letter-spacing: 0.015em;
@@ -52,7 +52,7 @@
 
 .email:hover {
   background-color: var(--black-color);
-  color: #ffc627;
+  color: var(--yellow-color);
 }
 
 @media (max-width: 800px) {
