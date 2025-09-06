@@ -9,12 +9,16 @@
 
 :root {
   --bg-color: #eee;
-  --black-color: #0C2340;
+
   --white-color: #f7f7f7;
+  --white-80-color: #ffffffcc;
+
   --blue-color: #1c93ff;
   --gray-color: #525252;
 
   --yellow-color: #ffc627;
+  --deep-navy-color: #0C2340;
+  --deep-navy-50-color: #0c234080;
 }
 
 body {
@@ -46,10 +50,12 @@ button {
 .title {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 4rem;
+  color: var(--deep-navy-color);
 }
 
 .subtitle {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 2.25rem;
   line-height: 1.1;
+  color: var(--deep-navy-color);
 }

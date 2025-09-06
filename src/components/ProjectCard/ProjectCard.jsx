@@ -28,7 +28,11 @@ const ProjectCard = ({ project }) => {
             <a href={project.site} target="blank">
               Site
             </a>
-            <a href={project.repository} target="blank">
+            <a
+              href={project.repository}
+              target="blank"
+              className={styles.teste}
+            >
               Repositório
             </a>
           </div>

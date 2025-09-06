@@ -23,7 +23,7 @@
   display: inline-block;
   vertical-align: middle;
   margin-right: 10px;
-  background-color: var(--black-color);
+  background-color: var(--deep-navy-color);
   width: 30px;
   height: 2px;
 }
@@ -40,7 +40,7 @@
 
 .email {
   background-color: var(--yellow-color);
-  color: var(--black-color);
+  color: var(--deep-navy-color);
   font-size: 1.125rem;
   letter-spacing: 0.015em;
   font-weight: 600;
@@ -51,8 +51,7 @@
 }
 
 .email:hover {
-  background-color: var(--black-color);
-  color: var(--yellow-color);
+  opacity: 0.9;
 }
 
 @media (max-width: 800px) {
