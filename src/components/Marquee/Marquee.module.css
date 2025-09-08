@@ -1,12 +1,12 @@
 .stacks {
   background-color: var(--deep-navy-color);
-  color: var(--bg-color);
   overflow: hidden;
   padding: 2rem 0;
   margin-bottom: 5rem;
 }
 
 .marquee {
+  color: var(--bg-color);
   display: flex;
   gap: 8rem;
   animation: scrollLeft 30s linear infinite;

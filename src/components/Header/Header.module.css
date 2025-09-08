@@ -1,6 +1,5 @@
 .header-bg {
   background-color: var(--deep-navy-color);
-  color: var(--white-color);
   padding: 2rem 0;
   margin-bottom: 5rem;
 }
@@ -16,13 +15,13 @@
 }
 
 .logo {
+  color: var(--bg-color);
   font-size: 2rem;
   line-height: 1.1;
 }
 
 .header a {
   background-color: var(--yellow-color);
-  color: var(--deep-navy-color);
   font-size: 1.125rem;
   font-weight: 600;
   text-transform: uppercase;

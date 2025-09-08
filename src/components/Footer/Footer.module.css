@@ -68,3 +68,14 @@
 .version:hover {
   background-color: rgba(0, 0, 0, 0.5);
 }
+
+@media (max-width: 800px) {
+  .content {
+    padding: 0 1.5rem;
+  }
+  .footer {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+}

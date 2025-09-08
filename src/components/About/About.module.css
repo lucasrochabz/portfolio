@@ -3,7 +3,7 @@
   display: grid;
   grid-template-columns: 585px auto;
   gap: 2rem;
-  margin: 0 auto 5rem auto;
+  margin: 0 auto 5rem;
 }
 
 .content {
@@ -58,7 +58,7 @@
 @media (max-width: 800px) {
   .about {
     grid-template-columns: 1fr;
-    padding: 0 2rem;
+    padding: 0 1.5rem;
   }
 }
 
