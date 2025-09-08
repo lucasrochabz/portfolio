@@ -25,13 +25,13 @@ const ProjectCard = ({ project }) => {
           <p>{project.text}</p>
 
           <div className={styles.links}>
-            <a href={project.site} target="blank">
+            <a href={project.site} target="blank" className={styles.primary}>
               Site
             </a>
             <a
               href={project.repository}
               target="blank"
-              className={styles.teste}
+              className={styles.secondary}
             >
               Repositório
             </a>

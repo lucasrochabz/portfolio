@@ -20,11 +20,11 @@
 }
 
 .content h3::before {
+  background-color: var(--deep-navy-color);
   content: '';
   display: inline-block;
   vertical-align: middle;
   margin-right: 10px;
-  background-color: var(--deep-navy-color);
   width: 30px;
   height: 2px;
 }
@@ -42,7 +42,6 @@
 
 .email {
   background-color: var(--yellow-color);
-  color: var(--deep-navy-color);
   font-size: 1.125rem;
   letter-spacing: 0.015em;
   font-weight: 600;
@@ -59,16 +58,7 @@
 @media (max-width: 800px) {
   .about {
     grid-template-columns: 1fr;
-    justify-items: center;
-    gap: 2rem;
-    height: 100%;
-  }
-  .content {
-    text-align: center;
-    align-items: center;
-  }
-  .content h2 {
-    font-size: 3rem;
+    padding: 0 2rem;
   }
 }
 
