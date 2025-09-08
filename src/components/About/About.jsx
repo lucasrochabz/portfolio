@@ -18,9 +18,11 @@ export const About = () => {
         </div>
 
         <div className={styles.content}>
-          <span>Olá, eu sou Lucas Rocha 👋</span>
-          <h2>Desenvolvedor Web</h2>
-          <h2>Full Stack</h2>
+          <h3>Olá, eu sou Lucas Rocha 👋</h3>
+          <h2>
+            Desenvolvedor Web <br />
+            Full Stack
+          </h2>
           <p>
             Sejam bem-vindos! Sou de Fortaleza, CE, crio interfaces modernas
             aliadas a soluções robustas e escaláveis para a web, sempre buscando

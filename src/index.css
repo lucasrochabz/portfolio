@@ -8,7 +8,8 @@
 }
 
 :root {
-  --bg-color: #eee;
+  /* --bg-color: #eee; */
+  --bg-color: #ffffff;
 
   --white-color: #f7f7f7;
   --white-80-color: #ffffffcc;
@@ -22,7 +23,6 @@
 }
 
 body {
-  /* font-family: Arial, Helvetica, sans-serif; */
   font-family: 'Fira Sans', sans-serif;
   background-color: var(--bg-color);
 }
@@ -47,14 +47,20 @@ button {
   cursor: pointer;
 }
 
+p, h3, li {
+  font-family: 'Roboto', sans-serif;
+}
+
+h2, a, span {
+  font-family: 'Poppins', sans-serif;
+}
+
 .title {
-  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 4rem;
   color: var(--deep-navy-color);
 }
 
 .subtitle {
-  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 2.25rem;
   line-height: 1.1;
   color: var(--deep-navy-color);

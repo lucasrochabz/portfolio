@@ -22,10 +22,10 @@
 .header a {
   background-color: var(--yellow-color);
   color: var(--deep-navy-color);
-  border: 1px solid transparent;
+  font-size: 1.125rem;
   font-weight: 600;
-  letter-spacing: 0.015em;
   text-transform: uppercase;
+  letter-spacing: 0.015em;
   border-radius: 5px;
   outline: none;
   transition: 0.3s;
