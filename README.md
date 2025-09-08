@@ -1,4 +1,4 @@
-# Portfolio v2.0.0
+# Portfolio v2.0.2
 
 ![Imagem do projeto](./src/assets/images/projeto-portfolio.png)
 
@@ -43,8 +43,8 @@ portfolio/
 │   │   └── images/
 │   │
 │   ├── components/
-│   ├── App.css
 │   ├── App.jsx
+│   ├── index.css
 │   └── main.jsx
 │
 ├── .eslintrc

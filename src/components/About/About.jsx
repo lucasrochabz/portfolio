@@ -1,4 +1,6 @@
-import lucas from '../../../public/lucas01.png';
+import lucas1 from '../../../public/lucas1.png';
+import lucas2 from '../../../public/lucas2.png';
+import lucas3 from '../../../public/lucas3.png';
 import styles from './About.module.css';
 
 export const About = () => {
@@ -7,13 +9,13 @@ export const About = () => {
       <section className={styles.about} id="about">
         <div className={styles.gridContainer}>
           <div className={`${styles.item} ${styles.item1}`}>
-            <img src={lucas} alt="Lucas" />
+            <img src={lucas1} alt="Lucas" />
           </div>
           <div className={styles.item}>
-            <img src={lucas} alt="Lucas" />
+            <img src={lucas2} alt="Lucas" />
           </div>
           <div className={styles.item}>
-            <img src={lucas} alt="Lucas" />
+            <img src={lucas3} alt="Lucas" />
           </div>
         </div>
 
