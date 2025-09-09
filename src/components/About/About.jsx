@@ -7,14 +7,14 @@ export const About = () => {
   return (
     <>
       <section className={styles.about} id="about">
-        <div className={styles.gridContainer}>
-          <div className={`${styles.item} ${styles.item1}`}>
+        <div className={styles.gallery}>
+          <div className={`${styles.galleryItem} ${styles.featured}`}>
             <img src={lucas1} alt="Lucas" />
           </div>
-          <div className={styles.item}>
+          <div className={styles.galleryItem}>
             <img src={lucas2} alt="Lucas" />
           </div>
-          <div className={styles.item}>
+          <div className={styles.galleryItem}>
             <img src={lucas3} alt="Lucas" />
           </div>
         </div>

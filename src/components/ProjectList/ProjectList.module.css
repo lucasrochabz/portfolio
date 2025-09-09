@@ -1,4 +1,4 @@
-.project-list {
+.projectList {
   max-width: 1200px;
   display: flex;
   flex-direction: column;
@@ -7,7 +7,7 @@
 }
 
 @media (max-width: 800px) {
-  .project-list {
+  .projectList {
     padding: 0 1.5rem;
   }
 }

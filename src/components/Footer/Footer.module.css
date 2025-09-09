@@ -1,26 +1,22 @@
-.container-bg {
+.footerBg {
   background-color: var(--deep-navy-color);
   color: var(--white-80-color);
   padding: 3rem 0;
 }
 
-.content {
+.footer {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.content h2 {
-  text-align: center;
-  padding-bottom: 2rem;
-}
-
-.list {
+.listLinks {
   display: flex;
+  flex-wrap: wrap;
   gap: 0.5rem;
   margin-bottom: 2rem;
 }
 
-.list a {
+.listLinks a {
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -29,22 +25,22 @@
   padding: 0.5rem 1rem;
 }
 
-.list a:hover {
+.listLinks a:hover {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.footer {
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+.bottom {
   color: var(--white-80-color);
   border-top: 1px solid var(--white-80-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 2rem;
-}
-
-.icon {
-  width: 20px;
-  height: 20px;
 }
 
 .version {
@@ -61,8 +57,8 @@
   background-color: #22c55e;
   display: inline-block;
   border-radius: 100px;
-  margin-right: 0.5rem;
   vertical-align: middle;
+  margin-right: 0.5rem;
 }
 
 .version:hover {
@@ -70,10 +66,10 @@
 }
 
 @media (max-width: 800px) {
-  .content {
+  .footer {
     padding: 0 1.5rem;
   }
-  .footer {
+  .bottom {
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;

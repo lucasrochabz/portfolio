@@ -2,9 +2,9 @@ import styles from './Footer.module.css';
 
 const Footer = () => {
   return (
-    <footer className={styles['container-bg']}>
-      <section className={styles.content}>
-        <ul className={styles.list}>
+    <footer className={styles.footerBg}>
+      <section className={styles.footer}>
+        <ul className={styles.listLinks}>
           <li>
             <a
               href="https://www.linkedin.com/in/lucas-bezerra-rocha"
@@ -34,7 +34,7 @@ const Footer = () => {
           </li>
         </ul>
 
-        <div className={styles.footer}>
+        <div className={styles.bottom}>
           <p>&copy; 2025 Lucas Rocha. Todos os direitos reservados.</p>
           <p className={styles.version}>v2.0</p>
         </div>

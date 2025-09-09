@@ -56,19 +56,19 @@
   opacity: 0.9;
 }
 
-.gridContainer {
+.gallery {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 2rem;
 }
 
-.item {
+.galleryItem {
   border-radius: 10px;
   overflow: hidden;
 }
 
-.item1 {
+.featured {
   grid-row: span 2;
 }
 

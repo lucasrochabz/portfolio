@@ -43,7 +43,7 @@ const projects = [
 const ProjectList = () => {
   return (
     <>
-      <section id="projetos" className={styles['project-list']}>
+      <section id="projetos" className={styles.projectList}>
         {projects.map((project, id) => (
           <ProjectCard key={id} project={project} />
         ))}
