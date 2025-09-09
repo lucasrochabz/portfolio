@@ -64,11 +64,6 @@
 }
 
 .item {
-  background: linear-gradient(
-    160deg,
-    rgba(12, 35, 64, 0.2) 0%,
-    rgba(255, 255, 255, 0.85) 100%
-  );
   border-radius: 10px;
   overflow: hidden;
 }
