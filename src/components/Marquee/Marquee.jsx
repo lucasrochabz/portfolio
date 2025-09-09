@@ -4,6 +4,8 @@ const techStacks = [
   'HTML',
   'CSS',
   'JavaScript',
+  'TypeScript',
+  'Python',
   'React',
   'Node.js',
   'Express.js',
@@ -17,7 +19,7 @@ const Marquee = () => {
     <section className={styles.stacks}>
       <div className={styles.marquee}>
         {repeatedStacks.map((item, index) => (
-          <h2 key={index}>{item}</h2>
+          <span key={index}>{item}</span>
         ))}
       </div>
     </section>

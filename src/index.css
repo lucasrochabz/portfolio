@@ -1,6 +1,3 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 * {
   margin: 0;
   padding: 0;
@@ -8,22 +5,27 @@
 }
 
 :root {
-  --bg-color: #eee;
-  --black-color: #000;
-  --white-color: #f7f7f7;
-  --blue-color: #1c93ff;
-  --gray-color: #525252;
+  --bg-color: #ffffff;
+
+  --white-color: #ffffff;
+  --white-80-color: #ffffffcc;
+
+  --deep-navy-color: #0C2340;
+  --deep-navy-50-color: #0c234080;
+
+  --yellow-color: #ffc627;
 }
 
 body {
-  /* font-family: Arial, Helvetica, sans-serif; */
-  font-family: 'Fira Sans', sans-serif;
   background-color: var(--bg-color);
+  color: var(--deep-navy-color);
 }
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 a {
@@ -40,12 +42,31 @@ button {
   cursor: pointer;
 }
 
+p, h3, li {
+  font-family: 'Roboto', sans-serif;
+}
+
+h2, a, span {
+  font-family: 'Poppins', sans-serif;
+}
+
 .title {
-  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 4rem;
 }
 
 .subtitle {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 3rem;
+  font-size: 2.25rem;
+  line-height: 1.1;
 }
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #0C2340;
+    --text-color: #f7f7f7;
+    --white-color: #f7f7f7;
+    --white-80-color: #f7f7f7cc;
+    --deep-navy-color: #ffffff;
+    --deep-navy-50-color: #ffffff80;
+    --yellow-color: #ffc627;
+  }
+} */

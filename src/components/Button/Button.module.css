@@ -2,7 +2,7 @@
   background-color: var(--blue-color);
   font-size: 1rem;
   font-weight: bold;
-  border: 1px solid var(--black-color);
+  border: 1px solid var(--deep-navy-color);
   border-radius: 5px;
   transition: 0.3s;
   padding: 1rem 2rem;
@@ -10,6 +10,6 @@
 }
 
 .primary:hover {
-  background-color: var(--black-color);
+  background-color: var(--deep-navy-color);
   color: var(--blue-color);
 }

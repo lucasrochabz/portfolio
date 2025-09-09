@@ -2,52 +2,41 @@ import styles from './Footer.module.css';
 
 const Footer = () => {
   return (
-    <footer className={styles['container-bg']}>
-      <section className={styles.content}>
-        <h2>lucasbezerrar@gmail.com</h2>
+    <footer className={styles.footerBg}>
+      <section className={styles.footer}>
+        <ul className={styles.listLinks}>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/lucas-bezerra-rocha"
+              target="blank"
+            >
+              <img src="/linkedin.svg" alt="Linkedin" className={styles.icon} />
+              LinkedIn
+            </a>
+          </li>
 
-        <div className={styles.item}>
-          <ul className={styles.list}>
-            <li className={styles.top}>Siga</li>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/lucas-bezerra-rocha"
-                target="blank"
-              >
-                LinkedIn
-              </a>
-            </li>
+          <li>
+            <a href="https://github.com/lucasrochabz" target="blank">
+              <img src="/github.svg" alt="GitHub" className={styles.icon} />
+              GitHub
+            </a>
+          </li>
 
-            <li>
-              <a href="https://github.com/lucasrochabz" target="blank">
-                GitHub
-              </a>
-            </li>
+          <li>
+            <a href="https://www.instagram.com/lucasrochabz" target="blank">
+              <img
+                src="/instagram.svg"
+                alt="Instagram"
+                className={styles.icon}
+              />
+              Instagram
+            </a>
+          </li>
+        </ul>
 
-            <li>
-              <a href="https://www.instagram.com/lucasrochabz" target="blank">
-                Instagram
-              </a>
-            </li>
-          </ul>
-
-          <ul className={styles.list}>
-            <li className={styles.top}>Links rápidos</li>
-
-            <li>
-              <a href="#about">Sobre</a>
-            </li>
-
-            <li>
-              <a href="#projetos">Projetos</a>
-            </li>
-          </ul>
-        </div>
-
-        <div className={styles.footer}>
-          <p>
-            Copyright &copy; 2025 Lucas Rocha. Todos os direitos reservados.
-          </p>
+        <div className={styles.bottom}>
+          <p>&copy; 2025 Lucas Rocha. Todos os direitos reservados.</p>
+          <p className={styles.version}>v2.0</p>
         </div>
       </section>
     </footer>

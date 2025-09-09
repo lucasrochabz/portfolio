@@ -1,13 +1,13 @@
-.project-list {
+.projectList {
   max-width: 1200px;
   display: flex;
   flex-direction: column;
   gap: 4rem;
-  margin: 4rem auto;
+  margin: 0 auto 5rem;
 }
 
 @media (max-width: 800px) {
-  .project-list {
-    padding: 0 1rem;
+  .projectList {
+    padding: 0 1.5rem;
   }
 }
