@@ -77,4 +77,10 @@
     grid-template-columns: 1fr;
     padding: 0 1.5rem;
   }
+  .content h2 {
+    font-size: 2.5rem;
+  }
+  .gallery {
+    gap: 1rem;
+  }
 }

@@ -3,7 +3,7 @@ import lucas2 from '../../../public/lucas2.png';
 import lucas3 from '../../../public/lucas3.png';
 import styles from './About.module.css';
 
-export const About = () => {
+const About = () => {
   return (
     <>
       <section className={styles.about} id="about">
