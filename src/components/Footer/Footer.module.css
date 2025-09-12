@@ -69,6 +69,10 @@
   .footer {
     padding: 0 1.5rem;
   }
+  .listLinks {
+    flex-direction: column;
+    align-items: flex-start;
+  }
   .bottom {
     flex-wrap: wrap;
     justify-content: center;

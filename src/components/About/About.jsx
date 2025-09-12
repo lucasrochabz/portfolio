@@ -1,9 +1,9 @@
-import lucas1 from '../../../public/lucas1.png';
-import lucas2 from '../../../public/lucas2.png';
-import lucas3 from '../../../public/lucas3.png';
+import lucas1 from '../../../public/lucas1.jpg';
+import lucas2 from '../../../public/lucas2.jpg';
+import lucas3 from '../../../public/lucas3.jpg';
 import styles from './About.module.css';
 
-export const About = () => {
+const About = () => {
   return (
     <>
       <section className={styles.about} id="about">
