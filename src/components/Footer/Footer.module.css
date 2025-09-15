@@ -16,24 +16,6 @@
   margin-bottom: 2rem;
 }
 
-.listLinks a {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  border-radius: 5px;
-  transition: 0.3s;
-  padding: 0.5rem 1rem;
-}
-
-.listLinks a:hover {
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.icon {
-  width: 20px;
-  height: 20px;
-}
-
 .bottom {
   color: var(--white-80-color);
   border-top: 1px solid var(--white-80-color);

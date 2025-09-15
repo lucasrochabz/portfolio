@@ -1,3 +1,4 @@
+import ExternalLink from '../ExternalLink/ExternalLink';
 import styles from './Footer.module.css';
 
 const Footer = () => {
@@ -6,31 +7,33 @@ const Footer = () => {
       <section className={styles.footer}>
         <ul className={styles.listLinks}>
           <li>
-            <a
+            <ExternalLink
+              variant="social"
               href="https://www.linkedin.com/in/lucas-bezerra-rocha"
-              target="blank"
+              icon="/linkedin.svg"
             >
-              <img src="/linkedin.svg" alt="Linkedin" className={styles.icon} />
               LinkedIn
-            </a>
+            </ExternalLink>
           </li>
 
           <li>
-            <a href="https://github.com/lucasrochabz" target="blank">
-              <img src="/github.svg" alt="GitHub" className={styles.icon} />
+            <ExternalLink
+              variant="social"
+              href="https://github.com/lucasrochabz"
+              icon="/github.svg"
+            >
               GitHub
-            </a>
+            </ExternalLink>
           </li>
 
           <li>
-            <a href="https://www.instagram.com/lucasrochabz" target="blank">
-              <img
-                src="/instagram.svg"
-                alt="Instagram"
-                className={styles.icon}
-              />
+            <ExternalLink
+              variant="social"
+              href="https://www.instagram.com/lucasrochabz"
+              icon="/instagram.svg"
+            >
               Instagram
-            </a>
+            </ExternalLink>
           </li>
         </ul>
 

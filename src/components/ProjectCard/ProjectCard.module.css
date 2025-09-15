@@ -8,8 +8,6 @@
   padding: 2rem;
 
   grid-template-areas: "figure info";
-
-  transition: 0.3s;
 }
 
 .card:nth-child(even) {
@@ -70,16 +68,6 @@
   border-radius: 5px;
   padding: 0.5rem 1rem;
   transition: 0.3s;
-}
-
-.primary {
-  background-color: var(--deep-navy-color);
-  color: var(--bg-color);
-}
-
-.secondary {
-  background-color: transparent;
-  border: 1px solid var(--deep-navy-50-color);
 }
 
 .links a:hover {

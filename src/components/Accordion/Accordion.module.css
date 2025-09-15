@@ -4,30 +4,36 @@
 }
 
 .container h2 {
-  font-size: 2.25rem;
+  font-size: 3rem;
   line-height: 1.1;
   margin-bottom: 1rem;
 }
 
 .container p {
-  font-size: 1.25rem;
-  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  margin-bottom: 4rem;
 }
 
-.container span {
-  font-size: 1.25rem;
+.container h3 {
+  font-size: 2rem;
+  font-weight: 600;
 }
 
 .accordion {
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 2rem;
 }
 
 .item {
   border-radius: 10px;
   border: 1px solid var(--deep-navy-50-color);
   box-shadow: 0 2px 2px var(--deep-navy-50-color);
+  overflow: hidden;
+}
+
+.item button:hover {
+  background-color: #f4f4f5;
 }
 
 .item button {
@@ -38,13 +44,21 @@
   background: none;
   border: none;
   cursor: pointer;
+  transition: 0.3s;
   padding: 2rem;
+}
+
+.itemHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
 }
 
 .content {
   max-height: 0;
   overflow: hidden;
-  font-size: 1rem;
+  font-size: 1.25rem;
   transition: max-height 0.3s ease, padding 0.3s ease;
   margin: 0 2rem;
 }
@@ -52,7 +66,7 @@
 .item.open .content {
   max-height: 200px;
   padding: 2rem 0;
-  border-top: 1px solid;
+  border-top: 1px solid var(--deep-navy-50-color);
 }
 
 @media (max-width: 800px) {

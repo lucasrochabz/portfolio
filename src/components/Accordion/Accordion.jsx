@@ -4,18 +4,21 @@ import styles from './Accordion.module.css';
 const items = [
   {
     version: 'Versão 3.0',
+    date: '11 de Set de 2025',
     description:
-      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, fuga eius repellendus quos non neque.',
+      'Versão inicial do projeto, com apresentação de portfólio, currículo e habilidades técnicas. Desenvolvido com HTML, CSS e JavaScript. Responsivo e interativo.',
   },
   {
     version: 'Versão 2.0',
+    date: '11 de Set de 2025',
     description:
-      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, fuga eius repellendus quos non neque.',
+      'Versão inicial do projeto, com apresentação de portfólio, currículo e habilidades técnicas. Desenvolvido com HTML, CSS e JavaScript. Responsivo e interativo.',
   },
   {
     version: 'Versão 1.0',
+    date: '11 de Set de 2025',
     description:
-      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, fuga eius repellendus quos non neque.',
+      'Versão inicial do projeto, com apresentação de portfólio, currículo e habilidades técnicas. Desenvolvido com HTML, CSS e JavaScript. Responsivo e interativo.',
   },
 ];
 
@@ -38,7 +41,10 @@ const Accordion = () => {
             className={`${styles.item} ${open === i ? styles.open : ''}`}
           >
             <button onClick={() => toggle(i)}>
-              <span>{item.version}</span>
+              <div className={styles.itemHeader}>
+                <h3>{item.version}</h3>
+                <span>{item.date}</span>
+              </div>
               <span>{open === i ? '-' : '+'}</span>
             </button>
             <div className={styles.content}>{item.description}</div>

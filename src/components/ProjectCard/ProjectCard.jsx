@@ -1,3 +1,4 @@
+import ExternalLink from '../ExternalLink/ExternalLink';
 import styles from './ProjectCard.module.css';
 
 const ProjectCard = ({ project }) => {
@@ -25,16 +26,13 @@ const ProjectCard = ({ project }) => {
           <p>{project.text}</p>
 
           <div className={styles.links}>
-            <a href={project.site} target="blank" className={styles.primary}>
+            <ExternalLink href={project.site} variant="primary">
               Site
-            </a>
-            <a
-              href={project.repository}
-              target="blank"
-              className={styles.secondary}
-            >
+            </ExternalLink>
+
+            <ExternalLink href={project.repository} variant="secondary">
               Repositório
-            </a>
+            </ExternalLink>
           </div>
         </div>
       </div>
