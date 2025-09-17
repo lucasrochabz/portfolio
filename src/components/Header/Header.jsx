@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styles from './Header.module.css';
 
 const Header = () => {
@@ -5,10 +6,15 @@ const Header = () => {
     <>
       <header className={styles.headerBg}>
         <div className={styles.header}>
-          <h2 className={styles.logo}>Lucas Rocha</h2>
+          <Link to="/">
+            <h2 className={styles.logo}>Lucas Rocha</h2>
+          </Link>
 
-          <nav className={styles.nav}>
-            <a href="mailto:lucasbezerrar@gmail.com?subject=Assunto%20do%20e-mail">
+          <nav>
+            <a
+              className={styles.buttonCta}
+              href="mailto:lucasbezerrar@gmail.com?subject=Assunto%20do%20e-mail"
+            >
               Entre em contato
             </a>
           </nav>

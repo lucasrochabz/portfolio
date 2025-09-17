@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import ExternalLink from '../ExternalLink/ExternalLink';
 import styles from './Footer.module.css';
 
@@ -39,7 +40,10 @@ const Footer = () => {
 
         <div className={styles.bottom}>
           <p>&copy; 2025 Lucas Rocha. Todos os direitos reservados.</p>
-          <p className={styles.version}>v2.0</p>
+
+          <Link to="/historico">
+            <p className={styles.version}>v2.0</p>
+          </Link>
         </div>
       </section>
     </footer>
