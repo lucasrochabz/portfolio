@@ -23,11 +23,11 @@ const Accordion = () => {
 
   return (
     <section className={styles.container}>
-      <h2>Registro de alterações</h2>
-      <p>
+      <h1 className="title">Histórico de alterações</h1>
+      <h3>
         Acompanhe a evolução do meu portfólio com atualizações e melhorias
         detalhadas.
-      </p>
+      </h3>
       <div className={styles.accordion}>
         {items.map((item, i) => (
           <div
@@ -36,7 +36,7 @@ const Accordion = () => {
           >
             <button onClick={() => toggle(i)}>
               <div className={styles.itemHeader}>
-                <h3>{item.version}</h3>
+                <h2>{item.version}</h2>
                 <span>{item.date}</span>
               </div>
               <span>{open === i ? '-' : '+'}</span>

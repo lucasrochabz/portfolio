@@ -46,12 +46,13 @@ p, h3, li {
   font-family: 'Roboto', sans-serif;
 }
 
-h2, a, span {
+h1, h2, a, span {
   font-family: 'Poppins', sans-serif;
 }
 
 .title {
-  font-size: 4rem;
+  font-size: 3rem;
+  line-height: 1.1;
 }
 
 .subtitle {

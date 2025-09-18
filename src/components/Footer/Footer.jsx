@@ -10,7 +10,7 @@ const Footer = () => {
           <li>
             <ExternalLink
               variant="social"
-              href="https://www.linkedin.com/in/lucas-bezerra-rocha"
+              href="https://www.linkedin.com/in/lucasrochabz"
               icon="/linkedin.svg"
             >
               LinkedIn

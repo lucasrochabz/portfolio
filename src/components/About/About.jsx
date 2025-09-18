@@ -21,10 +21,10 @@ const About = () => {
 
         <div className={styles.content}>
           <h3>Olá, eu sou Lucas Rocha 👋</h3>
-          <h2>
+          <h1 className="title">
             Desenvolvedor Web <br />
             Full Stack
-          </h2>
+          </h1>
           <p>
             Sejam bem-vindos! Sou de Fortaleza, CE, crio interfaces modernas
             aliadas a soluções robustas e escaláveis para a web, sempre buscando

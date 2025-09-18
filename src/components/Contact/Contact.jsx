@@ -15,10 +15,7 @@ const Contact = () => {
           <h2 className="subtitle">Entre em contato</h2>
           <ul className={styles.list}>
             <li>
-              <a
-                href="https://www.linkedin.com/in/lucas-bezerra-rocha"
-                target="blank"
-              >
+              <a href="https://www.linkedin.com/in/lucasrochabz" target="blank">
                 LinkedIn
               </a>
             </li>
