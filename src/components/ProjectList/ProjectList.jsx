@@ -5,7 +5,8 @@ const projects = [
   {
     id: 1,
     name: 'Bodega',
-    text: 'Este projeto é uma simulação de e-commerce, desenvolvido com JavaScript e React no front-end, proporcionando uma experiência de compra online completa e eficiente.',
+    description:
+      'Este projeto é uma simulação de e-commerce, desenvolvido com JavaScript e React no front-end, proporcionando uma experiência de compra online completa e eficiente.',
     tools: ['JavaScript', 'React', 'React Router'],
     image: 'projeto-bodega.png',
     site: 'https://bodega-dev.vercel.app/',
@@ -14,7 +15,8 @@ const projects = [
   {
     id: 2,
     name: 'Bodega API',
-    text: 'API de e-commerce em Node.js e Express que conecta o front-end ao banco de dados, com funcionalidades de autenticação, gerenciamento de produtos, estoque e pedidos.',
+    description:
+      'API de e-commerce em Node.js e Express que conecta o front-end ao banco de dados, com funcionalidades de autenticação, gerenciamento de produtos, estoque e pedidos.',
     tools: ['Node.js', 'Express', 'MySQL', 'Json Web Token', 'Bcrypt'],
     image: 'projeto-bodega-api.png',
     site: 'https://bodega-api-production.up.railway.app/api/docs/',
@@ -23,7 +25,8 @@ const projects = [
   {
     id: 3,
     name: 'News Scraper',
-    text: 'Aplicação que extrai e exibe manchetes de notícias usando Python com BeautifulSoup para web scraping e JavaScript para renderização dinâmica no navegador.',
+    description:
+      'Aplicação que extrai e exibe manchetes de notícias usando Python com BeautifulSoup para web scraping e JavaScript para renderização dinâmica no navegador.',
     tools: ['JavaScript', 'Python', 'BeautifulSoup'],
     image: 'projeto-news-scraper.png',
     site: 'https://lucasrochabz.github.io/news-scraper/',
@@ -32,8 +35,9 @@ const projects = [
   {
     id: 4,
     name: 'Portfólio',
-    text: 'Este projeto é meu portfólio como desenvolvedor, reunindo minha trajetória, habilidades e principais projetos em um só lugar, representando minha evolução na programação.',
-    tools: ['JavaScript', 'React'],
+    description:
+      'Este projeto é meu portfólio como desenvolvedor, reunindo minha trajetória, habilidades e principais projetos em um só lugar, representando minha evolução na programação.',
+    tools: ['JavaScript', 'React', 'React Router'],
     image: 'projeto-portfolio.png',
     site: 'https://portfolio-lucasrochabz.vercel.app/',
     repository: 'https://github.com/lucasrochabz/portfolio',

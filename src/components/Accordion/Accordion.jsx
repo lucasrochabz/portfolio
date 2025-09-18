@@ -3,12 +3,6 @@ import styles from './Accordion.module.css';
 
 const items = [
   {
-    version: 'Versão 3.0',
-    date: '11 de Set de 2025',
-    description:
-      'Versão inicial do projeto, com apresentação de portfólio, currículo e habilidades técnicas. Desenvolvido com HTML, CSS e JavaScript. Responsivo e interativo.',
-  },
-  {
     version: 'Versão 2.0',
     date: '11 de Set de 2025',
     description:
@@ -16,7 +10,7 @@ const items = [
   },
   {
     version: 'Versão 1.0',
-    date: '11 de Set de 2025',
+    date: '5 de Jun de 2025',
     description:
       'Versão inicial do projeto, com apresentação de portfólio, currículo e habilidades técnicas. Desenvolvido com HTML, CSS e JavaScript. Responsivo e interativo.',
   },

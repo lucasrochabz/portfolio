@@ -23,7 +23,7 @@ const ProjectCard = ({ project }) => {
             ))}
           </ul>
 
-          <p>{project.text}</p>
+          <p>{project.description}</p>
 
           <div className={styles.links}>
             <ExternalLink href={project.site} variant="primary">

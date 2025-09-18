@@ -26,9 +26,9 @@
 }
 
 .item {
-  border-radius: 10px;
   border: 1px solid var(--deep-navy-50-color);
   box-shadow: 0 2px 2px var(--deep-navy-50-color);
+  border-radius: 10px;
   overflow: hidden;
 }
 
@@ -37,9 +37,11 @@
 }
 
 .item button {
+  color: var(--deep-navy-color);
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   font-size: 1rem;
   background: none;
   border: none;
@@ -55,7 +57,12 @@
   gap: 0.5rem;
 }
 
+.itemHeader span {
+  font-family: 'Roboto', sans-serif;
+}
+
 .content {
+  font-family: 'Roboto', sans-serif;
   max-height: 0;
   overflow: hidden;
   font-size: 1.25rem;
@@ -72,5 +79,8 @@
 @media (max-width: 800px) {
   .container {
     padding: 0 1.5rem;
+  }
+  .container h2 {
+    font-size: 2.5rem;
   }
 }
