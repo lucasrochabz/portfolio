@@ -1,5 +1,6 @@
 import { HomePage } from '../pages/HomePage';
-import { Changelog } from '../pages/Changelog';
+import { AboutPage } from '../pages/AboutPage';
+import { ChangelogPage } from '../pages/ChangelogPage';
 
 const routes = [
   {
@@ -7,8 +8,12 @@ const routes = [
     element: <HomePage />,
   },
   {
+    path: '/sobre',
+    element: <AboutPage />,
+  },
+  {
     path: '/historico',
-    element: <Changelog />,
+    element: <ChangelogPage />,
   },
 ];
 

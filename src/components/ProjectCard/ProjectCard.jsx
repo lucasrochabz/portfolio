@@ -1,11 +1,12 @@
+import PropTypes from 'prop-types';
 import ExternalLink from '../ExternalLink/ExternalLink';
 import styles from './ProjectCard.module.css';
 
-const ProjectCard = ({ project }) => {
-  const images = import.meta.glob('/src/assets/images/*', {
-    eager: true,
-  });
+const images = import.meta.glob('/src/assets/images/*', {
+  eager: true,
+});
 
+const ProjectCard = ({ project }) => {
   const imagePath = images[`/src/assets/images/${project.image}`]?.default;
 
   return (
@@ -38,6 +39,17 @@ const ProjectCard = ({ project }) => {
       </div>
     </>
   );
+};
+
+ProjectCard.propTypes = {
+  project: PropTypes.shape({
+    image: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    tools: PropTypes.arrayOf(PropTypes.string).isRequired,
+    description: PropTypes.string.isRequired,
+    site: PropTypes.string.isRequired,
+    repository: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default ProjectCard;
