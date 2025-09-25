@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import ExternalLink from '../ExternalLink/ExternalLink';
 import styles from './Header.module.css';
 
 const Header = () => {
@@ -11,12 +12,12 @@ const Header = () => {
           </Link>
 
           <nav>
-            <a
-              className={styles.buttonCta}
+            <ExternalLink
               href="mailto:lucasbezerrar@gmail.com?subject=Assunto%20do%20e-mail"
+              variant="cta"
             >
               Entre em contato
-            </a>
+            </ExternalLink>
           </nav>
         </div>
       </header>

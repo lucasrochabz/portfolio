@@ -1,6 +1,7 @@
 import lucas1 from '../../../public/lucas1.jpg';
 import lucas2 from '../../../public/lucas2.jpg';
 import lucas3 from '../../../public/lucas3.jpg';
+import ExternalLink from '../ExternalLink/ExternalLink';
 import styles from './About.module.css';
 
 const About = () => {
@@ -30,12 +31,13 @@ const About = () => {
             aliadas a soluções robustas e escaláveis para a web, sempre buscando
             entregar valor e inovação em cada projeto.
           </p>
-          <a
-            className={styles.email}
+
+          <ExternalLink
             href="mailto:lucasbezerrar@gmail.com?subject=Assunto%20do%20e-mail"
+            variant="cta"
           >
             Entre em contato
-          </a>
+          </ExternalLink>
         </div>
       </section>
     </>

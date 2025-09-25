@@ -36,21 +36,6 @@
   margin: 2rem 0;
 }
 
-.email {
-  background-color: var(--yellow-color);
-  font-size: 1.125rem;
-  letter-spacing: 0.015em;
-  font-weight: 600;
-  text-transform: uppercase;
-  border-radius: 5px;
-  padding: 0.5rem 1rem;
-  transition: 0.3s;
-}
-
-.email:hover {
-  opacity: 0.9;
-}
-
 .gallery {
   display: grid;
   grid-template-columns: 1fr 1fr;
