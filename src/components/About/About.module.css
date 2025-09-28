@@ -21,7 +21,7 @@
 }
 
 .content h3::before {
-  background-color: var(--deep-navy-color);
+  background-color: var(--primary-color);
   content: '';
   display: inline-block;
   vertical-align: middle;

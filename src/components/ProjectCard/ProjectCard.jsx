@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import ExternalLink from '../ExternalLink/ExternalLink';
+import { ExternalLink } from '../ExternalLink';
 import styles from './ProjectCard.module.css';
 
 const images = import.meta.glob('/src/assets/images/*', {

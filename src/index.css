@@ -5,20 +5,27 @@
 }
 
 :root {
-  --bg-color: #ffffff;
+  --base-color: #ffffff;
+  --text-color: #0C2340;
 
+  --primary-color: #0C2340;
+  --deep-navy-50-color: #0c234080;
   --white-color: #ffffff;
   --white-80-color: #ffffffcc;
+  --secondary-color: #ffc627;
+}
 
-  --deep-navy-color: #0C2340;
-  --deep-navy-50-color: #0c234080;
+html {
+  font-family: 'Roboto', sanss-serif;
+}
 
-  --yellow-color: #ffc627;
+h1, h2, a, span {
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
-  background-color: var(--bg-color);
-  color: var(--deep-navy-color);
+  background-color: var(--base-color);
+  color: var(--text-color);
 }
 
 img {
@@ -42,13 +49,7 @@ button {
   cursor: pointer;
 }
 
-p, h3, li {
-  font-family: 'Roboto', sans-serif;
-}
 
-h1, h2, a, span {
-  font-family: 'Poppins', sans-serif;
-}
 
 .title {
   font-size: 3rem;
@@ -62,12 +63,13 @@ h1, h2, a, span {
 
 /* @media (prefers-color-scheme: dark) {
   :root {
-    --bg-color: #0C2340;
-    --text-color: #f7f7f7;
-    --white-color: #f7f7f7;
-    --white-80-color: #f7f7f7cc;
-    --deep-navy-color: #ffffff;
-    --deep-navy-50-color: #ffffff80;
-    --yellow-color: #ffc627;
+  --base-color: #000000;
+  --text-color: #ffffff;
+
+  --primary-color: #0C2340;
+  --deep-navy-50-color: #0c234080;
+  --white-color: #ffffff;
+  --white-80-color: #ffffffcc;
+  --secondary-color: #ffc627;
   }
 } */

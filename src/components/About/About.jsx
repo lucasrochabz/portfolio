@@ -1,7 +1,7 @@
 import lucas1 from '../../../public/lucas1.jpg';
 import lucas2 from '../../../public/lucas2.jpg';
 import lucas3 from '../../../public/lucas3.jpg';
-import ExternalLink from '../ExternalLink/ExternalLink';
+import { ExternalLink } from '../ExternalLink';
 import styles from './About.module.css';
 
 const About = () => {
