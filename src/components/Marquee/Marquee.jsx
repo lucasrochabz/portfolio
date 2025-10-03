@@ -1,16 +1,5 @@
+import { techStacks } from '../../data/portfolioData';
 import styles from './Marquee.module.css';
-
-const techStacks = [
-  'HTML',
-  'CSS',
-  'JavaScript',
-  'TypeScript',
-  'Python',
-  'React',
-  'Node.js',
-  'Express.js',
-  'MySQL',
-];
 
 const Marquee = () => {
   const repeatedStacks = techStacks.concat(techStacks);
