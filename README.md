@@ -44,6 +44,7 @@ portfolio/
 │   ├── components/
 │   ├── pages/
 │   ├── routes/
+│   ├── styles/
 │   ├── App.jsx
 │   ├── index.css
 │   └── main.jsx
