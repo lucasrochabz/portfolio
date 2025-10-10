@@ -1,6 +1,7 @@
 import lucas1 from '../../../public/lucas1.jpg';
 import lucas2 from '../../../public/lucas2.jpg';
 import lucas3 from '../../../public/lucas3.jpg';
+import { heroDetails } from '../../data/hero';
 import { ExternalLinkOld } from '../ExternalLinkOld';
 import styles from './Hero.module.css';
 
@@ -21,22 +22,20 @@ const Hero = () => {
         </div>
 
         <div className={styles.content}>
-          <h3>Olá, eu sou Lucas Rocha 👋</h3>
+          <h3>{heroDetails.subTitle}</h3>
           <h1 className="title">
-            Desenvolvedor Web <br />
-            Full Stack
+            {heroDetails.titleLine1} <br />
+            {heroDetails.titleLine2}
           </h1>
-          <p>
-            Sejam bem-vindos! Sou de Fortaleza, CE, crio interfaces modernas
-            aliadas a soluções robustas e escaláveis para a web, sempre buscando
-            entregar valor e inovação em cada projeto.
-          </p>
+          <p>{heroDetails.description}</p>
 
           <ExternalLinkOld
-            href="mailto:lucasbezerrar@gmail.com?subject=Assunto%20do%20e-mail"
+            href={`mailto:${heroDetails.email}?subject=${encodeURIComponent(
+              heroDetails.emailSubject,
+            )}`}
             variant="cta"
           >
-            Entre em contato
+            {heroDetails.cta}
           </ExternalLinkOld>
         </div>
       </section>

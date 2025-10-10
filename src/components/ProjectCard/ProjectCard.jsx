@@ -27,13 +27,15 @@ const ProjectCard = ({ project }) => {
           <p>{project.description}</p>
 
           <div className={styles.links}>
-            <ExternalLinkOld href={project.site} variant="primary">
-              Site
-            </ExternalLinkOld>
-
-            <ExternalLinkOld href={project.repository} variant="secondary">
-              Repositório
-            </ExternalLinkOld>
+            {project.links.map((link) => (
+              <ExternalLinkOld
+                key={link.url}
+                href={link.url}
+                variant={link.variant}
+              >
+                {link.name}
+              </ExternalLinkOld>
+            ))}
           </div>
         </div>
       </div>
@@ -46,9 +48,14 @@ ProjectCard.propTypes = {
     image: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     tools: PropTypes.arrayOf(PropTypes.string).isRequired,
+    links: PropTypes.arrayOf(
+      PropTypes.shape({
+        name: PropTypes.string.isRequired,
+        url: PropTypes.string.isRequired,
+        variant: PropTypes.oneOf(['primary', 'secondary']),
+      }),
+    ),
     description: PropTypes.string.isRequired,
-    site: PropTypes.string.isRequired,
-    repository: PropTypes.string.isRequired,
   }).isRequired,
 };
 
