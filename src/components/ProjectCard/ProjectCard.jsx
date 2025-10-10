@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { ExternalLink } from '../ExternalLink';
+import { ExternalLinkOld } from '../ExternalLinkOld';
 import styles from './ProjectCard.module.css';
 
 const images = import.meta.glob('/src/assets/images/*', {
@@ -27,13 +27,13 @@ const ProjectCard = ({ project }) => {
           <p>{project.description}</p>
 
           <div className={styles.links}>
-            <ExternalLink href={project.site} variant="primary">
+            <ExternalLinkOld href={project.site} variant="primary">
               Site
-            </ExternalLink>
+            </ExternalLinkOld>
 
-            <ExternalLink href={project.repository} variant="secondary">
+            <ExternalLinkOld href={project.repository} variant="secondary">
               Repositório
-            </ExternalLink>
+            </ExternalLinkOld>
           </div>
         </div>
       </div>

@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { footerDetails } from '../../data/footer';
 import { ExternalLink } from '../ExternalLink';
 import styles from './Footer.module.css';
 
@@ -7,42 +8,21 @@ const Footer = () => {
     <footer className={styles.footerBg}>
       <section className={styles.footer}>
         <ul className={styles.listLinks}>
-          <li>
-            <ExternalLink
-              variant="social"
-              href="https://www.linkedin.com/in/lucasrochabz"
-              icon="/linkedin.svg"
-            >
-              LinkedIn
-            </ExternalLink>
-          </li>
-
-          <li>
-            <ExternalLink
-              variant="social"
-              href="https://github.com/lucasrochabz"
-              icon="/github.svg"
-            >
-              GitHub
-            </ExternalLink>
-          </li>
-
-          <li>
-            <ExternalLink
-              variant="social"
-              href="https://www.instagram.com/lucasrochabz"
-              icon="/instagram.svg"
-            >
-              Instagram
-            </ExternalLink>
-          </li>
+          {footerDetails.socials.map((social) => (
+            <li key={social.text}>
+              <ExternalLink.Root href={social.url} variant="social">
+                <ExternalLink.Icon src={social.iconPath} />
+                {social.text}
+              </ExternalLink.Root>
+            </li>
+          ))}
         </ul>
 
         <div className={styles.bottom}>
-          <p>&copy; 2025 Lucas Rocha. Todos os direitos reservados.</p>
+          <p>{footerDetails.subtitle}</p>
 
           <Link to="/historico">
-            <p className={styles.version}>v2.0</p>
+            <p className={styles.version}>{footerDetails.version}</p>
           </Link>
         </div>
       </section>

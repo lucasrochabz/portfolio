@@ -1,5 +1,5 @@
 import { ProjectCard } from '../ProjectCard';
-import { projects } from '../../data/portfolioData';
+import { projects } from '../../data/projects';
 import styles from './ProjectList.module.css';
 
 const ProjectList = () => {

@@ -1,15 +1,3 @@
-export const techStacks = [
-  'HTML',
-  'CSS',
-  'JavaScript',
-  'TypeScript',
-  'Python',
-  'React',
-  'Node.js',
-  'Express.js',
-  'MySQL',
-];
-
 export const projects = [
   {
     id: 1,
@@ -50,25 +38,5 @@ export const projects = [
     image: 'projeto-portfolio.png',
     site: 'https://portfolio-lucasrochabz.vercel.app/',
     repository: 'https://github.com/lucasrochabz/portfolio',
-  },
-];
-
-export const historyList = [
-  {
-    version: 'Versão 3.0',
-    date: 'Indefinido',
-    description: 'Em desenvolvimento.',
-  },
-  {
-    version: 'Versão 2.0',
-    date: '11 de Set de 2025',
-    description:
-      'Versão inicial do projeto, com apresentação de portfólio, currículo e habilidades técnicas. Desenvolvido com HTML, CSS e JavaScript. Responsivo e interativo.',
-  },
-  {
-    version: 'Versão 1.0',
-    date: '5 de Jun de 2025',
-    description:
-      'Versão inicial do projeto, com apresentação de portfólio, currículo e habilidades técnicas. Desenvolvido com HTML, CSS e JavaScript. Responsivo e interativo.',
   },
 ];

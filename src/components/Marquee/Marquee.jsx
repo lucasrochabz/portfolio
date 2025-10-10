@@ -1,4 +1,4 @@
-import { techStacks } from '../../data/portfolioData';
+import { techStacks } from '../../data/techStacks';
 import styles from './Marquee.module.css';
 
 const Marquee = () => {

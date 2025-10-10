@@ -1,10 +1,10 @@
 import lucas1 from '../../../public/lucas1.jpg';
 import lucas2 from '../../../public/lucas2.jpg';
 import lucas3 from '../../../public/lucas3.jpg';
-import { ExternalLink } from '../ExternalLink';
-import styles from './About.module.css';
+import { ExternalLinkOld } from '../ExternalLinkOld';
+import styles from './Hero.module.css';
 
-const About = () => {
+const Hero = () => {
   return (
     <>
       <section className={styles.about} id="about">
@@ -32,16 +32,16 @@ const About = () => {
             entregar valor e inovação em cada projeto.
           </p>
 
-          <ExternalLink
+          <ExternalLinkOld
             href="mailto:lucasbezerrar@gmail.com?subject=Assunto%20do%20e-mail"
             variant="cta"
           >
             Entre em contato
-          </ExternalLink>
+          </ExternalLinkOld>
         </div>
       </section>
     </>
   );
 };
 
-export default About;
+export default Hero;

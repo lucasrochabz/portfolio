@@ -1,5 +1,5 @@
 import { Header } from '../../components/Header';
-import { About } from '../../components/About';
+import { Hero } from '../../components/Hero';
 import { Marquee } from '../../components/Marquee';
 import { ProjectList } from '../../components/ProjectList';
 import { Footer } from '../../components/Footer';
@@ -8,7 +8,7 @@ const HomePage = () => {
   return (
     <>
       <Header />
-      <About />
+      <Hero />
       <Marquee />
       <ProjectList />
       <Footer />

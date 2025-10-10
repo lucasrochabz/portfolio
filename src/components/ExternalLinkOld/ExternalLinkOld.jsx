@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import styles from './ExternalLink.module.css';
+import styles from './ExternalLinkOld.module.css';
 
 const ExternalLink = ({ variant, href, icon, children }) => {
   const isExternal = href.startsWith('http');
