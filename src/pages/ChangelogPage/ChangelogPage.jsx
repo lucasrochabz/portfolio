@@ -1,13 +1,13 @@
 import { Footer } from '../../components/Footer';
 import { Accordion } from '../../components/Accordion';
 import { Header } from '../../components/Header';
-import { historyList } from '../../data/historyList';
+import { changelogData } from '../../data/changelogData';
 
 const ChangelogPage = () => {
   return (
     <>
       <Header />
-      <Accordion historyList={historyList} />
+      <Accordion changelogData={changelogData} />
       <Footer />
     </>
   );

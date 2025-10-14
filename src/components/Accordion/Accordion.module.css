@@ -24,18 +24,18 @@
   gap: 2rem;
 }
 
-.item {
+.version {
   border: 1px solid var(--deep-navy-50-color);
   box-shadow: 0 2px 2px var(--deep-navy-50-color);
   border-radius: 10px;
   overflow: hidden;
 }
 
-.item button:hover {
+.version button:hover {
   background-color: #f4f4f5;
 }
 
-.item button {
+.version button {
   color: var(--primary-color);
   width: 100%;
   display: flex;
@@ -49,14 +49,14 @@
   padding: 2rem;
 }
 
-.itemHeader {
+.versionHeader {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 0.5rem;
 }
 
-.itemHeader span {
+.versionHeader span {
   font-family: 'Roboto', sans-serif;
 }
 
@@ -69,7 +69,7 @@
   margin: 0 2rem;
 }
 
-.item.open .content {
+.version.open .content {
   max-height: 200px;
   padding: 2rem 0;
   border-top: 1px solid var(--deep-navy-50-color);

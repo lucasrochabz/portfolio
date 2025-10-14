@@ -1,35 +1,34 @@
 import { useState } from 'react';
 import styles from './Accordion.module.css';
 
-const Accordion = ({ historyList }) => {
+const Accordion = ({ changelogData }) => {
   const [open, setOpen] = useState(null);
 
   const toggle = (i) => setOpen(open === i ? null : i);
 
   return (
     <section className={styles.container}>
-      <h1 className="title">Histórico de alterações</h1>
-      <h3>
-        Acompanhe a evolução do meu portfólio com atualizações e melhorias
-        detalhadas.
-      </h3>
+      <h1 className="title">{changelogData.title}</h1>
+      <h3>{changelogData.subtitle}</h3>
 
       <div className={styles.accordion}>
-        {historyList.map((item, i) => (
+        {changelogData.versions.map((version) => (
           <div
-            key={i}
-            className={`${styles.item} ${open === i ? styles.open : ''}`}
+            key={version.version}
+            className={`${styles.version} ${
+              open === version.version ? styles.open : ''
+            }`}
           >
-            <button onClick={() => toggle(i)}>
-              <div className={styles.itemHeader}>
-                <h2>{item.version}</h2>
-                <span>{item.date}</span>
+            <button onClick={() => toggle(version.version)}>
+              <div className={styles.versionHeader}>
+                <h2>{version.version}</h2>
+                <span>{version.date}</span>
               </div>
 
-              <span>{open === i ? '-' : '+'}</span>
+              <span>{open === version.version ? '-' : '+'}</span>
             </button>
 
-            <div className={styles.content}>{item.description}</div>
+            <div className={styles.content}>{version.description}</div>
           </div>
         ))}
       </div>

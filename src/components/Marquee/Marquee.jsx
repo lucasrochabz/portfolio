@@ -1,8 +1,8 @@
-import { techStacks } from '../../data/techStacks';
+import { techStacksData } from '../../data/techStacksData';
 import styles from './Marquee.module.css';
 
 const Marquee = () => {
-  const repeatedStacks = techStacks.concat(techStacks);
+  const repeatedStacks = techStacksData.concat(techStacksData);
 
   return (
     <section className={styles.stacks}>

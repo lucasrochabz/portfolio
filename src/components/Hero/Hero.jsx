@@ -1,7 +1,7 @@
 import lucas1 from '../../../public/lucas1.jpg';
 import lucas2 from '../../../public/lucas2.jpg';
 import lucas3 from '../../../public/lucas3.jpg';
-import { heroDetails } from '../../data/hero';
+import { heroData } from '../../data/heroData';
 import { ExternalLinkOld } from '../ExternalLinkOld';
 import styles from './Hero.module.css';
 
@@ -22,20 +22,20 @@ const Hero = () => {
         </div>
 
         <div className={styles.content}>
-          <h3>{heroDetails.subTitle}</h3>
+          <h3>{heroData.subTitle}</h3>
           <h1 className="title">
-            {heroDetails.titleLine1} <br />
-            {heroDetails.titleLine2}
+            {heroData.titleLine1} <br />
+            {heroData.titleLine2}
           </h1>
-          <p>{heroDetails.description}</p>
+          <p>{heroData.description}</p>
 
           <ExternalLinkOld
-            href={`mailto:${heroDetails.email}?subject=${encodeURIComponent(
-              heroDetails.emailSubject,
+            href={`mailto:${heroData.email}?subject=${encodeURIComponent(
+              heroData.emailSubject,
             )}`}
             variant="cta"
           >
-            {heroDetails.cta}
+            {heroData.cta}
           </ExternalLinkOld>
         </div>
       </section>

@@ -1,4 +1,4 @@
-export const techStacks = [
+export const techStacksData = [
   'HTML',
   'CSS',
   'JavaScript',

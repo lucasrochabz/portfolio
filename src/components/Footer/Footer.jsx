@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { footerDetails } from '../../data/footer';
+import { footerData } from '../../data/footerData';
 import { ExternalLink } from '../ExternalLink';
 import styles from './Footer.module.css';
 
@@ -8,7 +8,7 @@ const Footer = () => {
     <footer className={styles.footerBg}>
       <section className={styles.footer}>
         <ul className={styles.listLinks}>
-          {footerDetails.socials.map((social) => (
+          {footerData.socials.map((social) => (
             <li key={social.text}>
               <ExternalLink.Root href={social.url} variant="social">
                 <ExternalLink.Icon src={social.iconPath} />
@@ -19,10 +19,10 @@ const Footer = () => {
         </ul>
 
         <div className={styles.bottom}>
-          <p>{footerDetails.subtitle}</p>
+          <p>{footerData.subtitle}</p>
 
           <Link to="/historico">
-            <p className={styles.version}>{footerDetails.version}</p>
+            <p className={styles.version}>{footerData.version}</p>
           </Link>
         </div>
       </section>

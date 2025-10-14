@@ -1,4 +1,4 @@
-export const heroDetails = {
+export const heroData = {
   titleLine1: 'Desenvolvedor Web',
   titleLine2: 'Full Stack',
   subTitle: 'Olá, eu sou Lucas Rocha 👋',
