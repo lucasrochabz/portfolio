@@ -70,7 +70,7 @@ export const projectsData = [
     links: [
       {
         name: 'Site',
-        url: 'https://portfolio-lucasrochabz.vercel.app/',
+        url: 'https://lucasrochabz.vercel.app/',
         variant: 'primary',
       },
       {

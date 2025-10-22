@@ -42,9 +42,15 @@ portfolio/
 │   │   └── images/
 │   │
 │   ├── components/
+│   │       ├── MyComponent.jsx/
+│   │       ├── MyComponent.module.css/
+│   │       └── index.js/
+│   │
 │   ├── pages/
 │   ├── routes/
 │   ├── styles/
+│   │   ├── base/
+│   │   └── tokens/
 │   ├── App.jsx
 │   ├── index.css
 │   └── main.jsx
