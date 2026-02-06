@@ -42,17 +42,18 @@ portfolio/
 │   │   └── images/
 │   │
 │   ├── components/
-│   │       ├── MyComponent.jsx/
-│   │       ├── MyComponent.module.css/
-│   │       └── index.js/
+│   │   ├── MyComponent.jsx/
+│   │   ├── MyComponent.module.css/
+│   │   └── index.js/
 │   │
+│   ├── data/
 │   ├── pages/
 │   ├── routes/
 │   ├── styles/
 │   │   ├── base/
 │   │   └── tokens/
+│   │
 │   ├── App.jsx
-│   ├── index.css
 │   └── main.jsx
 │
 ├── .eslintrc

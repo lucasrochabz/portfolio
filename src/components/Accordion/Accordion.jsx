@@ -7,18 +7,15 @@ const Accordion = ({ changelogData }) => {
   const toggle = (i) => setOpen(open === i ? null : i);
 
   return (
-    <section className={styles.container}>
-      <h1 className="title">{changelogData.title}</h1>
-      <h3>{changelogData.subtitle}</h3>
-
-      <div className={styles.accordion}>
-        {changelogData.versions.map((version) => (
-          <div
-            key={version.version}
-            className={`${styles.version} ${
-              open === version.version ? styles.open : ''
-            }`}
-          >
+    <div className={styles.accordion}>
+      {changelogData.versions.map((version) => (
+        <article
+          key={version.version}
+          className={`${styles.card} ${
+            open === version.version ? styles.open : ''
+          }`}
+        >
+          <header>
             <button onClick={() => toggle(version.version)}>
               <div className={styles.versionHeader}>
                 <h2>{version.version}</h2>
@@ -27,12 +24,14 @@ const Accordion = ({ changelogData }) => {
 
               <span>{open === version.version ? '-' : '+'}</span>
             </button>
+          </header>
 
-            <div className={styles.content}>{version.description}</div>
+          <div className={styles.content}>
+            <p>{version.description}</p>
           </div>
-        ))}
-      </div>
-    </section>
+        </article>
+      ))}
+    </div>
   );
 };
 
