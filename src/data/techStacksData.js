@@ -3,6 +3,7 @@ export const techStacksData = [
   'CSS',
   'JavaScript',
   'TypeScript',
+  'PHP',
   'Python',
   'React',
   'Node.js',

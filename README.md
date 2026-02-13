@@ -1,4 +1,4 @@
-# Portfolio v2.0.4
+# Portfolio
 
 ![Imagem do projeto](./src/assets/images/projeto-portfolio.png)
 

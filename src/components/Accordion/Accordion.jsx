@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import styles from './Accordion.module.css';
 
+// fix: mudar nome desse componente
 const Accordion = ({ changelogData }) => {
   const [open, setOpen] = useState(null);
 
