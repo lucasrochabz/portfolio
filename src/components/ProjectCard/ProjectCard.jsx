@@ -10,36 +10,35 @@ const ProjectCard = ({ project }) => {
   const imagePath = images[`/src/assets/images/${project.image}`]?.default;
 
   return (
-    <>
-      <div className={styles.card}>
-        <figure>
-          <img src={imagePath} alt={imagePath} />
-        </figure>
+    <div className={styles.card}>
+      <figure>
+        <img src={imagePath} alt={imagePath} />
+      </figure>
 
-        <div className={styles.info}>
-          <h2 className="subtitle">{project.name}</h2>
-          <ul className={styles.list}>
-            {project.tools.map((tool, index) => (
-              <li key={index}>{tool}</li>
-            ))}
-          </ul>
+      <div className={styles.info}>
+        <h2 className="subtitle">{project.name}</h2>
 
-          <p>{project.description}</p>
+        <ul className={styles.list}>
+          {project.tools.map((tool, index) => (
+            <li key={index}>{tool}</li>
+          ))}
+        </ul>
 
-          <div className={styles.links}>
-            {project.links.map((link) => (
-              <ExternalLinkOld
-                key={link.url}
-                href={link.url}
-                variant={link.variant}
-              >
-                {link.name}
-              </ExternalLinkOld>
-            ))}
-          </div>
+        <p>{project.description}</p>
+
+        <div className={styles.links}>
+          {project.links.map((link) => (
+            <ExternalLinkOld
+              key={link.url}
+              href={link.url}
+              variant={link.variant}
+            >
+              {link.name}
+            </ExternalLinkOld>
+          ))}
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

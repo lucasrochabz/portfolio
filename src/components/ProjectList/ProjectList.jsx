@@ -4,13 +4,11 @@ import styles from './ProjectList.module.css';
 
 const ProjectList = () => {
   return (
-    <>
-      <section id="projetos" className={styles.projectList}>
-        {projectsData.map((project, id) => (
-          <ProjectCard key={id} project={project} />
-        ))}
-      </section>
-    </>
+    <section id="projetos" className={styles.projectList}>
+      {projectsData.map((project, id) => (
+        <ProjectCard key={id} project={project} />
+      ))}
+    </section>
   );
 };
 

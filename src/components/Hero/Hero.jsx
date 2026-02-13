@@ -7,39 +7,42 @@ import styles from './Hero.module.css';
 
 const Hero = () => {
   return (
-    <>
-      <section className={styles.about} id="about">
-        <div className={styles.gallery}>
-          <div className={`${styles.galleryItem} ${styles.featured}`}>
-            <img src={lucas1} alt="Lucas" />
-          </div>
-          <div className={styles.galleryItem}>
-            <img src={lucas2} alt="Lucas" />
-          </div>
-          <div className={styles.galleryItem}>
-            <img src={lucas3} alt="Lucas" />
-          </div>
-        </div>
+    <section className={styles.hero}>
+      <div className={styles.gallery}>
+        <figure className={`${styles.galleryItem} ${styles.featured}`}>
+          <img src={lucas1} alt="Lucas Rocha" />
+        </figure>
 
-        <div className={styles.content}>
-          <h3>{heroData.subTitle}</h3>
-          <h1 className="title">
-            {heroData.titleLine1} <br />
-            {heroData.titleLine2}
-          </h1>
-          <p>{heroData.description}</p>
+        <figure className={styles.galleryItem}>
+          <img src={lucas2} alt="Lucas Rocha" />
+        </figure>
 
-          <ExternalLinkOld
-            href={`mailto:${heroData.email}?subject=${encodeURIComponent(
-              heroData.emailSubject,
-            )}`}
-            variant="cta"
-          >
-            {heroData.cta}
-          </ExternalLinkOld>
-        </div>
-      </section>
-    </>
+        <figure className={styles.galleryItem}>
+          <img src={lucas3} alt="Lucas Rocha" />
+        </figure>
+      </div>
+
+      <div className={styles.content}>
+        <h3>{heroData.subTitle}</h3>
+
+        <h1 className="title">
+          {heroData.titleLine1}
+          <br />
+          {heroData.titleLine2}
+        </h1>
+
+        <p>{heroData.description}</p>
+
+        <ExternalLinkOld
+          href={`mailto:${heroData.email}?subject=${encodeURIComponent(
+            heroData.emailSubject,
+          )}`}
+          variant="cta"
+        >
+          {heroData.cta}
+        </ExternalLinkOld>
+      </div>
+    </section>
   );
 };
 
