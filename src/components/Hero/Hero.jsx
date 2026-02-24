@@ -1,6 +1,6 @@
-import lucas1 from '../../../public/lucas1.jpg';
-import lucas2 from '../../../public/lucas2.jpg';
-import lucas3 from '../../../public/lucas3.jpg';
+import lucas1 from '../../assets/images/lucas1.jpg';
+import lucas2 from '../../assets/images/lucas2.jpg';
+import lucas3 from '../../assets/images/lucas3.jpg';
 import { heroData } from '../../data/heroData';
 import { ExternalLinkOld } from '../ExternalLinkOld';
 import styles from './Hero.module.css';

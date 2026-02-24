@@ -7,7 +7,8 @@ const images = import.meta.glob('/src/assets/images/*', {
 });
 
 const ProjectCard = ({ project }) => {
-  const imagePath = images[`/src/assets/images/${project.image}`]?.default;
+  const imageModule = images[`/src/assets/images/${project.image}`];
+  const imagePath = imageModule?.default;
 
   return (
     <div className={styles.card}>
