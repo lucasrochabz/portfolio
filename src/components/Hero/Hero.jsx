@@ -1,6 +1,3 @@
-// import lucas1 from '../../assets/images/lucas1.jpg';
-// import lucas2 from '../../assets/images/lucas2.jpg';
-// import lucas3 from '../../assets/images/lucas3.jpg';
 import { heroData } from '../../data/heroData';
 import { ExternalLinkOld } from '../ExternalLinkOld';
 import { Gallery } from '../Gallery';
@@ -9,7 +6,7 @@ import styles from './Hero.module.css';
 const Hero = () => {
   return (
     <section className="container">
-      <div className={styles.hero}>
+      <div className={styles.wrapper}>
         <Gallery />
 
         <div className={styles.content}>
