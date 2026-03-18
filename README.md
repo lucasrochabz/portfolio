@@ -42,12 +42,20 @@ portfolio/
 │   │   └── images/
 │   │
 │   ├── components/
-│   │   ├── MyComponent.jsx/
-│   │   ├── MyComponent.module.css/
-│   │   └── index.js/
+│   │   ├── Header/
+│   │   │   ├── Header.jsx
+│   │   │   ├── Header.module.css
+│   │   │   └── index.js/
+│   │   └── ...
 │   │
 │   ├── data/
 │   ├── pages/
+│   │   ├── HomePage/
+│   │   │   ├── HomePage.jsx
+│   │   │   ├── HomePage.module.css
+│   │   │   └── index.js/
+│   │   └── ...
+│   │
 │   ├── routes/
 │   ├── styles/
 │   │   ├── base/
