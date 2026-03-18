@@ -1,18 +1,15 @@
-import { Header } from '../../components/Header';
+import { Layout } from '../../components/Layout';
 import { Hero } from '../../components/Hero';
 import { Marquee } from '../../components/Marquee';
 import { ProjectList } from '../../components/ProjectList';
-import { Footer } from '../../components/Footer';
 
 const HomePage = () => {
   return (
-    <>
-      <Header />
+    <Layout>
       <Hero />
       <Marquee />
       <ProjectList />
-      <Footer />
-    </>
+    </Layout>
   );
 };
 
