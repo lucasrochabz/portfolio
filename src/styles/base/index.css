@@ -30,6 +30,12 @@ button {
   cursor: pointer;
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  /* padding: 0 20px; */
+}
+
 /* @media (prefers-color-scheme: dark) {
   :root {
   --base-color: #000000;

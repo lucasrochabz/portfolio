@@ -1,9 +1,8 @@
 .hero {
-  max-width: 1200px;
   display: grid;
   grid-template-columns: 584px auto;
   gap: 2rem;
-  margin: 0 auto 5rem;
+  margin-bottom: 5rem;
 }
 
 .content {
@@ -36,22 +35,6 @@
   margin: 2rem 0;
 }
 
-.gallery {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 2rem;
-}
-
-.galleryItem {
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-.featured {
-  grid-row: span 2;
-}
-
 @media (max-width: 800px) {
   .hero {
     grid-template-columns: 1fr;
@@ -59,8 +42,5 @@
   }
   .content h1 {
     font-size: 2.5rem;
-  }
-  .gallery {
-    gap: 1rem;
   }
 }
