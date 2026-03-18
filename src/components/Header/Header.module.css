@@ -1,5 +1,5 @@
 .headerBg {
-  background-color: var(--deep-navy-color);
+  background-color: var(--primary-color);
   padding: 2rem 0;
   margin-bottom: 5rem;
 }
@@ -15,24 +15,12 @@
 }
 
 .logo {
-  color: var(--bg-color);
+  color: var(--white-color);
   font-size: 2rem;
   line-height: 1.1;
 }
 
-.header a {
-  background-color: var(--yellow-color);
-  font-size: 1.125rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.015em;
-  border-radius: 5px;
-  outline: none;
-  transition: 0.3s;
-  padding: 0.5rem 1rem;
-}
-
-.header a:hover, nav a:focus {
+.logo:hover {
   opacity: 0.9;
 }
 
@@ -40,7 +28,7 @@
   .header {
     justify-content: center;
   }
-  .header a {
+  .header nav a {
     display: none;
   }
 }

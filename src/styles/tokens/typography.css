@@ -1,0 +1,29 @@
+/* exemplo de uso */
+/* :root {
+  --font-primary: 'Roboto', sans-serif;
+  --font-secondary: 'Poppins', sans-serif;
+
+  --h1-size: 3rem;
+  --h2-size: 2.25rem;
+  --p-size: 1rem;
+  --line-height-tight: 1.1;
+  --line-height-normal: 1.5;
+} */
+
+html {
+  font-family: 'Roboto', sanss-serif;
+}
+
+h1, h2, a, span {
+  font-family: 'Poppins', sans-serif;
+}
+
+.title {
+  font-size: 3rem;
+  line-height: 1.1;
+}
+
+.subtitle {
+  font-size: 2.25rem;
+  line-height: 1.1;
+}

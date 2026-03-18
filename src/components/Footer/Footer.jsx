@@ -1,3 +1,7 @@
+import { ROUTES } from '../../paths';
+import { Link } from 'react-router-dom';
+import { footerData } from '../../data/footerData';
+import { ExternalLink } from '../ExternalLink';
 import styles from './Footer.module.css';
 
 const Footer = () => {
@@ -5,38 +9,22 @@ const Footer = () => {
     <footer className={styles.footerBg}>
       <section className={styles.footer}>
         <ul className={styles.listLinks}>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/lucas-bezerra-rocha"
-              target="blank"
-            >
-              <img src="/linkedin.svg" alt="Linkedin" className={styles.icon} />
-              LinkedIn
-            </a>
-          </li>
-
-          <li>
-            <a href="https://github.com/lucasrochabz" target="blank">
-              <img src="/github.svg" alt="GitHub" className={styles.icon} />
-              GitHub
-            </a>
-          </li>
-
-          <li>
-            <a href="https://www.instagram.com/lucasrochabz" target="blank">
-              <img
-                src="/instagram.svg"
-                alt="Instagram"
-                className={styles.icon}
-              />
-              Instagram
-            </a>
-          </li>
+          {footerData.socials.map((social) => (
+            <li key={social.text}>
+              <ExternalLink.Root href={social.url} variant="social">
+                <ExternalLink.Icon src={social.iconPath} />
+                {social.text}
+              </ExternalLink.Root>
+            </li>
+          ))}
         </ul>
 
         <div className={styles.bottom}>
-          <p>&copy; 2025 Lucas Rocha. Todos os direitos reservados.</p>
-          <p className={styles.version}>v2.0</p>
+          <p>{footerData.subtitle}</p>
+
+          <Link to={ROUTES.changelog}>
+            <p className={styles.version}>{footerData.version}</p>
+          </Link>
         </div>
       </section>
     </footer>

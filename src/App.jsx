@@ -1,19 +1,10 @@
-import { Header } from './components/Header';
-import { About } from './components/About';
-import { Marquee } from './components/Marquee';
-import { ProjectList } from './components/ProjectList';
-import { Footer } from './components/Footer';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { routes } from './routes/app.routes';
+
+const router = createBrowserRouter(routes);
 
 const App = () => {
-  return (
-    <>
-      <Header />
-      <About />
-      <Marquee />
-      <ProjectList />
-      <Footer />
-    </>
-  );
+  return <RouterProvider router={router} />;
 };
 
 export default App;

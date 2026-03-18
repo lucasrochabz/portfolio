@@ -1,51 +1,38 @@
 import { useState } from 'react';
 import styles from './Accordion.module.css';
 
-const items = [
-  {
-    version: 'Versão 3.0',
-    description:
-      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, fuga eius repellendus quos non neque.',
-  },
-  {
-    version: 'Versão 2.0',
-    description:
-      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, fuga eius repellendus quos non neque.',
-  },
-  {
-    version: 'Versão 1.0',
-    description:
-      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, fuga eius repellendus quos non neque.',
-  },
-];
-
-const Accordion = () => {
+// fix: mudar nome desse componente
+const Accordion = ({ changelogData }) => {
   const [open, setOpen] = useState(null);
 
   const toggle = (i) => setOpen(open === i ? null : i);
 
   return (
-    <section className={styles.container}>
-      <h2>Registro de alterações</h2>
-      <p>
-        Acompanhe a evolução do meu portfólio com atualizações e melhorias
-        detalhadas.
-      </p>
-      <div className={styles.accordion}>
-        {items.map((item, i) => (
-          <div
-            key={i}
-            className={`${styles.item} ${open === i ? styles.open : ''}`}
-          >
-            <button onClick={() => toggle(i)}>
-              <span>{item.version}</span>
-              <span>{open === i ? '-' : '+'}</span>
+    <div className={styles.accordion}>
+      {changelogData.versions.map((version) => (
+        <article
+          key={version.version}
+          className={`${styles.card} ${
+            open === version.version ? styles.open : ''
+          }`}
+        >
+          <header>
+            <button onClick={() => toggle(version.version)}>
+              <div className={styles.versionHeader}>
+                <h2>{version.version}</h2>
+                <span>{version.date}</span>
+              </div>
+
+              <span>{open === version.version ? '-' : '+'}</span>
             </button>
-            <div className={styles.content}>{item.description}</div>
+          </header>
+
+          <div className={styles.content}>
+            <p>{version.description}</p>
           </div>
-        ))}
-      </div>
-    </section>
+        </article>
+      ))}
+    </div>
   );
 };
 

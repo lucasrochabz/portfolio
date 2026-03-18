@@ -1,4 +1,4 @@
-# Portfolio v2.0.3
+# Portfolio
 
 ![Imagem do projeto](./src/assets/images/projeto-portfolio.png)
 
@@ -10,6 +10,7 @@ Este projeto é meu portfólio como desenvolvedor, onde apresento um pouco sobre
 
 - **JavaScript**: Linguagem de programação utilizada no projeto.
 - **React**: Biblioteca JavaScript para criação de interfaces de usuário.
+- **React Router**: Gerencia rotas da aplicação, permitindo navegar entre páginas sem recarregar.
 - **HTML**: Linguagem de marcação utilizada para estruturar as páginas do projeto.
 - **CSS**: Linguagem de estilos utilizada para a estilização da interface.
 
@@ -36,15 +37,31 @@ Este projeto é meu portfólio como desenvolvedor, onde apresento um pouco sobre
 ```bash
 portfolio/
 ├── public/
-│   └── lucas01.png
-│
 ├── src/
 │   ├── assets/
 │   │   └── images/
 │   │
 │   ├── components/
+│   │   ├── Header/
+│   │   │   ├── Header.jsx
+│   │   │   ├── Header.module.css
+│   │   │   └── index.js/
+│   │   └── ...
+│   │
+│   ├── data/
+│   ├── pages/
+│   │   ├── HomePage/
+│   │   │   ├── HomePage.jsx
+│   │   │   ├── HomePage.module.css
+│   │   │   └── index.js/
+│   │   └── ...
+│   │
+│   ├── routes/
+│   ├── styles/
+│   │   ├── base/
+│   │   └── tokens/
+│   │
 │   ├── App.jsx
-│   ├── index.css
 │   └── main.jsx
 │
 ├── .eslintrc

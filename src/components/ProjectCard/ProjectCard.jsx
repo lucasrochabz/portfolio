@@ -1,45 +1,62 @@
+import PropTypes from 'prop-types';
+import { ExternalLinkOld } from '../ExternalLinkOld';
 import styles from './ProjectCard.module.css';
 
-const ProjectCard = ({ project }) => {
-  const images = import.meta.glob('/src/assets/images/*', {
-    eager: true,
-  });
+const images = import.meta.glob('/src/assets/images/*', {
+  eager: true,
+});
 
-  const imagePath = images[`/src/assets/images/${project.image}`]?.default;
+const ProjectCard = ({ project }) => {
+  const imageModule = images[`/src/assets/images/${project.image}`];
+  const imagePath = imageModule?.default;
 
   return (
-    <>
-      <div className={styles.card}>
-        <figure>
-          <img src={imagePath} alt={imagePath} />
-        </figure>
+    <div className={styles.card}>
+      <figure>
+        <img src={imagePath} alt={imagePath} />
+      </figure>
 
-        <div className={styles.info}>
-          <h2 className="subtitle">{project.name}</h2>
-          <ul className={styles.list}>
-            {project.tools.map((tool, index) => (
-              <li key={index}>{tool}</li>
-            ))}
-          </ul>
+      <div className={styles.info}>
+        <h2 className="subtitle">{project.name}</h2>
 
-          <p>{project.text}</p>
+        <ul className={styles.list}>
+          {project.tools.map((tool, index) => (
+            <li key={index}>{tool}</li>
+          ))}
+        </ul>
 
-          <div className={styles.links}>
-            <a href={project.site} target="blank" className={styles.primary}>
-              Site
-            </a>
-            <a
-              href={project.repository}
-              target="blank"
-              className={styles.secondary}
+        <p>{project.description}</p>
+
+        <div className={styles.links}>
+          {project.links.map((link) => (
+            <ExternalLinkOld
+              key={link.url}
+              href={link.url}
+              variant={link.variant}
             >
-              Repositório
-            </a>
-          </div>
+              {link.name}
+            </ExternalLinkOld>
+          ))}
         </div>
       </div>
-    </>
+    </div>
   );
+};
+
+ProjectCard.propTypes = {
+  project: PropTypes.shape({
+    image: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    tools: PropTypes.arrayOf(PropTypes.string).isRequired,
+    links: PropTypes.arrayOf(
+      PropTypes.shape({
+        name: PropTypes.string.isRequired,
+        url: PropTypes.string.isRequired,
+        variant: PropTypes.oneOf(['primary', 'secondary']),
+      }),
+    ),
+    description: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default ProjectCard;
