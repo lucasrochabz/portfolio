@@ -1,20 +1,19 @@
+import { ROUTES } from '../paths';
 import { HomePage } from '../pages/HomePage';
 import { AboutPage } from '../pages/AboutPage';
 import { ChangelogPage } from '../pages/ChangelogPage';
 
-const routes = [
+export const routes = [
   {
-    path: '/',
+    path: ROUTES.home,
     element: <HomePage />,
   },
   {
-    path: '/sobre',
+    path: ROUTES.about,
     element: <AboutPage />,
   },
   {
-    path: '/historico',
+    path: ROUTES.changelog,
     element: <ChangelogPage />,
   },
 ];
-
-export default routes;

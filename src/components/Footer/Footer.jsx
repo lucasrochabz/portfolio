@@ -1,3 +1,4 @@
+import { ROUTES } from '../../paths';
 import { Link } from 'react-router-dom';
 import { footerData } from '../../data/footerData';
 import { ExternalLink } from '../ExternalLink';
@@ -21,7 +22,7 @@ const Footer = () => {
         <div className={styles.bottom}>
           <p>{footerData.subtitle}</p>
 
-          <Link to="/historico">
+          <Link to={ROUTES.changelog}>
             <p className={styles.version}>{footerData.version}</p>
           </Link>
         </div>
