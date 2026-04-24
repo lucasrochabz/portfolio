@@ -2,12 +2,12 @@ import PropTypes from 'prop-types';
 import { ExternalLinkOld } from '../ExternalLinkOld';
 import styles from './ProjectCard.module.css';
 
-const images = import.meta.glob('/src/assets/images/*', {
+const images = import.meta.glob('/src/assets/projects/*', {
   eager: true,
 });
 
 const ProjectCard = ({ project }) => {
-  const imageModule = images[`/src/assets/images/${project.image}`];
+  const imageModule = images[`/src/assets/projects/${project.image}`];
   const imagePath = imageModule?.default;
 
   return (
