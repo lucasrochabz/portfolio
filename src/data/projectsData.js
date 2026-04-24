@@ -10,12 +10,12 @@ export const projectsData = [
       {
         name: 'Site',
         url: 'https://bodega-dev.vercel.app',
-        variant: 'primary',
+        type: 'demo',
       },
       {
         name: 'Repositório',
         url: 'https://github.com/lucasrochabz/bodega',
-        variant: 'secondary',
+        type: 'repo',
       },
     ],
   },
@@ -26,17 +26,16 @@ export const projectsData = [
       'API de e-commerce em Node.js e Express que conecta o front-end ao banco de dados, com funcionalidades de autenticação, gerenciamento de produtos, estoque e pedidos.',
     tools: ['Node.js', 'Express', 'MySQL', 'Json Web Token', 'Bcrypt'],
     image: 'bodega-api.png',
-
     links: [
       {
         name: 'Site',
         url: 'https://bodega-api-production.up.railway.app/api/docs',
-        variant: 'primary',
+        type: 'demo',
       },
       {
         name: 'Repositório',
         url: 'https://github.com/lucasrochabz/bodega-api',
-        variant: 'secondary',
+        type: 'repo',
       },
     ],
   },
@@ -45,18 +44,18 @@ export const projectsData = [
     name: 'To-do List',
     description:
       'Aplicação de lista de tarefas desenvolvida com JavaScript e React em arquitetura SPA, permitindo criar, editar, concluir, restaurar e excluir tarefas, com filtros, busca e persistência de dados no localStorage.',
-    tools: ['JavaScript', 'React', 'React Router'],
+    tools: ['TypeScript', 'React', 'React Router'],
     image: 'to-do-list.png',
     links: [
       {
         name: 'Site',
         url: 'https://todolistlucas.vercel.app',
-        variant: 'primary',
+        type: 'demo',
       },
       {
         name: 'Repositório',
         url: 'https://github.com/lucasrochabz/to-do-list',
-        variant: 'secondary',
+        type: 'repo',
       },
     ],
   },
@@ -71,12 +70,12 @@ export const projectsData = [
       {
         name: 'Site',
         url: 'https://lucasrochabz.github.io/news-scraper',
-        variant: 'primary',
+        type: 'demo',
       },
       {
         name: 'Repositório',
         url: 'https://github.com/lucasrochabz/news-scraper',
-        variant: 'secondary',
+        type: 'repo',
       },
     ],
   },
@@ -91,12 +90,12 @@ export const projectsData = [
       {
         name: 'Site',
         url: 'https://lucasrochabz.vercel.app',
-        variant: 'primary',
+        type: 'demo',
       },
       {
         name: 'Repositório',
         url: 'https://github.com/lucasrochabz/portfolio',
-        variant: 'secondary',
+        type: 'repo',
       },
     ],
   },

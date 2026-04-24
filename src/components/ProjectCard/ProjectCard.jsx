@@ -10,6 +10,11 @@ const ProjectCard = ({ project }) => {
   const imageModule = images[`/src/assets/projects/${project.image}`];
   const imagePath = imageModule?.default;
 
+  const linkVariantMap = {
+    demo: 'primary',
+    repo: 'secondary',
+  };
+
   return (
     <div className={styles.card}>
       <figure>
@@ -32,7 +37,7 @@ const ProjectCard = ({ project }) => {
             <ExternalLinkOld
               key={link.url}
               href={link.url}
-              variant={link.variant}
+              variant={linkVariantMap[link.type]}
             >
               {link.name}
             </ExternalLinkOld>
@@ -52,7 +57,7 @@ ProjectCard.propTypes = {
       PropTypes.shape({
         name: PropTypes.string.isRequired,
         url: PropTypes.string.isRequired,
-        variant: PropTypes.oneOf(['primary', 'secondary']),
+        variant: PropTypes.oneOf(['demo', 'repo']),
       }),
     ),
     description: PropTypes.string.isRequired,

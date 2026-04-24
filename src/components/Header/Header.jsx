@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { ROUTES } from '../../paths';
+import { ROUTES } from '../../constants/routes';
 import { ExternalLinkOld } from '../ExternalLinkOld';
 import styles from './Header.module.css';
 
@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <header className={styles.headerBg}>
       <div className={styles.header}>
-        <Link to={ROUTES.home}>
+        <Link to={ROUTES.HOME}>
           <h2 className={styles.logo}>Lucas Rocha</h2>
         </Link>
 
