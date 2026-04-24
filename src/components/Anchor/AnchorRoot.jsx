@@ -1,7 +1,8 @@
 import PropTypes from 'prop-types';
-import styles from './ExternalLinkRoot.module.css';
+import styles from './Anchor.module.css';
 
-const ExternalLinkRoot = ({ variant, href, children }) => {
+const ExternalLinkRoot = ({ href, variant = 'primary', children }) => {
+  const variantClass = styles[variant] || styles.primary;
   const isExternal = href.startsWith('http');
 
   const extraProps = isExternal
@@ -9,11 +10,7 @@ const ExternalLinkRoot = ({ variant, href, children }) => {
     : {};
 
   return (
-    <a
-      href={href}
-      {...extraProps}
-      className={`${styles.base} ${styles[variant]}`}
-    >
+    <a href={href} {...extraProps} className={`${styles.base} ${variantClass}`}>
       {children}
     </a>
   );

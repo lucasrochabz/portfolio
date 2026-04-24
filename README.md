@@ -42,13 +42,14 @@ portfolio/
 ├── public/
 ├── src/
 │   ├── assets/
-│   │   └── images/
+│   │   ├── images/
+│   │   └── projects/
 │   │
 │   ├── components/
 │   │   ├── Header/
 │   │   │   ├── Header.jsx
 │   │   │   ├── Header.module.css
-│   │   │   └── index.js/
+│   │   │   └── index.js
 │   │   └── ...
 │   │
 │   ├── constants/
@@ -57,7 +58,7 @@ portfolio/
 │   │   ├── HomePage/
 │   │   │   ├── HomePage.jsx
 │   │   │   ├── HomePage.module.css
-│   │   │   └── index.js/
+│   │   │   └── index.js
 │   │   └── ...
 │   │
 │   ├── routes/

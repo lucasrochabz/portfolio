@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { ROUTES } from '../../constants/routes';
 import { footerData } from '../../data/footerData';
-import { ExternalLink } from '../ExternalLink';
+import { Anchor } from '@/components/Anchor';
 import styles from './Footer.module.css';
 
 const Footer = () => {
@@ -11,10 +11,10 @@ const Footer = () => {
         <ul className={styles.listLinks}>
           {footerData.socials.map((social) => (
             <li key={social.text}>
-              <ExternalLink.Root href={social.url} variant="social">
-                <ExternalLink.Icon src={social.iconPath} />
+              <Anchor.Root href={social.url} variant="social">
+                <Anchor.Icon src={social.iconPath} />
                 {social.text}
-              </ExternalLink.Root>
+              </Anchor.Root>
             </li>
           ))}
         </ul>
