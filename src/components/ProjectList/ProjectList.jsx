@@ -1,11 +1,11 @@
 import { ProjectCard } from '../ProjectCard';
-import { projectsData } from '../../data/projectsData';
+import { projects } from '@/data/projects';
 import styles from './ProjectList.module.css';
 
 const ProjectList = () => {
   return (
     <section id="projetos" className={styles.projectList}>
-      {projectsData.map((project, id) => (
+      {projects.map((project, id) => (
         <ProjectCard key={id} project={project} />
       ))}
     </section>

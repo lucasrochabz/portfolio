@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import { ROUTES } from '../../constants/routes';
-import { ExternalLinkOld } from '../ExternalLinkOld';
+import { ROUTES } from '@/constants/routes';
+import { Anchor } from '../Anchor';
 import styles from './Header.module.css';
 
 const Header = () => {
@@ -12,12 +12,12 @@ const Header = () => {
         </Link>
 
         <nav>
-          <ExternalLinkOld
+          <Anchor.Root
             href="mailto:lucasbezerrar@gmail.com?subject=Assunto%20do%20e-mail"
             variant="cta"
           >
             Entre em contato
-          </ExternalLinkOld>
+          </Anchor.Root>
         </nav>
       </div>
     </header>

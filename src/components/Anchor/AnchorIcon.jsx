@@ -1,7 +1,13 @@
+import PropTypes from 'prop-types';
 import styles from './Anchor.module.css';
 
-const ExternalLinkIcon = ({ src, alt }) => {
+const AnchorIcon = ({ src, alt }) => {
   return <img src={src} alt={alt} aria-hidden="true" className={styles.icon} />;
 };
 
-export default ExternalLinkIcon;
+AnchorIcon.propTypes = {
+  src: PropTypes.string,
+  alt: PropTypes.string,
+};
+
+export default AnchorIcon;

@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { ExternalLinkOld } from '../ExternalLinkOld';
+import { Anchor } from '@/components/Anchor';
 import styles from './ProjectCard.module.css';
 
 const images = import.meta.glob('/src/assets/projects/*', {
@@ -32,17 +32,17 @@ const ProjectCard = ({ project }) => {
 
         <p>{project.description}</p>
 
-        <div className={styles.links}>
+        <nav className={styles.links}>
           {project.links.map((link) => (
-            <ExternalLinkOld
+            <Anchor.Root
               key={link.url}
               href={link.url}
               variant={linkVariantMap[link.type]}
             >
               {link.name}
-            </ExternalLinkOld>
+            </Anchor.Root>
           ))}
-        </div>
+        </nav>
       </div>
     </div>
   );

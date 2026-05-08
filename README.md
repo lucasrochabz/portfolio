@@ -1,12 +1,12 @@
-# Portfolio
+## Portfolio
 
 ![Imagem do projeto](./src/assets/images/projeto-portfolio.png)
 
-## Sobre
+### Sobre
 
 Este projeto é meu portfólio como desenvolvedor, onde apresento um pouco sobre minha trajetória, minhas habilidades e alguns dos projetos que desenvolvi. A ideia é reunir em um só lugar tudo o que representa minha evolução como profissional e minhas principais criações no mundo da programação.
 
-## Tecnologias
+### Tecnologias
 
 | Tecnologia   | Descrição                |
 | ------------ | ------------------------ |
@@ -17,12 +17,21 @@ Este projeto é meu portfólio como desenvolvedor, onde apresento um pouco sobre
 | HTML         | Estrutura de páginas     |
 | CSS Modules  | Estilos modulares        |
 
-## Requisitos
+### Funcionalidades
+
+- [] Adicionar
+
+### Preview
+
+Acesse o projeto online:
+https://lucasrochabz.vercel.app/
+
+### Requisitos
 
 - Node na versão versão 22.12 ou superior
 - NPM na versão 10.9 ou superior.
 
-## Como instalar?
+### Como instalar?
 
 1. Faça o clone do projeto.
 2. Abra o terminal e navegue até a pasta do projeto.
@@ -35,7 +44,7 @@ Este projeto é meu portfólio como desenvolvedor, onde apresento um pouco sobre
    npm run dev
    ```
 
-## Estrutura do projeto
+### Estrutura do projeto
 
 ```bash
 portfolio/
@@ -53,6 +62,8 @@ portfolio/
 │   │   └── ...
 │   │
 │   ├── constants/
+│   │   └── routes.js
+│   │
 │   ├── data/
 │   ├── pages/
 │   │   ├── HomePage/
@@ -78,6 +89,6 @@ portfolio/
 └── vite.config.js
 ```
 
-## Encontrou algum problema?
+### Encontrou algum problema?
 
 Abra uma [issue](https://github.com/lucasrochabz/portifolio/issues) com sua sugestão ou crítica.

@@ -1,4 +1,4 @@
-export const footerData = {
+export const footer = {
   subtitle: '© 2025 Lucas Rocha. Todos os direitos reservados.',
   version: 'v2.0',
   socials: [

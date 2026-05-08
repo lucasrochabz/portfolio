@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import styles from './ExternalLinkOld.module.css';
 
+// fix: remover componente depois de atualizar para o novo
 const ExternalLinkOld = ({ variant = 'primary', href, icon, children }) => {
   const variantClass = styles[variant] || styles.primary;
   const isExternal = href.startsWith('http');

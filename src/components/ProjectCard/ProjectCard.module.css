@@ -1,13 +1,18 @@
 .card {
-  border: 1px solid var(--deep-navy-50-color);
-  box-shadow: 0px 2px 2px var(--deep-navy-50-color);
   display: grid;
   grid-template-columns: 552px auto;
   gap: 2rem;
+  border: 1px solid var(--deep-navy-50-color);
   border-radius: 10px;
+  box-shadow: 0px 2px 2px var(--deep-navy-50-color);
+  transition: 0.3s;
   padding: 2rem;
 
   grid-template-areas: "figure info";
+}
+
+.card:hover {
+  border-color: var(--primary-color);
 }
 
 .card:nth-child(even) {
@@ -18,8 +23,8 @@
 .card figure {
   width: 100%;
   border-radius: 10px;
-  overflow: hidden;
   box-shadow: 0 2px 2px var(--deep-navy-50-color);
+  overflow: hidden;
   
   grid-area: figure;
 }

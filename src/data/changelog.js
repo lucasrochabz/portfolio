@@ -1,4 +1,4 @@
-export const changelogData = {
+export const changelog = {
   title: 'Histórico de alterações',
   subtitle:
     'Acompanhe a evolução do meu portfólio com atualizações e melhorias detalhadas.',

@@ -1,5 +1,5 @@
-import { heroData } from '../../data/heroData';
-import { ExternalLinkOld } from '../ExternalLinkOld';
+import { hero } from '@/data/hero';
+import { Anchor } from '../Anchor';
 import { Gallery } from '../Gallery';
 import styles from './Hero.module.css';
 
@@ -10,24 +10,24 @@ const Hero = () => {
         <Gallery />
 
         <div className={styles.content}>
-          <h3>{heroData.subTitle}</h3>
+          <h3>{hero.subTitle}</h3>
 
           <h1 className="title">
-            {heroData.titleLine1}
+            {hero.titleLine1}
             <br />
-            {heroData.titleLine2}
+            {hero.titleLine2}
           </h1>
 
-          <p>{heroData.description}</p>
+          <p>{hero.description}</p>
 
-          <ExternalLinkOld
-            href={`mailto:${heroData.email}?subject=${encodeURIComponent(
-              heroData.emailSubject,
+          <Anchor.Root
+            href={`mailto:${hero.email}?subject=${encodeURIComponent(
+              hero.emailSubject,
             )}`}
             variant="cta"
           >
-            {heroData.cta}
-          </ExternalLinkOld>
+            {hero.cta}
+          </Anchor.Root>
         </div>
       </div>
     </section>
