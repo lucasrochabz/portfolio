@@ -4,7 +4,7 @@ import styles from './ProjectList.module.css';
 
 const ProjectList = () => {
   return (
-    <section id="projetos" className={styles.projectList}>
+    <section className={styles.projectList}>
       {projects.map((project, id) => (
         <ProjectCard key={id} project={project} />
       ))}

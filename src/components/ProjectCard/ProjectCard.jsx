@@ -21,7 +21,7 @@ const ProjectCard = ({ project }) => {
         <img src={imagePath} alt={imagePath} />
       </figure>
 
-      <div className={styles.info}>
+      <div className={styles.content}>
         <h2 className="subtitle">{project.name}</h2>
 
         <ul className={styles.list}>

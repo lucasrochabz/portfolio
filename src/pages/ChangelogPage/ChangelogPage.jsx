@@ -9,7 +9,7 @@ const ChangelogPage = () => {
       <section className={styles.container}>
         <h1 className="title">{changelog.title}</h1>
         <h3>{changelog.subtitle}</h3>
-        <Accordion changelogData={changelog} />
+        <Accordion versions={changelog.versions} />
       </section>
     </Layout>
   );

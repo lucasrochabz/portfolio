@@ -1,12 +1,13 @@
 export const techStacks = [
-  'HTML',
-  'CSS',
   'JavaScript',
   'TypeScript',
+  'React',
+  'Next.js',
+  'Node.js',
+  'NestJS',
+  'Express.js',
   'PHP',
   'Python',
-  'React',
-  'Node.js',
-  'Express.js',
   'MySQL',
+  'Docker',
 ];

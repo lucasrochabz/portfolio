@@ -8,16 +8,16 @@
   transition: 0.3s;
   padding: 2rem;
 
-  grid-template-areas: "figure info";
+  grid-template-areas: "figure content";
+}
+
+.card:nth-child(even) {
+  grid-template-areas: "content figure";
+  grid-template-columns: auto 552px;
 }
 
 .card:hover {
   border-color: var(--primary-color);
-}
-
-.card:nth-child(even) {
-  grid-template-areas: "info figure";
-  grid-template-columns: auto 552px;
 }
 
 .card figure {
@@ -29,18 +29,18 @@
   grid-area: figure;
 }
 
-.info {
+.content {
   display: flex;
   flex-direction: column;
 
-  grid-area: info;
+  grid-area: content;
 }
 
-.info h2 {
+.content h2 {
   margin-bottom: 1rem;
 }
 
-.info p {
+.content p {
   font-size: 1.25rem;
   line-height: 1.5;
   margin-bottom: 2rem;
@@ -70,6 +70,6 @@
     grid-template-columns: 1fr;
     grid-template-areas: 
     "figure"
-    "info";
+    "content";
   }
 }

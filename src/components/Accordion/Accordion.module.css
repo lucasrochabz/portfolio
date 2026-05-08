@@ -9,48 +9,43 @@
   box-shadow: 0 2px 2px var(--deep-navy-50-color);
   border-radius: 10px;
   overflow: hidden;
-}
-
-.card button:hover {
-  background-color: #eee;
-}
-
-.card button {
-  color: var(--primary-color);
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 1rem;
-  background: none;
-  border: none;
-  cursor: pointer;
   transition: 0.3s;
+
   padding: 2rem;
 }
 
-.versionHeader {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 0.5rem;
+.card:hover {
+  border-color: var(--primary-color);
 }
 
-.versionHeader span {
-  font-family: 'Roboto', sans-serif;
+.card h2 {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-radius: 100px;
+  padding: 0.5rem 1rem;
+  
 }
 
-.content {
-  font-family: 'Roboto', sans-serif;
-  max-height: 0;
-  overflow: hidden;
+.card span {
   font-size: 1.25rem;
-  transition: max-height 0.3s ease, padding 0.3s ease;
-  margin: 0 2rem;
+  font-weight: 600;
 }
 
-.card.open .content {
-  max-height: 200px;
-  padding: 2rem 0;
-  border-top: 1px solid var(--deep-navy-50-color);
+.card p {
+  font-size: 1.25rem;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 800px) {
+  .card {
+    padding: 1.5rem;
+  }
 }
