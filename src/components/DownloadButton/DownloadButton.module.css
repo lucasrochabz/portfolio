@@ -1,0 +1,12 @@
+.download {
+  background-color: var(--primary-color);
+  color: #fff;
+  width: fit-content;
+  border-radius: 5px;
+  transition: 0.3s;
+  padding: 0.5rem 1rem;
+}
+
+.download:hover {
+  background-color: #000;
+}

@@ -1,0 +1,14 @@
+.section {
+  margin-bottom: 1rem;
+}
+
+.experiences {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.role {
+  font-weight: bold;
+}

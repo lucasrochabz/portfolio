@@ -65,6 +65,13 @@ portfolio/
 │   │   └── routes.js
 │   │
 │   ├── data/
+│   │   ├── changelog.js
+│   │   ├── experiences.js
+│   │   ├── footer.js
+│   │   ├── hero.js
+│   │   ├── projects.js
+│   │   └── techStacks.js
+│   │
 │   ├── pages/
 │   │   ├── HomePage/
 │   │   │   ├── HomePage.jsx

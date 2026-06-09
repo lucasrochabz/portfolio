@@ -1,15 +1,12 @@
-import { experiences } from '@/data/experiences';
 import { Layout } from '@/components/Layout';
-import { DownloadButton } from '@/components/DownloadButton';
-import { ExperienceList } from '@/components/ExperienceList';
-import { LanguageList } from '@/components/LanguageList';
-import styles from './AboutPage.module.css';
+import styles from './ProjectsPage.module.css';
 
-const AboutPage = () => {
+// fix: colocar todos os projetos aqui
+const ProjectsPage = () => {
   return (
     <Layout>
-      <section className={styles.aboutPage}>
-        <h1 className="title">Sobre mim.</h1>
+      <section className={styles.projectsPage}>
+        <h1 className="title">Projetos.</h1>
         <h3>Transformando ideias em projetos digitais.</h3>
 
         <div className={styles.grid}>
@@ -31,19 +28,29 @@ const AboutPage = () => {
               queijo.
             </p>
 
-            <DownloadButton
-              file="/documents/curriculo-lucas-rocha-fullstack.pdf"
-              label="Baixar Currículo"
-            />
+            <a
+              href="/path_do_arquivo.pdf"
+              download="/nome_do_arquivo_teste.pdf"
+            >
+              Currículo
+            </a>
           </div>
         </div>
+        <div>
+          <h2>Carreira</h2>
+          <p>Desenvolvedor Web</p>
+          <p>704 Apps — Fortaleza, Ceará</p>
+          <p>Mai 2024 — Jan 2025 — 8 mes.</p>
+        </div>
 
-        <ExperienceList experiences={experiences} />
-
-        <LanguageList />
+        <div>
+          <h2>Idiomas</h2>
+          <p>Português / Fluente</p>
+          <p>Inglês — Básico</p>
+        </div>
       </section>
     </Layout>
   );
 };
 
-export default AboutPage;
+export default ProjectsPage;

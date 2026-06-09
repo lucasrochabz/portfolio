@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { ToolList } from '@/components/ToolList';
 import { Anchor } from '@/components/Anchor';
 import styles from './ProjectCard.module.css';
 
@@ -24,11 +25,7 @@ const ProjectCard = ({ project }) => {
       <div className={styles.content}>
         <h2 className="subtitle">{project.name}</h2>
 
-        <ul className={styles.list}>
-          {project.tools.map((tool, index) => (
-            <li key={index}>{tool}</li>
-          ))}
-        </ul>
+        <ToolList tools={project.tools} />
 
         <p>{project.description}</p>
 

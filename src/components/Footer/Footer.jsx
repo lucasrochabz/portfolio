@@ -4,6 +4,7 @@ import { footer } from '@/data/footer';
 import { Anchor } from '@/components/Anchor';
 import styles from './Footer.module.css';
 
+// fix: add links rápidos para outras páginas
 const Footer = () => {
   return (
     <footer className={styles.footerBg}>

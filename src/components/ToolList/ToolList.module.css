@@ -1,0 +1,13 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.list li {
+  border: 1px solid var(--deep-navy-50-color);
+  font-size: 0.75rem;
+  border-radius: 100px;
+  padding: 0.5rem 1rem;
+}
