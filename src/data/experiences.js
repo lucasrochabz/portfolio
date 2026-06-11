@@ -8,6 +8,14 @@ export const experiences = [
     duration: '8 meses',
   },
   {
+    role: 'Técnico em Edificações',
+    company: 'Quintto Arquitetura e Engenharia',
+    location: 'Fortaleza, Ceará',
+    startDate: 'Jan 2023',
+    endDate: 'Agosto 2023',
+    duration: '7 meses',
+  },
+  {
     role: 'Auxiliar Admnistrativo',
     company: 'Detran',
     location: 'Fortaleza, Ceará',

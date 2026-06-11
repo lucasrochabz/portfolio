@@ -1,5 +1,3 @@
-import styles from './LanguageList.module.css';
-
 const LanguageList = () => {
   return (
     <>

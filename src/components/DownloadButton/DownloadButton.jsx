@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { Download } from 'lucide-react';
 import styles from './DownloadButton.module.css';
 
 const DownloadButton = ({ file, label }) => {
@@ -10,6 +11,7 @@ const DownloadButton = ({ file, label }) => {
       rel="noopener noreferrer"
       className={styles.download}
     >
+      <Download />
       {label}
     </a>
   );

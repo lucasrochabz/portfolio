@@ -10,21 +10,25 @@ const AboutPage = () => {
     <Layout>
       <section className={styles.aboutPage}>
         <h1 className="title">Sobre mim.</h1>
-        <h3>Transformando ideias em projetos digitais.</h3>
+        <p className={styles.subtitle}>
+          Transformando ideias em projetos digitais.
+        </p>
 
         <div className={styles.grid}>
-          <img src="" alt="" />
+          <img src="/src/assets/images/lucas3.jpg" alt="" />
           <div className={styles.content}>
             <p>
               Olá, eu sou Lucas Rocha. Comecei como engenheiro de software em
-              2009, trabalhando com Flash.
+              2023, trabalhando com Flash.
             </p>
+
             <p>
               Sou fundador e CEO da Resend. Antes disso, fui vice-presidente de
               experiência do desenvolvedor na WorkOS e diretor de marketing na
               Liferay Cloud. Sou brasileiro e agora moro em Fortaleza, Ceará,
               com minha incrível esposa e minha linda filha.
             </p>
+
             <p>
               Adoro o modo escuro , código aberto e projetos paralelos. Quando
               não estou trabalhando, gosto de correr, assistir filmes e comer
@@ -33,7 +37,7 @@ const AboutPage = () => {
 
             <DownloadButton
               file="/documents/curriculo-lucas-rocha-fullstack.pdf"
-              label="Baixar Currículo"
+              label="Currículo"
             />
           </div>
         </div>

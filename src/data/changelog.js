@@ -1,7 +1,6 @@
 export const changelog = {
   title: 'Registro de alterações',
-  subtitle:
-    'Acompanhe a evolução do meu portfólio com atualizações e melhorias detalhadas.',
+  subtitle: 'Acompanhe a evolução do projeto versão a versão.',
   versions: [
     {
       version: 'v3.0',

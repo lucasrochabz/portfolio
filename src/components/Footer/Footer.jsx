@@ -27,6 +27,14 @@ const Footer = () => {
             <p className={styles.version}>{footer.version}</p>
           </Link>
         </div>
+
+        <ul>
+          <li>Links rápidos</li>
+          <li>
+            <Link to={ROUTES.ABOUT}>Sobre</Link>
+            <Link to={ROUTES.PROJECTS}>Projetos</Link>
+          </li>
+        </ul>
       </section>
     </footer>
   );

@@ -8,7 +8,7 @@ const ChangelogPage = () => {
     <Layout>
       <section className={styles.container}>
         <h1 className="title">{changelog.title}</h1>
-        <h3>{changelog.subtitle}</h3>
+        <p className={styles.subtitle}>{changelog.subtitle}</p>
         <Accordion versions={changelog.versions} />
       </section>
     </Layout>
