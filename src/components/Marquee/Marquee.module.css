@@ -1,18 +1,18 @@
-.stacks {
+.marquee {
   background-color: var(--primary-color);
   overflow: hidden;
   padding: 2rem 0;
   margin-bottom: 5rem;
 }
 
-.marquee {
+.stacks {
   color: var(--white-color);
   display: flex;
   gap: 8rem;
   animation: scrollLeftDesktop 30s linear infinite;
 }
 
-.marquee span {
+.stacks span {
   font-size: 1.5rem;
   font-weight: bold;
 }
@@ -36,7 +36,7 @@
 }
 
 @media (max-width: 800px) {
-  .marquee {
+  .stacks {
     gap: 4rem;
     animation: scrollLeftMobile 30s linear infinite;
   }

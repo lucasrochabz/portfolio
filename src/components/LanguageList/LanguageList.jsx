@@ -1,12 +1,19 @@
+import { profile } from '@/data/profile';
+import styles from './LanguageList.module.css';
+
 const LanguageList = () => {
   return (
-    <>
+    <section className={styles.language}>
       <h2>Idiomas</h2>
-      <div>
-        <p>Português / Fluente</p>
-        <p>Inglês — Básico</p>
-      </div>
-    </>
+
+      <ul className={styles.list}>
+        {profile.languages.map((language) => (
+          <li key={language.name}>
+            {language.name} — {language.level}
+          </li>
+        ))}
+      </ul>
+    </section>
   );
 };
 

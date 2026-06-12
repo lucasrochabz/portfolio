@@ -1,15 +1,15 @@
 import { Link } from 'react-router-dom';
+import { profile } from '@/data/profile';
 import { ROUTES } from '../../constants/routes';
-import { footer } from '@/data/footer';
-import { Anchor } from '@/components/Anchor';
+// import { Anchor } from '@/components/Anchor';
 import styles from './Footer.module.css';
 
-// fix: add links rápidos para outras páginas
+// fix: remover Anchor e tentar ver se uso em outro canto
 const Footer = () => {
   return (
     <footer className={styles.footerBg}>
       <section className={styles.footer}>
-        <ul className={styles.listLinks}>
+        {/* <ul className={styles.listLinks}>
           {footer.socials.map((social) => (
             <li key={social.text}>
               <Anchor.Root href={social.url} variant="social">
@@ -18,23 +18,48 @@ const Footer = () => {
               </Anchor.Root>
             </li>
           ))}
-        </ul>
+        </ul> */}
 
-        <div className={styles.bottom}>
-          <p>{footer.subtitle}</p>
+        <div className={styles.content}>
+          <h2>Lucas Rocha</h2>
 
-          <Link to={ROUTES.CHANGELOG}>
-            <p className={styles.version}>{footer.version}</p>
-          </Link>
+          <div className={styles.links}>
+            <ul className={styles.list}>
+              <li className={styles.top}>Páginas</li>
+
+              <li>
+                <Link to={ROUTES.HOME}>Home</Link>
+              </li>
+
+              <li>
+                <Link to={ROUTES.ABOUT}>Sobre</Link>
+              </li>
+
+              <li>
+                <Link to={ROUTES.PROJECTS}>Projetos</Link>
+              </li>
+            </ul>
+
+            <ul className={styles.list}>
+              <li className={styles.top}>Redes Sociais</li>
+              {profile.socials.map((social) => (
+                <li key={social.text}>
+                  <a href={social.url} target="_blank">
+                    {social.text}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
 
-        <ul>
-          <li>Links rápidos</li>
-          <li>
-            <Link to={ROUTES.ABOUT}>Sobre</Link>
-            <Link to={ROUTES.PROJECTS}>Projetos</Link>
-          </li>
-        </ul>
+        <div className={styles.bottom}>
+          <p>{profile.copyright}</p>
+
+          <Link to={ROUTES.CHANGELOG}>
+            <p className={styles.version}>{profile.version}</p>
+          </Link>
+        </div>
       </section>
     </footer>
   );

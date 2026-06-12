@@ -12,6 +12,12 @@ export const changelog = {
       date: 'Setembro de 2025',
       description:
         'Nesta versão, o layout foi redesenhado no Figma e implementado com React e React Router, trazendo navegação fluida e visual mais moderno.',
+      changes: [
+        'Layout redesenhado no Figma.',
+        'Migração para React.',
+        'Implementação do React Router.',
+        'Melhorias de navegação e usabilidade.',
+      ],
     },
     {
       version: 'v1.0',

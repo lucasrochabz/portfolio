@@ -1,12 +1,12 @@
-import { techStacks } from '@/data/techStacks';
+import { profile } from '@/data/profile';
 import styles from './Marquee.module.css';
 
 const Marquee = () => {
-  const repeatedStacks = techStacks.concat(techStacks);
+  const repeatedStacks = profile.skills.concat(profile.skills);
 
   return (
-    <section className={styles.stacks}>
-      <div className={styles.marquee}>
+    <section className={styles.marquee}>
+      <div className={styles.stacks}>
         {repeatedStacks.map((item, index) => (
           <span key={index}>{item}</span>
         ))}

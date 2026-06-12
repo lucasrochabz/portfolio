@@ -16,7 +16,7 @@ export const experiences = [
     duration: '7 meses',
   },
   {
-    role: 'Auxiliar Admnistrativo',
+    role: 'Auxiliar Administrativo',
     company: 'Detran',
     location: 'Fortaleza, Ceará',
     startDate: 'Jun 2013',

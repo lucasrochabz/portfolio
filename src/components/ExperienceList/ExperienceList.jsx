@@ -3,25 +3,27 @@ import styles from './ExperienceList.module.css';
 
 const ExperienceList = ({ experiences }) => {
   return (
-    <>
-      <h2 className={styles.section}>Carreira</h2>
+    <section className={styles.career}>
+      <h2>Carreira</h2>
 
-      <div className={styles.experiences}>
+      <ul className={styles.list}>
         {experiences.map(
           ({ company, role, location, startDate, endDate, duration }) => (
-            <div key={company} className={styles.item}>
-              <p className={styles.role}>{role}</p>
+            <li key={company} className={styles.item}>
+              <h3 className={styles.role}>{role}</h3>
+
               <p>
                 {company} — {location}
               </p>
-              <p>
+
+              <time>
                 {startDate} — {endDate} | {duration}
-              </p>
-            </div>
+              </time>
+            </li>
           ),
         )}
-      </div>
-    </>
+      </ul>
+    </section>
   );
 };
 

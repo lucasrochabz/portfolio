@@ -1,34 +1,34 @@
-import { hero } from '@/data/hero';
+import { profile } from '@/data/profile';
 import { Anchor } from '../Anchor';
 import { Gallery } from '../Gallery';
 import styles from './Hero.module.css';
 
+const { role, specialization, email, hero } = profile;
+
 const Hero = () => {
   return (
-    <section className="container">
-      <div className={styles.wrapper}>
-        <Gallery />
+    <section className={styles.hero}>
+      <Gallery />
 
-        <div className={styles.content}>
-          <h3>{hero.subTitle}</h3>
+      <div className={styles.content}>
+        <h3>{hero.greeting}</h3>
 
-          <h1 className="title">
-            {hero.titleLine1}
-            <br />
-            {hero.titleLine2}
-          </h1>
+        <h1 className="title">
+          {role}
+          <br />
+          {specialization}
+        </h1>
 
-          <p>{hero.description}</p>
+        <p>{hero.description}</p>
 
-          <Anchor.Root
-            href={`mailto:${hero.email}?subject=${encodeURIComponent(
-              hero.emailSubject,
-            )}`}
-            variant="cta"
-          >
-            {hero.cta}
-          </Anchor.Root>
-        </div>
+        <Anchor.Root
+          href={`mailto:${email}?subject=${encodeURIComponent(
+            hero.contactSubject,
+          )}`}
+          variant="cta"
+        >
+          {hero.contactLabel}
+        </Anchor.Root>
       </div>
     </section>
   );
