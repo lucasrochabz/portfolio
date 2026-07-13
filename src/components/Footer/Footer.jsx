@@ -4,6 +4,13 @@ import { ROUTES } from '../../constants/routes';
 // import { Anchor } from '@/components/Anchor';
 import styles from './Footer.module.css';
 
+const navigationLinks = [
+  { path: ROUTES.HOME, label: 'Home' },
+  { path: ROUTES.ABOUT, label: 'Sobre' },
+  { path: ROUTES.PROJECTS, label: 'Projetos' },
+  { path: ROUTES.CONTACT, label: 'Contato' },
+];
+
 // fix: remover Anchor e tentar ver se uso em outro canto
 const Footer = () => {
   return (
@@ -27,17 +34,11 @@ const Footer = () => {
             <ul className={styles.list}>
               <li className={styles.top}>Páginas</li>
 
-              <li>
-                <Link to={ROUTES.HOME}>Home</Link>
-              </li>
-
-              <li>
-                <Link to={ROUTES.ABOUT}>Sobre</Link>
-              </li>
-
-              <li>
-                <Link to={ROUTES.PROJECTS}>Projetos</Link>
-              </li>
+              {navigationLinks.map((link) => (
+                <li key={link.label}>
+                  <Link to={link.path}>{link.label}</Link>
+                </li>
+              ))}
             </ul>
 
             <ul className={styles.list}>
