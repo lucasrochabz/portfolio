@@ -7,7 +7,7 @@ const { role, specialization, email, hero } = profile;
 
 const Hero = () => {
   return (
-    <section className={styles.hero}>
+    <section className={`container ${styles.hero}`}>
       <Gallery />
 
       <div className={styles.content}>

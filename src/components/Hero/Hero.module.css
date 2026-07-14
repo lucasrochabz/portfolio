@@ -1,9 +1,7 @@
 .hero {
-  max-width: 1200px;
   display: grid;
   grid-template-columns: 584px auto;
   gap: var(--space-lg);
-  margin: 0 auto 4rem;
 }
 
 .content {
