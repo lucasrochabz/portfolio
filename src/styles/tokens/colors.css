@@ -8,3 +8,17 @@
   --white-80-color: #ffffffcc;
   --secondary-color: #ffc627;
 }
+
+/* fix: saber se isso deve ficar aqui mesmo */
+/* @media (prefers-color-scheme: dark) {
+  :root {
+  --base-color: #000000;
+  --text-color: #ffffff;
+
+  --primary-color: #0C2340;
+  --deep-navy-50-color: #0c234080;
+  --white-color: #ffffff;
+  --white-80-color: #ffffffcc;
+  --secondary-color: #ffc627;
+  }
+} */

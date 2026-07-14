@@ -36,7 +36,9 @@
   grid-area: content;
 }
 
-.content h2 {
+.title {
+  font-size: var(--font-size-lg);
+  line-height: 1.1;
   margin-bottom: 1rem;
 }
 

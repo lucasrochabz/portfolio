@@ -3,12 +3,6 @@
   margin: 0 auto 5rem;
 }
 
-.subtitle {
-  font-size: 1.25rem;
-  margin-top: 0.5rem;
-  margin-bottom: 4rem;
-}
-
 @media (max-width: 800px) {
   .container {
     padding: 0 1.5rem;

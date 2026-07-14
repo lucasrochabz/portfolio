@@ -10,9 +10,7 @@ const AboutPage = () => {
   return (
     <Layout>
       <h1 className="title">Sobre mim.</h1>
-      <p className={styles.subtitle}>
-        Transformando ideias em projetos digitais.
-      </p>
+      <p className="subtitle">Transformando ideias em projetos digitais.</p>
 
       <section className={styles.summary}>
         <img src="/src/assets/images/lucas3.jpg" alt="" />

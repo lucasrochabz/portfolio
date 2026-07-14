@@ -31,7 +31,7 @@
 }
 
 .content p {
-  font-size: 1.25rem;
+  font-size: var(--font-size-md);
   line-height: 1.5;
   margin: 2rem 0;
 }

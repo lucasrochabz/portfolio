@@ -23,7 +23,7 @@ const ProjectCard = ({ project }) => {
       </figure>
 
       <div className={styles.content}>
-        <h2 className="subtitle">{project.name}</h2>
+        <h2 className={styles.title}>{project.name}</h2>
 
         <ToolList tools={project.tools} />
 

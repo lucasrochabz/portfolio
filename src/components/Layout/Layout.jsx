@@ -3,6 +3,7 @@ import { Header } from '../Header';
 import { Footer } from '../Footer';
 import styles from './Layout.module.css';
 
+// fix: add Page Layout para páginas fora a home
 const Layout = ({ children }) => {
   return (
     <>
