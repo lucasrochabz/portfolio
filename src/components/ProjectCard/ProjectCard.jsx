@@ -27,7 +27,7 @@ const ProjectCard = ({ project }) => {
 
         <ToolList tools={project.tools} />
 
-        <p>{project.description}</p>
+        <p className={styles.description}>{project.description}</p>
 
         <nav className={styles.links}>
           {project.links.map((link) => (

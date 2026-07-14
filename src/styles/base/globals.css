@@ -24,13 +24,23 @@ button {
   cursor: pointer;
 }
 
+.logo {
+  color: var(--white-color);
+  font-size: 2rem;
+  line-height: 1.1;
+}
+
+.logo:hover {
+  opacity: 0.9;
+}
+
 .title {
   font-size: var(--font-size-xl);
   line-height: 1.1;
 }
 
 .subtitle {
-  font-size: var(--font-size-md);
+  font-size: var(--font-size-base);
   margin-top: 0.5rem;
   margin-bottom: 4rem;
 }

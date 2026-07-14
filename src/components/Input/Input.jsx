@@ -1,4 +1,4 @@
-import styles from './Input.module.css';
+import PropTypes from 'prop-types';
 
 const Input = ({ label, id, ...props }) => {
   return (
@@ -7,6 +7,11 @@ const Input = ({ label, id, ...props }) => {
       <input id={id} name={id} {...props} />
     </>
   );
+};
+
+Input.propTypes = {
+  label: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
 };
 
 export default Input;

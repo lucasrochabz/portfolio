@@ -8,7 +8,7 @@ const Header = () => {
     <header className={styles.headerBg}>
       <div className={styles.header}>
         <Link to={ROUTES.HOME}>
-          <h2 className={styles.logo}>Lucas Rocha</h2>
+          <h2 className="logo">Lucas Rocha</h2>
         </Link>
 
         <nav>
