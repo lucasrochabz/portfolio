@@ -67,15 +67,14 @@ portfolio/
 │   ├── data/
 │   │   ├── changelog.js
 │   │   ├── experiences.js
-│   │   ├── footer.js
-│   │   ├── hero.js
+│   │   ├── profile.js
 │   │   ├── projects.js
-│   │   └── techStacks.js
+│   │   └── seo.js
 │   │
 │   ├── pages/
-│   │   ├── HomePage/
-│   │   │   ├── HomePage.jsx
-│   │   │   ├── HomePage.module.css
+│   │   ├── AboutPage/
+│   │   │   ├── AboutPage.jsx
+│   │   │   ├── AboutPage.module.css
 │   │   │   └── index.js
 │   │   └── ...
 │   │
@@ -83,6 +82,8 @@ portfolio/
 │   ├── styles/
 │   │   ├── base/
 │   │   └── tokens/
+│   │   └── utilities/
+│   │   └── index.css
 │   │
 │   ├── App.jsx
 │   └── main.jsx
