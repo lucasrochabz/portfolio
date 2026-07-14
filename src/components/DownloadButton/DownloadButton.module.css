@@ -10,7 +10,7 @@
   width: fit-content;
   border-radius: 5px;
   transition: 0.3s;
-  gap: 0.5rem;
+  gap: var(--space-sm);
   padding: 0.5rem 1rem;
 }
 

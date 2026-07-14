@@ -12,7 +12,7 @@
 .content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-bottom: 2rem;
+  margin-bottom: var(--space-lg);
 }
 
 .links {
@@ -27,13 +27,13 @@
 .list {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: var(--space-sm);
 }
 
 .top {
   font-size: var(--font-size-base);
   font-weight: 600;
-  margin-bottom: 1rem;
+  margin-bottom: var(--space-md);
 }
 
 /* fix: apagar isso */
@@ -50,7 +50,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 2rem;
+  padding-top: var(--space-lg);
 }
 
 .version {
@@ -81,7 +81,7 @@
   }
   .content {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: var(--space-lg);
   }
   .links {
     justify-content: space-between;
@@ -89,6 +89,6 @@
   .bottom {
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1rem;
+    gap: var(--space-md);
   }
 }

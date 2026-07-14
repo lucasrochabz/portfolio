@@ -1,16 +1,16 @@
 .summary {
   display: grid;
   grid-template-columns: 585px auto;
-  gap: 2rem;
+  gap: var(--space-lg);
   border-bottom: 1px solid var(--primary-color);
-  padding-bottom: 2rem;
-  margin-bottom: 2rem;
+  padding-bottom: var(--space-lg);
+  margin-bottom: var(--space-lg);
 }
 
 .content {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: var(--space-md);
 }
 
 .content p {
@@ -18,7 +18,7 @@
 }
 
 .content a {
-  margin-top: 1rem;
+  margin-top: var(--space-md);
 }
 
 .content span {

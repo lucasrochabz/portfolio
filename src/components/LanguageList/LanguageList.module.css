@@ -1,9 +1,9 @@
 .language h2 {
-  margin-bottom: 2rem;
+  margin-bottom: var(--space-lg);
 }
 
 .list {
   display: flex;
   flex-direction: column;
-  gap: 0.25rem;
+  gap: var(--space-xs);
 }

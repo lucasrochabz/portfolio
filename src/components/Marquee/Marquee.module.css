@@ -2,7 +2,7 @@
   background-color: var(--primary-color);
   overflow: hidden;
   padding: 2rem 0;
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
 }
 
 .stacks {
@@ -37,7 +37,7 @@
 
 @media (max-width: 800px) {
   .stacks {
-    gap: 4rem;
+    gap: var(--space-xl);
     animation: scrollLeftMobile 30s linear infinite;
   }
 }
