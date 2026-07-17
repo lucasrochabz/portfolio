@@ -8,7 +8,7 @@ const Accordion = ({ versions }) => {
       {versions.map((release) => (
         <li key={release.version} className={styles.card}>
           <div className={styles.top}>
-            <h2>{release.version}</h2>
+            <h2 className={styles.version}>{release.version}</h2>
             <span>{release.date}</span>
           </div>
 

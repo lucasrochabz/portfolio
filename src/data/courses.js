@@ -1,7 +1,7 @@
 export const courses = [
   {
     name: 'Full Stack',
-    workload: 36,
+    workload: 192,
     completedAt: 'Jul/2026',
     institution: 'Digital College Brasil',
   },
@@ -19,25 +19,25 @@ export const courses = [
   },
   {
     name: 'JavaScript Completo ES6',
-    workload: 36,
+    workload: 74,
     completedAt: 'Jul/2026',
     institution: 'Origamid',
   },
   {
     name: 'CSS Grid Layout',
-    workload: 36,
+    workload: 10,
     completedAt: 'Jul/2026',
     institution: 'Origamid',
   },
   {
     name: 'CSS Flexbox',
-    workload: 36,
+    workload: 6,
     completedAt: 'Jul/2026',
     institution: 'Origamid',
   },
   {
     name: 'UI Design para Iniciantes',
-    workload: 36,
+    workload: 34,
     completedAt: 'Jul/2026',
     institution: 'Origamid',
   },

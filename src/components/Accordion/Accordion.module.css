@@ -9,7 +9,6 @@
   border-radius: 10px;
   overflow: hidden;
   transition: 0.3s;
-
   padding: var(--space-lg);
 }
 
@@ -17,7 +16,14 @@
   border-color: var(--primary-color);
 }
 
-.card h2 {
+.top {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+.version {
   background-color: var(--primary-color);
   color: var(--white-color);
   font-size: var(--font-size-md);
@@ -33,13 +39,6 @@
 
 .card p {
   font-size: var(--font-size-base);
-}
-
-.top {
-  display: flex;
-  align-items: center;
-  gap: var(--space-md);
-  margin-bottom: var(--space-lg);
 }
 
 @media (max-width: 800px) {

@@ -6,6 +6,7 @@ import { AboutPage } from '@/pages/AboutPage';
 import { ContactPage } from '@/pages/ContactPage';
 import { ChangelogPage } from '@/pages/ChangelogPage';
 
+// fix: add página de rota não encontrada
 export const routes = [
   {
     element: <LayoutRoot />,
