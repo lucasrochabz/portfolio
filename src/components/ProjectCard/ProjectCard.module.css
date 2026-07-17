@@ -55,6 +55,7 @@
 
 @media (max-width: 800px) {
   .card, .card:nth-child(even) {
+    padding: 1.5rem;
     grid-template-columns: 1fr;
     grid-template-areas: 
     "figure"

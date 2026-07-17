@@ -1,4 +1,4 @@
-.summary {
+.about {
   display: grid;
   grid-template-columns: 585px auto;
   gap: var(--space-lg);
@@ -7,26 +7,22 @@
   margin-bottom: var(--space-lg);
 }
 
-.content {
-  display: flex;
-  flex-direction: column;
+.info {
+  display: grid;
   gap: var(--space-md);
+  margin-bottom: var(--space-lg);
 }
 
-.content p {
+.info p {
   font-size: var(--font-size-base);
 }
 
-.content a {
-  margin-top: var(--space-md);
-}
-
-.content span {
+.info span {
   font-weight: 600;
 }
 
 @media (max-width: 800px) {
-  .summary {
+  .about {
     grid-template-columns: 1fr;
   }
 }

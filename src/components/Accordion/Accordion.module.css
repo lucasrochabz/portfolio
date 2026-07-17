@@ -1,6 +1,5 @@
 .accordion {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: var(--space-lg);
 }
 

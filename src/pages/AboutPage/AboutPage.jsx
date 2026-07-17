@@ -12,12 +12,15 @@ const AboutPage = () => {
       <h1 className="title">Sobre mim</h1>
       <p className="subtitle">Aprendizado contínuo, evolução constante</p>
 
-      <section className={styles.summary}>
-        <img src="/src/assets/images/lucas3.jpg" alt="" />
-        <div className={styles.content}>
-          {profile.about.map((about) => (
-            <p key={about}>{about}</p>
-          ))}
+      <section className={styles.about}>
+        <img src="/src/assets/images/lucas3.jpg" alt="Lucas Rocha" />
+
+        <div>
+          <div className={styles.info}>
+            {profile.about.map((about) => (
+              <p key={about}>{about}</p>
+            ))}
+          </div>
 
           <DownloadButton
             file="/documents/curriculo-lucas-rocha-fullstack.pdf"

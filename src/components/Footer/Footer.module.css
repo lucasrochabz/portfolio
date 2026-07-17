@@ -18,6 +18,7 @@
 .links {
   display: flex;
   justify-content: space-around;
+  align-items: start;
 }
 
 .links a:hover {
@@ -25,8 +26,7 @@
 }
 
 .list {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: var(--space-sm);
 }
 

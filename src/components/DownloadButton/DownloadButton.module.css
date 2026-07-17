@@ -1,7 +1,7 @@
 .download {
+  display: flex;
   background-color: var(--secondary-color);
   color: var(--primary-color);
-  display: flex;
   align-items: center;  
   font-size: var(--font-size-sm);
   text-transform: uppercase;

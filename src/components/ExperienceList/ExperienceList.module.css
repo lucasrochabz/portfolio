@@ -1,6 +1,5 @@
 .career {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: var(--space-lg);
   border-bottom: 1px solid var(--primary-color);
   padding-bottom: var(--space-lg);
@@ -8,14 +7,12 @@
 }
 
 .list {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: var(--space-md);
 }
 
 .item {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: var(--space-xs);
 }
 
