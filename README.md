@@ -1,6 +1,6 @@
 ## Portfolio
 
-![Imagem do projeto](./src/assets/images/projeto-portfolio.png)
+![Imagem do projeto](./src/assets/projects/portfolio.png)
 
 ### Sobre
 
@@ -91,9 +91,11 @@ portfolio/
 ├── .eslintrc
 ├── .gitignore
 ├── index.html
-├── package-lock.json
+├── jsconfig.json
 ├── package.json
+├── package-lock.json
 ├── README.md
+├── vercel.json
 └── vite.config.js
 ```
 
