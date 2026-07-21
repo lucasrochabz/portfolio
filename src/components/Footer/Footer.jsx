@@ -9,6 +9,7 @@ const navigationLinks = [
   { path: ROUTES.ABOUT, label: 'Sobre' },
   { path: ROUTES.PROJECTS, label: 'Projetos' },
   { path: ROUTES.CONTACT, label: 'Contato' },
+  { path: ROUTES.COURSE, label: 'Cursos' },
 ];
 
 // fix: remover Anchor e tentar ver se uso em outro canto

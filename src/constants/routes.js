@@ -3,5 +3,6 @@ export const ROUTES = Object.freeze({
   PROJECTS: '/projetos',
   ABOUT: '/sobre',
   CONTACT: '/contato',
+  COURSE: '/cursos',
   CHANGELOG: '/historico',
 });
