@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { profile } from '@/data/profile';
 import { ROUTES } from '@/constants/routes';
+import { Heading } from '@/components/Heading';
 // import { Anchor } from '@/components/Anchor';
 import styles from './Footer.module.css';
 
@@ -29,7 +30,7 @@ const Footer = () => {
 
         <div className={styles.content}>
           <Link to={ROUTES.HOME}>
-            <h2>Lucas Rocha</h2>
+            <Heading as="h2">Lucas Rocha</Heading>
           </Link>
 
           <div className={styles.links}>

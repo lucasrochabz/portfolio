@@ -1,10 +1,11 @@
 import PropTypes from 'prop-types';
+import { Heading } from '@/components/Heading';
 import styles from './ExperienceList.module.css';
 
 const ExperienceList = ({ experiences }) => {
   return (
     <section className={styles.career}>
-      <h2>Carreira</h2>
+      <Heading as="h2">Carreira</Heading>
 
       <ul className={styles.list}>
         {experiences.map(

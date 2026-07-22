@@ -3,6 +3,7 @@ import { ClockFading } from 'lucide-react';
 import { courses } from '@/data/courses';
 import { CourseList } from '@/components/CourseList';
 import { Layout } from '@/components/Layout';
+import { Heading } from '@/components/Heading';
 import styles from './CoursePage.module.css';
 
 const CoursePage = () => {
@@ -14,14 +15,14 @@ const CoursePage = () => {
 
   return (
     <Layout>
-      <h1 className="title">{courses.title}</h1>
+      <Heading variant="title">{courses.title}</Heading>
       <p className="subtitle">{courses.subtitle}</p>
 
       <ul className={styles.statistics}>
         <li className={styles.card}>
           <div>
             <GraduationCap />
-            <h2>{totalCourses} cursos concluídos.</h2>
+            <Heading as="h2">{totalCourses} cursos concluídos.</Heading>
           </div>
 
           <p>
@@ -33,7 +34,7 @@ const CoursePage = () => {
         <li className={styles.card}>
           <div>
             <ClockFading />
-            <h2>+{totalHours} horas de estudo.</h2>
+            <Heading as="h2">+{totalHours} horas de estudo.</Heading>
           </div>
 
           <p>

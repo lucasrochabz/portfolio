@@ -1,6 +1,7 @@
 import { profile } from '@/data/profile';
 import { Anchor } from '../Anchor';
 import { Gallery } from '../Gallery';
+import { Heading } from '@/components/Heading';
 import styles from './Hero.module.css';
 
 const { role, specialization, email } = profile;
@@ -12,12 +13,11 @@ const Hero = () => {
 
       <div className={styles.content}>
         <h3>Olá, eu sou Lucas Rocha 👋</h3>
-
-        <h1 className="title">
+        <Heading variant="title">
           {role}
           <br />
           {specialization}
-        </h1>
+        </Heading>
 
         <p>
           Sou de Fortaleza, CE, e desenvolvo sites e aplicações para diferentes

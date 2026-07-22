@@ -1,5 +1,6 @@
 import { experiences } from '@/data/experiences';
 import { Layout } from '@/components/Layout';
+import { Heading } from '@/components/Heading';
 import { DownloadButton } from '@/components/DownloadButton';
 import { ExperienceList } from '@/components/ExperienceList';
 import { LanguageList } from '@/components/LanguageList';
@@ -8,7 +9,7 @@ import styles from './AboutPage.module.css';
 const AboutPage = () => {
   return (
     <Layout>
-      <h1 className="title">Sobre mim</h1>
+      <Heading variant="title">Sobre mim</Heading>
       <p className="subtitle">Aprendizado contínuo, evolução constante</p>
 
       <section className={styles.about}>

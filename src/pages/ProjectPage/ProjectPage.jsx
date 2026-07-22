@@ -1,6 +1,7 @@
 import { useParams } from 'react-router-dom';
 import { projects } from '@/data/projects';
 import { Layout } from '@/components/Layout';
+import { Heading } from '@/components/Heading';
 
 const images = import.meta.glob('/src/assets/projects/*', {
   eager: true,
@@ -16,7 +17,7 @@ const ProjectPage = () => {
   return (
     <Layout>
       <section>
-        <h1>Detalhes do Projeto</h1>
+        <Heading variant="title">Detalhes do Projeto</Heading>
         <h3>Projeto {project.name}</h3>
         <p>{project.summary}</p>
         <img src={imagePath} alt="Imagem do projeto" />

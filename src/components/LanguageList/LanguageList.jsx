@@ -1,10 +1,11 @@
 import { profile } from '@/data/profile';
+import { Heading } from '@/components/Heading';
 import styles from './LanguageList.module.css';
 
 const LanguageList = () => {
   return (
     <section className={styles.language}>
-      <h2>Idiomas</h2>
+      <Heading as="h2">Idiomas</Heading>
 
       <ul className={styles.list}>
         {profile.languages.map((language) => (
