@@ -7,8 +7,9 @@
 }
 
 .list {
-  display: grid;
-  gap: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
 }
 
 .item {

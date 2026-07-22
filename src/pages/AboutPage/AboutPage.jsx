@@ -1,4 +1,3 @@
-import { profile } from '@/data/profile';
 import { experiences } from '@/data/experiences';
 import { Layout } from '@/components/Layout';
 import { DownloadButton } from '@/components/DownloadButton';
@@ -17,9 +16,25 @@ const AboutPage = () => {
 
         <div>
           <div className={styles.info}>
-            {profile.about.map((about) => (
-              <p key={about}>{about}</p>
-            ))}
+            <p>
+              Olá! Sou Lucas Rocha, desenvolvedor web de Fortaleza, CE. Atuo na
+              criação de sites e aplicações modernas, buscando unir desempenho,
+              usabilidade e qualidade em cada projeto.
+            </p>
+
+            <p>
+              Tenho experiência com JavaScript, TypeScript, React e Node.js,
+              desenvolvendo soluções responsivas e escaláveis para diferentes
+              plataformas e dispositivos.
+            </p>
+
+            <p>
+              Estou sempre aprimorando minhas habilidades e acompanhando novas
+              tecnologias, com foco em boas práticas e desenvolvimento contínuo.
+              Meu objetivo é transformar ideias em produtos digitais eficientes
+              que gerem valor para empresas e proporcionem uma ótima experiência
+              aos usuários.
+            </p>
           </div>
 
           <DownloadButton

@@ -1,15 +1,14 @@
 import { Link } from 'react-router-dom';
 import { profile } from '@/data/profile';
-import { ROUTES } from '../../constants/routes';
+import { ROUTES } from '@/constants/routes';
 // import { Anchor } from '@/components/Anchor';
 import styles from './Footer.module.css';
 
 const navigationLinks = [
-  { path: ROUTES.HOME, label: 'Home' },
   { path: ROUTES.ABOUT, label: 'Sobre' },
   { path: ROUTES.PROJECTS, label: 'Projetos' },
-  { path: ROUTES.CONTACT, label: 'Contato' },
   { path: ROUTES.COURSE, label: 'Cursos' },
+  { path: ROUTES.CONTACT, label: 'Contato' },
 ];
 
 // fix: remover Anchor e tentar ver se uso em outro canto
@@ -29,7 +28,9 @@ const Footer = () => {
         </ul> */}
 
         <div className={styles.content}>
-          <h2>Lucas Rocha</h2>
+          <Link to={ROUTES.HOME}>
+            <h2>Lucas Rocha</h2>
+          </Link>
 
           <div className={styles.links}>
             <ul className={styles.list}>

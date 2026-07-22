@@ -66,6 +66,7 @@ portfolio/
 │   │
 │   ├── data/
 │   │   ├── changelog.js
+│   │   ├── courses.js
 │   │   ├── experiences.js
 │   │   ├── profile.js
 │   │   ├── projects.js

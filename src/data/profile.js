@@ -4,20 +4,6 @@ export const profile = {
   specialization: 'Full Stack',
   email: 'lucasbezerrar@gmail.com',
   location: 'Fortaleza, Ceará',
-  hero: {
-    greeting: 'Olá, eu sou Lucas Rocha 👋',
-    description:
-      'Sou de Fortaleza, CE, e desenvolvo sites e aplicações para diferentes plataformas e dispositivos, ajudando empresas a se destacarem no ambiente digital.',
-    contactSubject: 'Gostaria de falar sobre um projeto',
-    contactLabel: 'Entre em contato',
-  },
-  about: [
-    'Olá! Sou Lucas Rocha, desenvolvedor web de Fortaleza, CE. Atuo na criação de sites e aplicações modernas, buscando unir desempenho, usabilidade e qualidade em cada projeto.',
-
-    'Tenho experiência com JavaScript, TypeScript, React e Node.js, desenvolvendo soluções responsivas e escaláveis para diferentes plataformas e dispositivos.',
-
-    'Estou sempre aprimorando minhas habilidades e acompanhando novas tecnologias, com foco em boas práticas e desenvolvimento contínuo. Meu objetivo é transformar ideias em produtos digitais eficientes que gerem valor para empresas e proporcionem uma ótima experiência aos usuários.',
-  ],
   languages: [
     { name: 'Português', level: 'Nativo' },
     { name: 'Inglês', level: 'Intermediário' },

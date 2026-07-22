@@ -18,10 +18,10 @@ const CoursePage = () => {
       <p className="subtitle">{courses.subtitle}</p>
 
       <ul className={styles.statistics}>
-        <li className={styles.item}>
+        <li className={styles.card}>
           <div>
             <GraduationCap />
-            <h2>{totalCourses} cursos concluídos</h2>
+            <h2>{totalCourses} cursos concluídos.</h2>
           </div>
 
           <p>
@@ -30,7 +30,7 @@ const CoursePage = () => {
           </p>
         </li>
 
-        <li className={styles.item}>
+        <li className={styles.card}>
           <div>
             <ClockFading />
             <h2>+{totalHours} horas de estudo.</h2>

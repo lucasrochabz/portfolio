@@ -3,7 +3,7 @@ import { Anchor } from '../Anchor';
 import { Gallery } from '../Gallery';
 import styles from './Hero.module.css';
 
-const { role, specialization, email, hero } = profile;
+const { role, specialization, email } = profile;
 
 const Hero = () => {
   return (
@@ -11,7 +11,7 @@ const Hero = () => {
       <Gallery />
 
       <div className={styles.content}>
-        <h3>{hero.greeting}</h3>
+        <h3>Olá, eu sou Lucas Rocha 👋</h3>
 
         <h1 className="title">
           {role}
@@ -19,15 +19,19 @@ const Hero = () => {
           {specialization}
         </h1>
 
-        <p>{hero.description}</p>
+        <p>
+          Sou de Fortaleza, CE, e desenvolvo sites e aplicações para diferentes
+          plataformas e dispositivos, ajudando empresas a se destacarem no
+          ambiente digital.
+        </p>
 
         <Anchor.Root
           href={`mailto:${email}?subject=${encodeURIComponent(
-            hero.contactSubject,
+            'Gostaria de falar sobre um projeto',
           )}`}
           variant="cta"
         >
-          {hero.contactLabel}
+          Entre em contato
         </Anchor.Root>
       </div>
     </section>
