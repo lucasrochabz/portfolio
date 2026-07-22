@@ -5,6 +5,7 @@ export const projects = {
     {
       id: 1,
       name: 'Bodega',
+      slug: 'bodega',
       description:
         'Este projeto é uma simulação de e-commerce, desenvolvido com JavaScript e React no front-end, proporcionando uma experiência de compra online completa e eficiente.',
       tools: ['JavaScript', 'React', 'React Router'],
@@ -25,6 +26,7 @@ export const projects = {
     {
       id: 2,
       name: 'Bodega API',
+      slug: 'bodega-api',
       description:
         'API de e-commerce em Node.js e Express que conecta o front-end ao banco de dados, com funcionalidades de autenticação, gerenciamento de produtos, estoque e pedidos.',
       tools: ['Node.js', 'Express', 'MySQL', 'Json Web Token', 'Bcrypt'],
@@ -45,6 +47,7 @@ export const projects = {
     {
       id: 3,
       name: 'To-do List',
+      slug: 'to-do-list',
       description:
         'Aplicação de lista de tarefas desenvolvida com JavaScript e React em arquitetura SPA, permitindo criar, editar, concluir, restaurar e excluir tarefas, com filtros, busca e persistência de dados no localStorage.',
       tools: ['TypeScript', 'React', 'React Router'],
@@ -65,6 +68,7 @@ export const projects = {
     {
       id: 4,
       name: 'News Scraper',
+      slug: 'news-scraper',
       description:
         'Aplicação que extrai e exibe manchetes de notícias usando Python com BeautifulSoup para web scraping e JavaScript para renderização dinâmica no navegador.',
       tools: ['JavaScript', 'Python', 'BeautifulSoup'],
@@ -85,6 +89,7 @@ export const projects = {
     {
       id: 5,
       name: 'Portfólio',
+      slug: 'portfolio',
       description:
         'Este projeto é meu portfólio como desenvolvedor, reunindo minha trajetória, habilidades e principais projetos em um só lugar, representando minha evolução na programação.',
       tools: ['JavaScript', 'React', 'React Router'],

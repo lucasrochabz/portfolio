@@ -1,8 +1,11 @@
 export const ROUTES = Object.freeze({
   HOME: '/',
-  PROJECTS: '/projetos',
   ABOUT: '/sobre',
-  CONTACT: '/contato',
+  PROJECTS: {
+    INDEX: '/projetos',
+    DETAILS: '/projetos/:slug',
+  },
   COURSE: '/cursos',
+  CONTACT: '/contato',
   CHANGELOG: '/historico',
 });
