@@ -18,7 +18,7 @@ const ProjectPage = () => {
       <section>
         <h1>Detalhes do Projeto</h1>
         <h3>Projeto {project.name}</h3>
-        <p>{project.description}</p>
+        <p>{project.summary}</p>
         <img src={imagePath} alt="Imagem do projeto" />
       </section>
     </Layout>

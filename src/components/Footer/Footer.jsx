@@ -6,7 +6,7 @@ import styles from './Footer.module.css';
 
 const navigationLinks = [
   { path: ROUTES.ABOUT, label: 'Sobre' },
-  { path: ROUTES.PROJECTS, label: 'Projetos' },
+  { path: ROUTES.PROJECTS.INDEX, label: 'Projetos' },
   { path: ROUTES.COURSE, label: 'Cursos' },
   { path: ROUTES.CONTACT, label: 'Contato' },
 ];

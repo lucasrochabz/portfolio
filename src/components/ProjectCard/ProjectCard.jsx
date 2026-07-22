@@ -27,7 +27,7 @@ const ProjectCard = ({ project }) => {
 
         <ToolList tools={project.tools} />
 
-        <p className={styles.description}>{project.description}</p>
+        <p className={styles.summary}>{project.summary}</p>
 
         <nav className={styles.links}>
           {project.links.map((link) => (
@@ -57,7 +57,7 @@ ProjectCard.propTypes = {
         variant: PropTypes.oneOf(['demo', 'repo']),
       }),
     ),
-    description: PropTypes.string.isRequired,
+    summary: PropTypes.string.isRequired,
   }).isRequired,
 };
 
