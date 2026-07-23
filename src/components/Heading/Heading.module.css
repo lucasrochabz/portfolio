@@ -2,3 +2,13 @@
   font-size: var(--font-size-xl);
   line-height: 1.1;
 }
+
+.logo {
+  color: var(--white-color);
+  font-size: 2rem;
+  line-height: 1.1;
+}
+
+.logo:hover {
+  opacity: 0.9;
+}

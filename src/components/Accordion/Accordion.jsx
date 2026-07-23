@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { Heading } from '../Heading';
 import styles from './Accordion.module.css';
 
 // fix: mudar nome desse componente
@@ -8,7 +9,10 @@ const Accordion = ({ versions }) => {
       {versions.map((release) => (
         <li key={release.version} className={styles.card}>
           <div className={styles.top}>
-            <h2 className={styles.version}>{release.version}</h2>
+            <Heading as="h2" className={styles.version}>
+              {release.version}
+            </Heading>
+
             <span>{release.date}</span>
           </div>
 

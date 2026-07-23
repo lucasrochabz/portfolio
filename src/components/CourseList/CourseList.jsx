@@ -1,4 +1,5 @@
 import { courses } from '@/data/courses';
+import { Heading } from '@/components/Heading';
 import styles from './CourseList.module.css';
 
 const CourseList = () => {
@@ -6,7 +7,7 @@ const CourseList = () => {
     <ul className={styles.list}>
       {courses.items.map((course) => (
         <li key={course.name} className={styles.item}>
-          <h3>{course.name}</h3>
+          <Heading as="h3">{course.name}</Heading>
           <p>{course.institution}</p>
           <p>Data de conclusão: {course.completedAt}</p>
           <p>{course.workload} horas</p>

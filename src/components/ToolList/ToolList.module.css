@@ -5,7 +5,7 @@
   margin-bottom: var(--space-md);
 }
 
-.list li {
+.item {
   font-size: var(--font-size-xs);
   border: 1px solid var(--deep-navy-50-color);
   border-radius: 100px;

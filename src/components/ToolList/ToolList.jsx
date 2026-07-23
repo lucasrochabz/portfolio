@@ -5,7 +5,9 @@ const ToolList = ({ tools }) => {
   return (
     <ul className={styles.list}>
       {tools.map((tool) => (
-        <li key={tool}>{tool}</li>
+        <li key={tool} className={styles.item}>
+          {tool}
+        </li>
       ))}
     </ul>
   );

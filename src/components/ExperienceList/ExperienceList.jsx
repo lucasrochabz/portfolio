@@ -11,7 +11,9 @@ const ExperienceList = ({ experiences }) => {
         {experiences.map(
           ({ company, role, location, startDate, endDate, duration }) => (
             <li key={company} className={styles.item}>
-              <h3 className={styles.role}>{role}</h3>
+              <Heading as="h3" className={styles.role}>
+                {role}
+              </Heading>
 
               <p>
                 {company} — {location}

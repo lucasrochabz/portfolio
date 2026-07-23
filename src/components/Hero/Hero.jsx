@@ -1,6 +1,6 @@
 import { profile } from '@/data/profile';
-import { Anchor } from '../Anchor';
-import { Gallery } from '../Gallery';
+import { Anchor } from '@/components/Anchor';
+import { Gallery } from '@/components/Gallery';
 import { Heading } from '@/components/Heading';
 import styles from './Hero.module.css';
 
@@ -12,7 +12,7 @@ const Hero = () => {
       <Gallery />
 
       <div className={styles.content}>
-        <h3>Olá, eu sou Lucas Rocha 👋</h3>
+        <Heading as="h3">Olá, eu sou Lucas Rocha 👋</Heading>
         <Heading variant="title">
           {role}
           <br />

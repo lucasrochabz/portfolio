@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { ROUTES } from '@/constants/routes';
-import { Anchor } from '../Anchor';
+import { Heading } from '@/components/Heading';
+import { Anchor } from '@/components/Anchor';
 import styles from './Header.module.css';
 
 const Header = () => {
@@ -8,7 +9,9 @@ const Header = () => {
     <header className={styles.headerBg}>
       <div className={styles.header}>
         <Link to={ROUTES.HOME}>
-          <h2 className="logo">Lucas Rocha</h2>
+          <Heading as="h2" variant="logo">
+            Lucas Rocha
+          </Heading>
         </Link>
 
         <nav>

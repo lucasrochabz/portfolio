@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { Heading } from '@/components/Heading';
 import { ToolList } from '@/components/ToolList';
 import { Anchor } from '@/components/Anchor';
 import styles from './ProjectCard.module.css';
@@ -23,7 +24,9 @@ const ProjectCard = ({ project }) => {
       </figure>
 
       <div className={styles.content}>
-        <h2 className={styles.title}>{project.name}</h2>
+        <Heading as="h2" className={styles.name}>
+          {project.name}
+        </Heading>
 
         <ToolList tools={project.tools} />
 
