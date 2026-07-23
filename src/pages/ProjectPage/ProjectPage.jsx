@@ -7,6 +7,7 @@ const images = import.meta.glob('/src/assets/projects/*', {
   eager: true,
 });
 
+// Fix: melhorar essa página
 const ProjectPage = () => {
   const { slug } = useParams();
   const project = projects.items.find((project) => project.slug === slug);

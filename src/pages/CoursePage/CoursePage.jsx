@@ -18,8 +18,8 @@ const CoursePage = () => {
       <Heading variant="title">{courses.title}</Heading>
       <p className="subtitle">{courses.subtitle}</p>
 
-      <ul className={styles.statistics}>
-        <li className={styles.card}>
+      <section className={styles.statistics}>
+        <article className={styles.card}>
           <div>
             <GraduationCap />
             <Heading as="h2">{totalCourses} cursos concluídos.</Heading>
@@ -29,9 +29,9 @@ const CoursePage = () => {
             Aprendizado contínuo para evoluir como desenvolvedor e acompanhar a
             evolução das tecnologias.
           </p>
-        </li>
+        </article>
 
-        <li className={styles.card}>
+        <article className={styles.card}>
           <div>
             <ClockFading />
             <Heading as="h2">+{totalHours} horas de estudo.</Heading>
@@ -41,8 +41,8 @@ const CoursePage = () => {
             Tempo dedicado ao aprendizado teórico e prático, explorando
             fundamentos da engenharia de software, ferramentas e frameworks.
           </p>
-        </li>
-      </ul>
+        </article>
+      </section>
 
       <CourseList />
     </Layout>

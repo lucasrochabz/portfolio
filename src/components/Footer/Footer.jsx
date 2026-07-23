@@ -33,7 +33,7 @@ const Footer = () => {
             <Heading as="h2">Lucas Rocha</Heading>
           </Link>
 
-          <div className={styles.links}>
+          <nav className={styles.links}>
             <ul className={styles.list}>
               <li className={styles.top}>Páginas</li>
 
@@ -54,10 +54,10 @@ const Footer = () => {
                 </li>
               ))}
             </ul>
-          </div>
+          </nav>
         </div>
 
-        <div className={styles.bottom}>
+        <div className={styles.copyright}>
           <p>{profile.copyright}</p>
 
           <Link to={ROUTES.CHANGELOG}>

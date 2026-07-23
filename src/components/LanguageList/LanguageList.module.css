@@ -1,8 +1,10 @@
+/* fix: resolver isso. Acho que tem que fazer um padrão */
 .language h2 {
   margin-bottom: var(--space-lg);
 }
 
 .list {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: var(--space-xs);
 }

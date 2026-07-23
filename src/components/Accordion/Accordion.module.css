@@ -1,5 +1,6 @@
-.accordion {
-  display: grid;
+.list {
+  display: flex;
+  flex-direction: column;
   gap: var(--space-lg);
 }
 
@@ -16,7 +17,7 @@
   border-color: var(--primary-color);
 }
 
-.top {
+.header {
   display: flex;
   align-items: center;
   gap: var(--space-md);
@@ -32,12 +33,12 @@
   padding: 0.5rem 1rem;
 }
 
-.card span {
+.date {
   font-size: var(--font-size-base);
   font-weight: 600;
 }
 
-.card p {
+.description {
   font-size: var(--font-size-base);
 }
 

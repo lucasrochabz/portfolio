@@ -9,7 +9,7 @@ const CourseList = () => {
         <li key={course.name} className={styles.item}>
           <Heading as="h3">{course.name}</Heading>
           <p>{course.institution}</p>
-          <p>Data de conclusão: {course.completedAt}</p>
+          <time>Data de conclusão: {course.completedAt}</time>
           <p>{course.workload} horas</p>
         </li>
       ))}
