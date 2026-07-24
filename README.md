@@ -1,25 +1,37 @@
-# Portfolio
+## Portfolio
 
-![Imagem do projeto](./src/assets/images/projeto-portfolio.png)
+![Imagem do projeto](./src/assets/projects/portfolio.png)
 
-## Sobre
+### Sobre
 
 Este projeto é meu portfólio como desenvolvedor, onde apresento um pouco sobre minha trajetória, minhas habilidades e alguns dos projetos que desenvolvi. A ideia é reunir em um só lugar tudo o que representa minha evolução como profissional e minhas principais criações no mundo da programação.
 
-## Tecnologias
+### Tecnologias
 
-- **JavaScript**: Linguagem de programação utilizada no projeto.
-- **React**: Biblioteca JavaScript para criação de interfaces de usuário.
-- **React Router**: Gerencia rotas da aplicação, permitindo navegar entre páginas sem recarregar.
-- **HTML**: Linguagem de marcação utilizada para estruturar as páginas do projeto.
-- **CSS**: Linguagem de estilos utilizada para a estilização da interface.
+| Tecnologia   | Descrição                |
+| ------------ | ------------------------ |
+| JavaScript   | Linguagem de programação |
+| React        | Biblioteca de UI         |
+| React Router | Rotas na aplicação       |
+| Vite         | Build tool               |
+| HTML         | Estrutura de páginas     |
+| CSS Modules  | Estilos modulares        |
 
-## Requisitos
+### Funcionalidades
+
+- [] Adicionar
+
+### Preview
+
+Acesse o projeto online:
+https://lucasrochabz.vercel.app/
+
+### Requisitos
 
 - Node na versão versão 22.12 ou superior
 - NPM na versão 10.9 ou superior.
 
-## Como instalar?
+### Como instalar?
 
 1. Faça o clone do projeto.
 2. Abra o terminal e navegue até a pasta do projeto.
@@ -32,34 +44,47 @@ Este projeto é meu portfólio como desenvolvedor, onde apresento um pouco sobre
    npm run dev
    ```
 
-## Estrutura do projeto
+### Estrutura do projeto
 
 ```bash
 portfolio/
 ├── public/
 ├── src/
 │   ├── assets/
-│   │   └── images/
+│   │   ├── images/
+│   │   └── projects/
 │   │
 │   ├── components/
 │   │   ├── Header/
 │   │   │   ├── Header.jsx
 │   │   │   ├── Header.module.css
-│   │   │   └── index.js/
+│   │   │   └── index.js
 │   │   └── ...
 │   │
+│   ├── constants/
+│   │   └── routes.js
+│   │
 │   ├── data/
+│   │   ├── changelog.js
+│   │   ├── courses.js
+│   │   ├── experiences.js
+│   │   ├── profile.js
+│   │   ├── projects.js
+│   │   └── seo.js
+│   │
 │   ├── pages/
-│   │   ├── HomePage/
-│   │   │   ├── HomePage.jsx
-│   │   │   ├── HomePage.module.css
-│   │   │   └── index.js/
+│   │   ├── AboutPage/
+│   │   │   ├── AboutPage.jsx
+│   │   │   ├── AboutPage.module.css
+│   │   │   └── index.js
 │   │   └── ...
 │   │
 │   ├── routes/
 │   ├── styles/
 │   │   ├── base/
 │   │   └── tokens/
+│   │   └── utilities/
+│   │   └── index.css
 │   │
 │   ├── App.jsx
 │   └── main.jsx
@@ -67,12 +92,14 @@ portfolio/
 ├── .eslintrc
 ├── .gitignore
 ├── index.html
-├── package-lock.json
+├── jsconfig.json
 ├── package.json
+├── package-lock.json
 ├── README.md
+├── vercel.json
 └── vite.config.js
 ```
 
-## Encontrou algum problema?
+### Encontrou algum problema?
 
 Abra uma [issue](https://github.com/lucasrochabz/portifolio/issues) com sua sugestão ou crítica.

@@ -1,59 +1,54 @@
-import { Footer } from '../../components/Footer';
-import { Header } from '../../components/Header';
+import { experiences } from '@/data/experiences';
+import { Layout } from '@/components/Layout';
+import { Heading } from '@/components/Heading';
+import { DownloadButton } from '@/components/DownloadButton';
+import { ExperienceList } from '@/components/ExperienceList';
+import { LanguageList } from '@/components/LanguageList';
 import styles from './AboutPage.module.css';
 
 const AboutPage = () => {
   return (
-    <>
-      <Header />
+    <Layout>
+      <Heading variant="title">Sobre mim</Heading>
+      <p className="subtitle">Aprendizado contínuo, evolução constante</p>
 
-      <section className={styles.aboutPage}>
-        <h1 className="title">Sobre mim.</h1>
-        <h3>Transformando ideias em projetos digitais.</h3>
+      <section className={styles.about}>
+        <img src="/src/assets/images/lucas3.jpg" alt="Lucas Rocha" />
 
-        <div className={styles.grid}>
-          <img src="" alt="" />
-          <div className={styles.content}>
+        <div>
+          <div className={styles.info}>
             <p>
-              Olá, eu sou Lucas Rocha. Comecei como engenheiro de software em
-              2009, trabalhando com Flash.
-            </p>
-            <p>
-              Sou fundador e CEO da Resend. Antes disso, fui vice-presidente de
-              experiência do desenvolvedor na WorkOS e diretor de marketing na
-              Liferay Cloud. Sou brasileiro e agora moro em Fortaleza, Ceará,
-              com minha incrível esposa e minha linda filha.
-            </p>
-            <p>
-              Adoro o modo escuro , código aberto e projetos paralelos. Quando
-              não estou trabalhando, gosto de correr, assistir filmes e comer
-              queijo.
+              Olá! Sou Lucas Rocha, desenvolvedor web de Fortaleza, CE. Atuo na
+              criação de sites e aplicações modernas, buscando unir desempenho,
+              usabilidade e qualidade em cada projeto.
             </p>
 
-            <a
-              href="/path_do_arquivo.pdf"
-              download="/nome_do_arquivo_teste.pdf"
-            >
-              Currículo
-            </a>
+            <p>
+              Tenho experiência com JavaScript, TypeScript, React e Node.js,
+              desenvolvendo soluções responsivas e escaláveis para diferentes
+              plataformas e dispositivos.
+            </p>
+
+            <p>
+              Estou sempre aprimorando minhas habilidades e acompanhando novas
+              tecnologias, com foco em boas práticas e desenvolvimento contínuo.
+              Meu objetivo é transformar ideias em produtos digitais eficientes
+              que gerem valor para empresas e proporcionem uma ótima experiência
+              aos usuários.
+            </p>
           </div>
-        </div>
-        <div>
-          <h2>Carreira</h2>
-          <p>Desenvolvedor Web</p>
-          <p>704 Apps — Fortaleza, Ceará</p>
-          <p>Mai 2024 — Jan 2025 — 8 mes.</p>
-        </div>
 
-        <div>
-          <h2>Idiomas</h2>
-          <p>Português / Fluente</p>
-          <p>Inglês — Básico</p>
+          <DownloadButton
+            file="/documents/curriculo-lucas-rocha-fullstack.pdf"
+            label="Currículo"
+          />
         </div>
       </section>
 
-      <Footer />
-    </>
+      <ExperienceList experiences={experiences} />
+
+      <LanguageList />
+    </Layout>
   );
 };
 

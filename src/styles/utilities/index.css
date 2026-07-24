@@ -1,0 +1,16 @@
+.subtitle {
+  font-size: var(--font-size-base);
+  margin-top: var(--space-sm);
+  margin-bottom: var(--space-xl);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto 4rem;
+}
+
+@media (max-width: 800px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+}

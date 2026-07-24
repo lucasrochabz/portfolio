@@ -1,23 +1,26 @@
 import { Link } from 'react-router-dom';
-import { ROUTES } from '../../paths';
-import { ExternalLinkOld } from '../ExternalLinkOld';
+import { ROUTES } from '@/constants/routes';
+import { Heading } from '@/components/Heading';
+import { Anchor } from '@/components/Anchor';
 import styles from './Header.module.css';
 
 const Header = () => {
   return (
     <header className={styles.headerBg}>
       <div className={styles.header}>
-        <Link to={ROUTES.home}>
-          <h2 className={styles.logo}>Lucas Rocha</h2>
+        <Link to={ROUTES.HOME}>
+          <Heading as="h2" variant="logo">
+            Lucas Rocha
+          </Heading>
         </Link>
 
         <nav>
-          <ExternalLinkOld
+          <Anchor.Root
             href="mailto:lucasbezerrar@gmail.com?subject=Assunto%20do%20e-mail"
             variant="cta"
           >
             Entre em contato
-          </ExternalLinkOld>
+          </Anchor.Root>
         </nav>
       </div>
     </header>

@@ -1,16 +1,15 @@
-import { changelogData } from '../../data/changelogData';
-import { Layout } from '../../components/Layout';
-import { Accordion } from '../../components/Accordion';
-import styles from './ChangelogPage.module.css';
+import { changelog } from '@/data/changelog';
+import { Layout } from '@/components/Layout';
+import { Heading } from '@/components/Heading';
+import { Accordion } from '@/components/Accordion';
 
 const ChangelogPage = () => {
   return (
     <Layout>
-      <section className={styles.container}>
-        <h1 className="title">{changelogData.title}</h1>
-        <h3>{changelogData.subtitle}</h3>
-        <Accordion changelogData={changelogData} />
-      </section>
+      <Heading variant="title">{changelog.title}</Heading>
+      <p className="subtitle">{changelog.subtitle}</p>
+
+      <Accordion versions={changelog.versions} />
     </Layout>
   );
 };

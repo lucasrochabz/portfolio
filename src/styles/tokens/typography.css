@@ -1,29 +1,20 @@
-/* exemplo de uso */
-/* :root {
-  --font-primary: 'Roboto', sans-serif;
-  --font-secondary: 'Poppins', sans-serif;
+:root {
+  --font-family-base: 'Roboto', sans-serif;
+  --font-family-heading: 'Poppins', sans-serif;
 
-  --h1-size: 3rem;
-  --h2-size: 2.25rem;
-  --p-size: 1rem;
+  --font-size-xs: 0.75rem;    /* 12px */
+  --font-size-sm: 1.125rem;   /* 18px */
+  --font-size-base: 1.25rem;  /* 20px */
+  --font-size-md: 1.5rem;     /* 24px */
+  --font-size-lg: 2.25rem;    /* 36px */
+  --font-size-xl: 3rem;       /* 48px */
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+}
+
+/* :root {
   --line-height-tight: 1.1;
   --line-height-normal: 1.5;
 } */
-
-html {
-  font-family: 'Roboto', sanss-serif;
-}
-
-h1, h2, a, span {
-  font-family: 'Poppins', sans-serif;
-}
-
-.title {
-  font-size: 3rem;
-  line-height: 1.1;
-}
-
-.subtitle {
-  font-size: 2.25rem;
-  line-height: 1.1;
-}

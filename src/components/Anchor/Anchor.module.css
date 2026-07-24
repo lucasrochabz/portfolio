@@ -1,5 +1,5 @@
 .base {
-  font-size: 1.125rem;
+  font-size: var(--font-size-sm);
   letter-spacing: 0.015em;
   border-radius: 5px;
   padding: 0.5rem 1rem;
@@ -32,7 +32,7 @@
 .social {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: var(--space-sm);
 }
 
 .social:hover {

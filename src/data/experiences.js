@@ -1,0 +1,26 @@
+export const experiences = [
+  {
+    role: 'Desenvolvedor Web',
+    company: '704 Apps',
+    location: 'Fortaleza, Ceará',
+    startDate: 'Mai 2024',
+    endDate: 'Jan 2025',
+    duration: '8 meses',
+  },
+  {
+    role: 'Técnico em Edificações',
+    company: 'Quintto Arquitetura e Engenharia',
+    location: 'Fortaleza, Ceará',
+    startDate: 'Jan 2023',
+    endDate: 'Agosto 2023',
+    duration: '7 meses',
+  },
+  {
+    role: 'Auxiliar Administrativo',
+    company: 'Detran',
+    location: 'Fortaleza, Ceará',
+    startDate: 'Jun 2013',
+    endDate: 'Jan 2023',
+    duration: '9 anos e 7 meses',
+  },
+];

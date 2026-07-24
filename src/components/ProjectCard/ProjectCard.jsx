@@ -1,14 +1,21 @@
 import PropTypes from 'prop-types';
-import { ExternalLinkOld } from '../ExternalLinkOld';
+import { Heading } from '@/components/Heading';
+import { ToolList } from '@/components/ToolList';
+import { Anchor } from '@/components/Anchor';
 import styles from './ProjectCard.module.css';
 
-const images = import.meta.glob('/src/assets/images/*', {
+const images = import.meta.glob('/src/assets/projects/*', {
   eager: true,
 });
 
 const ProjectCard = ({ project }) => {
-  const imageModule = images[`/src/assets/images/${project.image}`];
+  const imageModule = images[`/src/assets/projects/${project.image}`];
   const imagePath = imageModule?.default;
+
+  const linkVariantMap = {
+    demo: 'primary',
+    repo: 'secondary',
+  };
 
   return (
     <div className={styles.card}>
@@ -16,28 +23,26 @@ const ProjectCard = ({ project }) => {
         <img src={imagePath} alt={imagePath} />
       </figure>
 
-      <div className={styles.info}>
-        <h2 className="subtitle">{project.name}</h2>
+      <div className={styles.content}>
+        <Heading as="h2" className={styles.name}>
+          {project.name}
+        </Heading>
 
-        <ul className={styles.list}>
-          {project.tools.map((tool, index) => (
-            <li key={index}>{tool}</li>
-          ))}
-        </ul>
+        <ToolList tools={project.tools} />
 
-        <p>{project.description}</p>
+        <p className={styles.summary}>{project.summary}</p>
 
-        <div className={styles.links}>
+        <nav className={styles.links}>
           {project.links.map((link) => (
-            <ExternalLinkOld
+            <Anchor.Root
               key={link.url}
               href={link.url}
-              variant={link.variant}
+              variant={linkVariantMap[link.type]}
             >
               {link.name}
-            </ExternalLinkOld>
+            </Anchor.Root>
           ))}
-        </div>
+        </nav>
       </div>
     </div>
   );
@@ -52,10 +57,10 @@ ProjectCard.propTypes = {
       PropTypes.shape({
         name: PropTypes.string.isRequired,
         url: PropTypes.string.isRequired,
-        variant: PropTypes.oneOf(['primary', 'secondary']),
+        variant: PropTypes.oneOf(['demo', 'repo']),
       }),
     ),
-    description: PropTypes.string.isRequired,
+    summary: PropTypes.string.isRequired,
   }).isRequired,
 };
 

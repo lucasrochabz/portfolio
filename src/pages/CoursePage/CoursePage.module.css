@@ -1,0 +1,21 @@
+.statistics {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: var(--space-lg);
+}
+
+.card {
+  border: 1px solid;
+  border-radius: 10px;
+  padding: var(--space-lg);
+}
+
+@media (max-width: 800px) {
+  .statistics {
+    grid-template-columns: 1fr;
+  }
+  .card {
+    padding: 1.5rem;
+  }
+}

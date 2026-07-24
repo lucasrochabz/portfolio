@@ -1,39 +1,38 @@
-import { useState } from 'react';
+import PropTypes from 'prop-types';
+import { Heading } from '@/components/Heading';
 import styles from './Accordion.module.css';
 
 // fix: mudar nome desse componente
-const Accordion = ({ changelogData }) => {
-  const [open, setOpen] = useState(null);
-
-  const toggle = (i) => setOpen(open === i ? null : i);
-
+const Accordion = ({ versions }) => {
   return (
-    <div className={styles.accordion}>
-      {changelogData.versions.map((version) => (
-        <article
-          key={version.version}
-          className={`${styles.card} ${
-            open === version.version ? styles.open : ''
-          }`}
-        >
-          <header>
-            <button onClick={() => toggle(version.version)}>
-              <div className={styles.versionHeader}>
-                <h2>{version.version}</h2>
-                <span>{version.date}</span>
-              </div>
+    <ul className={styles.list}>
+      {versions.map((release) => (
+        <li key={release.version}>
+          <article className={styles.card}>
+            <header className={styles.header}>
+              <Heading as="h2" className={styles.version}>
+                {release.version}
+              </Heading>
 
-              <span>{open === version.version ? '-' : '+'}</span>
-            </button>
-          </header>
+              <time className={styles.date}>{release.date}</time>
+            </header>
 
-          <div className={styles.content}>
-            <p>{version.description}</p>
-          </div>
-        </article>
+            <p className={styles.description}>{release.description}</p>
+          </article>
+        </li>
       ))}
-    </div>
+    </ul>
   );
+};
+
+Accordion.propTypes = {
+  versions: PropTypes.arrayOf(
+    PropTypes.shape({
+      version: PropTypes.string.isRequired,
+      date: PropTypes.string.isRequired,
+      description: PropTypes.string.isRequired,
+    }),
+  ).isRequired,
 };
 
 export default Accordion;

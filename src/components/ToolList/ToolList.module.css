@@ -1,0 +1,13 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-md);
+}
+
+.item {
+  font-size: var(--font-size-xs);
+  border: 1px solid var(--deep-navy-50-color);
+  border-radius: 100px;
+  padding: 0.5rem 1rem;
+}

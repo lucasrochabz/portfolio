@@ -1,19 +1,23 @@
-import { ROUTES } from '../paths';
-import { HomePage } from '../pages/HomePage';
-import { AboutPage } from '../pages/AboutPage';
-import { ChangelogPage } from '../pages/ChangelogPage';
+import { ROUTES } from '@/constants/routes';
+import { LayoutRoot } from '@/components/LayoutRoot';
+import { HomePage } from '@/pages/HomePage';
+import { ProjectsPage } from '@/pages/ProjectsPage';
+import { ProjectPage } from '@/pages/ProjectPage';
+import { AboutPage } from '@/pages/AboutPage';
+import { CoursePage } from '@/pages/CoursePage';
+import { ChangelogPage } from '@/pages/ChangelogPage';
 
+// fix: add página de rota não encontrada
 export const routes = [
   {
-    path: ROUTES.home,
-    element: <HomePage />,
-  },
-  {
-    path: ROUTES.about,
-    element: <AboutPage />,
-  },
-  {
-    path: ROUTES.changelog,
-    element: <ChangelogPage />,
+    element: <LayoutRoot />,
+    children: [
+      { path: ROUTES.HOME, element: <HomePage /> },
+      { path: ROUTES.PROJECTS.INDEX, element: <ProjectsPage /> },
+      { path: ROUTES.PROJECTS.DETAILS, element: <ProjectPage /> },
+      { path: ROUTES.ABOUT, element: <AboutPage /> },
+      { path: ROUTES.COURSE, element: <CoursePage /> },
+      { path: ROUTES.CHANGELOG, element: <ChangelogPage /> },
+    ],
   },
 ];

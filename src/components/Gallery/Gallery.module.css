@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 2rem;
+  gap: var(--space-lg);
 }
 
 .galleryItem {
@@ -16,6 +16,6 @@
 
 @media (max-width: 800px) {
   .gallery {
-    gap: 1rem;
+    gap: var(--space-md);
   }
 }

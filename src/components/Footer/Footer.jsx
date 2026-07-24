@@ -1,29 +1,66 @@
-import { ROUTES } from '../../paths';
 import { Link } from 'react-router-dom';
-import { footerData } from '../../data/footerData';
-import { ExternalLink } from '../ExternalLink';
+import { profile } from '@/data/profile';
+import { ROUTES } from '@/constants/routes';
+import { Heading } from '@/components/Heading';
+// import { Anchor } from '@/components/Anchor';
 import styles from './Footer.module.css';
 
+const navigationLinks = [
+  { path: ROUTES.ABOUT, label: 'Sobre' },
+  { path: ROUTES.PROJECTS.INDEX, label: 'Projetos' },
+  { path: ROUTES.COURSE, label: 'Cursos' },
+];
+
+// fix: remover Anchor e tentar ver se uso em outro canto
 const Footer = () => {
   return (
     <footer className={styles.footerBg}>
       <section className={styles.footer}>
-        <ul className={styles.listLinks}>
-          {footerData.socials.map((social) => (
+        {/* <ul className={styles.listLinks}>
+          {footer.socials.map((social) => (
             <li key={social.text}>
-              <ExternalLink.Root href={social.url} variant="social">
-                <ExternalLink.Icon src={social.iconPath} />
+              <Anchor.Root href={social.url} variant="social">
+                <Anchor.Icon src={social.iconPath} />
                 {social.text}
-              </ExternalLink.Root>
+              </Anchor.Root>
             </li>
           ))}
-        </ul>
+        </ul> */}
 
-        <div className={styles.bottom}>
-          <p>{footerData.subtitle}</p>
+        <div className={styles.content}>
+          <Link to={ROUTES.HOME}>
+            <Heading as="h2">Lucas Rocha</Heading>
+          </Link>
 
-          <Link to={ROUTES.changelog}>
-            <p className={styles.version}>{footerData.version}</p>
+          <nav className={styles.links}>
+            <ul className={styles.list}>
+              <li className={styles.top}>Páginas</li>
+
+              {navigationLinks.map((link) => (
+                <li key={link.label}>
+                  <Link to={link.path}>{link.label}</Link>
+                </li>
+              ))}
+            </ul>
+
+            <ul className={styles.list}>
+              <li className={styles.top}>Redes Sociais</li>
+              {profile.socials.map((social) => (
+                <li key={social.text}>
+                  <a href={social.url} target="_blank">
+                    {social.text}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        </div>
+
+        <div className={styles.copyright}>
+          <p>{profile.copyright}</p>
+
+          <Link to={ROUTES.CHANGELOG}>
+            <p className={styles.version}>{profile.version}</p>
           </Link>
         </div>
       </section>
