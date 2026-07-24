@@ -12,6 +12,8 @@
 .content {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  justify-items: start;
+  align-items: start;
   border-bottom: 1px solid var(--white-80-color);
   padding-bottom: var(--space-lg);
   margin-bottom: var(--space-lg);

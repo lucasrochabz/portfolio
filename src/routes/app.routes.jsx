@@ -4,7 +4,6 @@ import { HomePage } from '@/pages/HomePage';
 import { ProjectsPage } from '@/pages/ProjectsPage';
 import { ProjectPage } from '@/pages/ProjectPage';
 import { AboutPage } from '@/pages/AboutPage';
-import { ContactPage } from '@/pages/ContactPage';
 import { CoursePage } from '@/pages/CoursePage';
 import { ChangelogPage } from '@/pages/ChangelogPage';
 
@@ -17,7 +16,6 @@ export const routes = [
       { path: ROUTES.PROJECTS.INDEX, element: <ProjectsPage /> },
       { path: ROUTES.PROJECTS.DETAILS, element: <ProjectPage /> },
       { path: ROUTES.ABOUT, element: <AboutPage /> },
-      { path: ROUTES.CONTACT, element: <ContactPage /> },
       { path: ROUTES.COURSE, element: <CoursePage /> },
       { path: ROUTES.CHANGELOG, element: <ChangelogPage /> },
     ],
