@@ -2,6 +2,7 @@ import { useParams } from 'react-router-dom';
 import { projects } from '@/data/projects';
 import { Layout } from '@/components/Layout';
 import { Heading } from '@/components/Heading';
+import styles from './ProjectPage.module.css';
 
 const images = import.meta.glob('/src/assets/projects/*', {
   eager: true,
@@ -17,12 +18,12 @@ const ProjectPage = () => {
 
   return (
     <Layout>
-      <section>
-        <Heading variant="title">Detalhes do Projeto</Heading>
-
-        <Heading as="h3">Projeto {project.name}</Heading>
-        <p>{project.summary}</p>
-        <img src={imagePath} alt="Imagem do projeto" />
+      <section className={styles.project}>
+        <Heading variant="title">{project.name}</Heading>
+        <div className={styles.content}>
+          <img src={imagePath} alt="Imagem do projeto" />
+          <p>{project.summary}</p>
+        </div>
       </section>
     </Layout>
   );
