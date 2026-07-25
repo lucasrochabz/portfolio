@@ -14,9 +14,8 @@ const navigationLinks = [
 // fix: remover Anchor e tentar ver se uso em outro canto
 const Footer = () => {
   return (
-    <footer className={styles.footerBg}>
-      <section className={styles.footer}>
-        {/* <ul className={styles.listLinks}>
+    <footer className={styles.footer}>
+      {/* <ul className={styles.listLinks}>
           {footer.socials.map((social) => (
             <li key={social.text}>
               <Anchor.Root href={social.url} variant="social">
@@ -27,6 +26,7 @@ const Footer = () => {
           ))}
         </ul> */}
 
+      <header className={styles.header}>
         <div className={styles.content}>
           <Link to={ROUTES.HOME}>
             <Heading as="h2">Lucas Rocha</Heading>
@@ -55,12 +55,14 @@ const Footer = () => {
             </ul>
           </nav>
         </div>
+      </header>
 
+      <section className={styles.section}>
         <div className={styles.copyright}>
           <p>{profile.copyright}</p>
 
-          <Link to={ROUTES.CHANGELOG}>
-            <p className={styles.version}>{profile.version}</p>
+          <Link to={ROUTES.CHANGELOG} className={styles.version}>
+            {profile.version}
           </Link>
         </div>
       </section>
