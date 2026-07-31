@@ -12,11 +12,6 @@ const ProjectCard = ({ project }) => {
   const imageModule = images[`/src/assets/projects/${project.image}`];
   const imagePath = imageModule?.default;
 
-  const linkVariantMap = {
-    demo: 'primary',
-    repo: 'secondary',
-  };
-
   return (
     <div className={styles.card}>
       <figure>
@@ -33,15 +28,13 @@ const ProjectCard = ({ project }) => {
         <p className={styles.summary}>{project.summary}</p>
 
         <nav className={styles.links}>
-          {project.links.map((link) => (
-            <Anchor.Root
-              key={link.url}
-              href={link.url}
-              variant={linkVariantMap[link.type]}
-            >
-              {link.name}
-            </Anchor.Root>
-          ))}
+          <Anchor.Root href={project.links.demo} variant="primary">
+            Site
+          </Anchor.Root>
+
+          <Anchor.Root href={project.links.repository} variant="secondary">
+            Repositório
+          </Anchor.Root>
         </nav>
       </div>
     </div>
@@ -53,13 +46,10 @@ ProjectCard.propTypes = {
     image: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     tools: PropTypes.arrayOf(PropTypes.string).isRequired,
-    links: PropTypes.arrayOf(
-      PropTypes.shape({
-        name: PropTypes.string.isRequired,
-        url: PropTypes.string.isRequired,
-        variant: PropTypes.oneOf(['demo', 'repo']),
-      }),
-    ),
+    links: PropTypes.shape({
+      demo: PropTypes.string.isRequired,
+      repository: PropTypes.string.isRequired,
+    }),
     summary: PropTypes.string.isRequired,
   }).isRequired,
 };

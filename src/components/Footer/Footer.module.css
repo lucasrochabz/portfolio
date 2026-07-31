@@ -21,7 +21,7 @@
   flex-wrap: wrap;
   align-items: start;
   border-left: 1px solid;
-  gap: var(--space-lg);
+  gap: var(--space-xl);
   padding-left: 1.5rem;
 }
 
@@ -43,7 +43,7 @@
 }
 
 .section {
-  background-color: #000;
+  background-color: #040f1d;
   padding: 2rem 0px;
 }
 
