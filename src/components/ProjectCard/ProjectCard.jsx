@@ -13,9 +13,9 @@ const ProjectCard = ({ project }) => {
   const imagePath = imageModule?.default;
 
   return (
-    <div className={styles.card}>
+    <article className={styles.card}>
       <figure>
-        <img src={imagePath} alt={imagePath} />
+        <img src={imagePath} alt={project.name} />
       </figure>
 
       <div className={styles.content}>
@@ -37,7 +37,7 @@ const ProjectCard = ({ project }) => {
           </Anchor.Root>
         </nav>
       </div>
-    </div>
+    </article>
   );
 };
 

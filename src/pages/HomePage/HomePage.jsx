@@ -15,7 +15,7 @@ const HomePage = () => {
       <main>
         <Hero />
         <Marquee />
-        <ProjectList projects={featuredProjects} />
+        <ProjectList withContainer={true} projects={featuredProjects} />
       </main>
       <Footer />
     </>

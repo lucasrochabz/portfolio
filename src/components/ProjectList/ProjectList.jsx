@@ -2,18 +2,24 @@ import PropTypes from 'prop-types';
 import { ProjectCard } from '../ProjectCard';
 import styles from './ProjectList.module.css';
 
-// fix: add proptypes
-const ProjectList = ({ projects }) => {
+const ProjectList = ({ projects, withContainer = false }) => {
+  const className = withContainer
+    ? `container ${styles.list}`
+    : styles.projectList;
+
   return (
-    <section className={`container ${styles.projectList}`}>
-      {projects.map((project, id) => (
-        <ProjectCard key={id} project={project} />
+    <ul className={className}>
+      {projects.map((project) => (
+        <li key={project.id}>
+          <ProjectCard project={project} />
+        </li>
       ))}
-    </section>
+    </ul>
   );
 };
 
 ProjectList.propTypes = {
+  withContainer: PropTypes.bool,
   projects: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.number.isRequired,
