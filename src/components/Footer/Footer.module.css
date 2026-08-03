@@ -1,5 +1,5 @@
 .footer {
-  color: var(--white-80-color);
+  color: var(--white-color);
 }
 
 .header {
@@ -21,13 +21,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: start;
-  border-left: 1px solid;
   gap: var(--space-xl);
-  padding-left: 1.5rem;
-}
-
-.links a:hover {
-  color: var(--secondary-color);
 }
 
 .list {
@@ -37,10 +31,19 @@
   gap: var(--space-sm);
 }
 
-.top {
+.tilte {
   font-size: var(--font-size-base);
-  font-weight: 600;
+  text-transform: uppercase;
   margin-bottom: var(--space-md);
+}
+
+.list a {
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+.list a:hover {
+  opacity: 1;
 }
 
 .section {
@@ -53,6 +56,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
   margin: 0 auto;
 }
 

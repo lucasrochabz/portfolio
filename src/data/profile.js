@@ -53,6 +53,6 @@ export const profile = {
     'Jest',
     'Cypress',
   ],
-  copyright: 'Copyright © 2024 - 2026 Lucas Rocha',
+  copyright: '© 2026 Lucas Rocha. Todos os direitos reservados.',
   version: 'v2.0',
 };

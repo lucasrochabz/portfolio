@@ -8,13 +8,13 @@ const images = import.meta.glob('/src/assets/projects/*', {
   eager: true,
 });
 
-const ProjectCard = ({ project }) => {
+const ProjectCard = ({ project, reverse }) => {
   const imageModule = images[`/src/assets/projects/${project.image}`];
   const imagePath = imageModule?.default;
 
   return (
-    <article className={styles.card}>
-      <figure>
+    <article className={`${styles.card} ${reverse ? styles.reverse : ''}`}>
+      <figure className={styles.figure}>
         <img src={imagePath} alt={project.name} />
       </figure>
 
@@ -42,6 +42,7 @@ const ProjectCard = ({ project }) => {
 };
 
 ProjectCard.propTypes = {
+  reverse: PropTypes.bool,
   project: PropTypes.shape({
     image: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,

@@ -3,15 +3,13 @@ import { ProjectCard } from '../ProjectCard';
 import styles from './ProjectList.module.css';
 
 const ProjectList = ({ projects, withContainer = false }) => {
-  const className = withContainer
-    ? `container ${styles.list}`
-    : styles.projectList;
+  const className = withContainer ? `container ${styles.list}` : styles.list;
 
   return (
     <ul className={className}>
-      {projects.map((project) => (
-        <li key={project.id}>
-          <ProjectCard project={project} />
+      {projects.map((project, index) => (
+        <li key={project.id} className={styles.item}>
+          <ProjectCard project={project} reverse={index % 2 !== 0} />
         </li>
       ))}
     </ul>

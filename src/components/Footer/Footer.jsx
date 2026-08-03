@@ -33,26 +33,37 @@ const Footer = () => {
           </Link>
 
           <nav className={styles.links}>
-            <ul className={styles.list}>
-              <li className={styles.top}>Páginas</li>
+            <div>
+              <Heading as="h3" className={styles.tilte}>
+                Páginas
+              </Heading>
+              <ul className={styles.list}>
+                {navigationLinks.map((link) => (
+                  <li key={link.label}>
+                    <Link to={link.path}>{link.label}</Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
 
-              {navigationLinks.map((link) => (
-                <li key={link.label}>
-                  <Link to={link.path}>{link.label}</Link>
-                </li>
-              ))}
-            </ul>
-
-            <ul className={styles.list}>
-              <li className={styles.top}>Redes Sociais</li>
-              {profile.socials.map((social) => (
-                <li key={social.text}>
-                  <a href={social.url} target="_blank">
-                    {social.text}
-                  </a>
-                </li>
-              ))}
-            </ul>
+            <div>
+              <Heading as="h3" className={styles.tilte}>
+                Redes Sociais
+              </Heading>
+              <ul className={styles.list}>
+                {profile.socials.map((social) => (
+                  <li key={social.text}>
+                    <a
+                      href={social.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {social.text}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </nav>
         </div>
       </header>
