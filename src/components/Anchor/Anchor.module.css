@@ -16,7 +16,7 @@
 }
 
 .primary {
-  background-color: var(--primary-color);
+  background: linear-gradient(var(--primary-color), #040f1d);
   color: var(--white-color);
 }
 
@@ -26,7 +26,7 @@
 }
 
 .cta {
-  background-color: var(--secondary-color);
+  background: linear-gradient(var(--secondary-color), #ecb51c);
 }
 
 .social {

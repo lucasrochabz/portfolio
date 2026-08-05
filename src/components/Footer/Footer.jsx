@@ -1,11 +1,13 @@
 import { Link } from 'react-router-dom';
+import logoWhite from '@/assets/images/logo-white.svg';
 import { profile } from '@/data/profile';
 import { ROUTES } from '@/constants/routes';
+import { Anchor } from '@/components/Anchor';
 import { Heading } from '@/components/Heading';
-// import { Anchor } from '@/components/Anchor';
 import styles from './Footer.module.css';
 
 const navigationLinks = [
+  { path: ROUTES.HOME, label: 'Home' },
   { path: ROUTES.ABOUT, label: 'Sobre' },
   { path: ROUTES.PROJECTS.INDEX, label: 'Projetos' },
   { path: ROUTES.COURSE, label: 'Cursos' },
@@ -14,7 +16,7 @@ const navigationLinks = [
 // fix: remover Anchor e tentar ver se uso em outro canto
 const Footer = () => {
   return (
-    <footer className={styles.footer}>
+    <footer>
       {/* <ul className={styles.listLinks}>
           {footer.socials.map((social) => (
             <li key={social.text}>
@@ -28,14 +30,24 @@ const Footer = () => {
 
       <header className={styles.header}>
         <div className={styles.content}>
-          <Link to={ROUTES.HOME}>
-            <Heading as="h2">Lucas Rocha</Heading>
-          </Link>
+          <div className={styles.brand}>
+            <img src={logoWhite} alt="Logo" />
+
+            <p className={styles.tagline}>
+              Transformando aprendizado em projetos.
+            </p>
+            <Anchor.Root
+              href="mailto:lucasbezerrar@gmail.com?subject=Assunto%20do%20e-mail"
+              variant="cta"
+            >
+              Entre em contato
+            </Anchor.Root>
+          </div>
 
           <nav className={styles.links}>
             <div>
-              <Heading as="h3" className={styles.tilte}>
-                Páginas
+              <Heading as="h3" className={styles.title}>
+                Menu
               </Heading>
               <ul className={styles.list}>
                 {navigationLinks.map((link) => (
@@ -47,7 +59,7 @@ const Footer = () => {
             </div>
 
             <div>
-              <Heading as="h3" className={styles.tilte}>
+              <Heading as="h3" className={styles.title}>
                 Redes Sociais
               </Heading>
               <ul className={styles.list}>

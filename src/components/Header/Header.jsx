@@ -1,6 +1,4 @@
-import { Link } from 'react-router-dom';
-import { ROUTES } from '@/constants/routes';
-import { Heading } from '@/components/Heading';
+import { Logo } from '@/components/Logo';
 import { Anchor } from '@/components/Anchor';
 import styles from './Header.module.css';
 
@@ -8,11 +6,7 @@ const Header = () => {
   return (
     <header className={styles.headerBg}>
       <div className={styles.header}>
-        <Link to={ROUTES.HOME}>
-          <Heading as="h2" variant="logo">
-            Lucas Rocha
-          </Heading>
-        </Link>
+        <Logo />
 
         <nav>
           <Anchor.Root
