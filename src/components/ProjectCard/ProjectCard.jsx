@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { Heading } from '@/components/Heading';
 import { ToolList } from '@/components/ToolList';
-import { Anchor } from '@/components/Anchor';
+import { Link } from '@/components/Link';
 import styles from './ProjectCard.module.css';
 
 const images = import.meta.glob('/src/assets/projects/*', {
@@ -28,13 +28,13 @@ const ProjectCard = ({ project, reverse }) => {
         <p className={styles.summary}>{project.summary}</p>
 
         <nav className={styles.links}>
-          <Anchor.Root href={project.links.demo} variant="primary">
+          <Link.Root href={project.links.demo} variant="primary">
             Site
-          </Anchor.Root>
+          </Link.Root>
 
-          <Anchor.Root href={project.links.repository} variant="secondary">
+          <Link.Root href={project.links.repository} variant="secondary">
             Repositório
-          </Anchor.Root>
+          </Link.Root>
         </nav>
       </div>
     </article>

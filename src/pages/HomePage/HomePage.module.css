@@ -1,0 +1,14 @@
+.button {
+  background: linear-gradient(var(--primary-color), #040f1d);
+  color: #fff;
+  justify-self: center;
+  text-transform: uppercase;
+  
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  margin-bottom: 4rem;
+}
+
+.button:hover {
+  opacity: 0.9;
+}

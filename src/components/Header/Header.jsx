@@ -1,20 +1,20 @@
 import { Logo } from '@/components/Logo';
-import { Anchor } from '@/components/Anchor';
+import { Link } from '@/components/Link';
 import styles from './Header.module.css';
 
 const Header = () => {
   return (
     <header className={styles.headerBg}>
       <div className={styles.header}>
-        <Logo />
+        <Logo isHeader={true} />
 
         <nav>
-          <Anchor.Root
+          <Link.Root
             href="mailto:lucasbezerrar@gmail.com?subject=Assunto%20do%20e-mail"
             variant="cta"
           >
             Entre em contato
-          </Anchor.Root>
+          </Link.Root>
         </nav>
       </div>
     </header>
