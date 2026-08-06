@@ -2,13 +2,11 @@ import PropTypes from 'prop-types';
 import { ProjectCard } from '../ProjectCard';
 import styles from './ProjectList.module.css';
 
-const ProjectList = ({ projects, withContainer = false }) => {
-  const className = withContainer ? `container ${styles.list}` : styles.list;
-
+const ProjectList = ({ projects }) => {
   return (
-    <ul className={className}>
+    <ul className={styles.list}>
       {projects.map((project, index) => (
-        <li key={project.id} className={styles.item}>
+        <li key={project.id}>
           <ProjectCard project={project} reverse={index % 2 !== 0} />
         </li>
       ))}
@@ -17,7 +15,6 @@ const ProjectList = ({ projects, withContainer = false }) => {
 };
 
 ProjectList.propTypes = {
-  withContainer: PropTypes.bool,
   projects: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.number.isRequired,

@@ -9,6 +9,7 @@ img {
   height: auto;
 }
 
+/* fix: acho que tenho que ajustar só para inline-block */
 a {
   display: block;
   text-decoration: none;

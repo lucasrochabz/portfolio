@@ -1,20 +1,10 @@
-.list {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-lg);
-}
-
 .card {
-  border: 1px solid var(--deep-navy-50-color);
-  box-shadow: 0 2px 2px var(--deep-navy-50-color);
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   overflow: hidden;
   transition: 0.3s;
   padding: var(--space-lg);
-}
-
-.card:hover {
-  border-color: var(--primary-color);
 }
 
 .header {

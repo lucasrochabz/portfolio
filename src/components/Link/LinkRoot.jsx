@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 import { Link as RouterLink } from 'react-router-dom';
 import styles from './Link.module.css';
 
-// fix: melhorar o nome do componente
 const LinkRoot = ({ href, to, variant = 'primary', children }) => {
   const variantClass = styles[variant] || styles.primary;
 
