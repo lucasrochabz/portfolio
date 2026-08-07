@@ -1,7 +1,7 @@
 import { changelog } from '@/data/changelog';
 import { Layout } from '@/components/Layout';
 import { Heading } from '@/components/Heading';
-import { Accordion } from '@/components/Accordion';
+import { ChangelogList } from '@/components/ChangelogList';
 
 const ChangelogPage = () => {
   return (
@@ -9,7 +9,7 @@ const ChangelogPage = () => {
       <Heading variant="title">{changelog.title}</Heading>
       <p className="subtitle">{changelog.subtitle}</p>
 
-      <Accordion versions={changelog.versions} />
+      <ChangelogList versions={changelog.versions} />
     </Layout>
   );
 };

@@ -1,26 +1,21 @@
 import PropTypes from 'prop-types';
 import { Heading } from '@/components/Heading';
 import { ToolList } from '@/components/ToolList';
-import { Anchor } from '@/components/Anchor';
+import { Link } from '@/components/Link';
 import styles from './ProjectCard.module.css';
 
 const images = import.meta.glob('/src/assets/projects/*', {
   eager: true,
 });
 
-const ProjectCard = ({ project }) => {
+const ProjectCard = ({ project, reverse }) => {
   const imageModule = images[`/src/assets/projects/${project.image}`];
   const imagePath = imageModule?.default;
 
-  const linkVariantMap = {
-    demo: 'primary',
-    repo: 'secondary',
-  };
-
   return (
-    <div className={styles.card}>
-      <figure>
-        <img src={imagePath} alt={imagePath} />
+    <article className={`${styles.card} ${reverse ? styles.reverse : ''}`}>
+      <figure className={styles.figure}>
+        <img src={imagePath} alt={project.name} />
       </figure>
 
       <div className={styles.content}>
@@ -33,33 +28,29 @@ const ProjectCard = ({ project }) => {
         <p className={styles.summary}>{project.summary}</p>
 
         <nav className={styles.links}>
-          {project.links.map((link) => (
-            <Anchor.Root
-              key={link.url}
-              href={link.url}
-              variant={linkVariantMap[link.type]}
-            >
-              {link.name}
-            </Anchor.Root>
-          ))}
+          <Link.Root href={project.links.demo} variant="primary">
+            Site
+          </Link.Root>
+
+          <Link.Root href={project.links.repository} variant="secondary">
+            Repositório
+          </Link.Root>
         </nav>
       </div>
-    </div>
+    </article>
   );
 };
 
 ProjectCard.propTypes = {
+  reverse: PropTypes.bool,
   project: PropTypes.shape({
     image: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     tools: PropTypes.arrayOf(PropTypes.string).isRequired,
-    links: PropTypes.arrayOf(
-      PropTypes.shape({
-        name: PropTypes.string.isRequired,
-        url: PropTypes.string.isRequired,
-        variant: PropTypes.oneOf(['demo', 'repo']),
-      }),
-    ),
+    links: PropTypes.shape({
+      demo: PropTypes.string.isRequired,
+      repository: PropTypes.string.isRequired,
+    }),
     summary: PropTypes.string.isRequired,
   }).isRequired,
 };

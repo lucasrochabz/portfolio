@@ -1,67 +1,79 @@
-import { Link } from 'react-router-dom';
 import { profile } from '@/data/profile';
 import { ROUTES } from '@/constants/routes';
+import { Logo } from '@/components/Logo';
+import { Link } from '@/components/Link';
 import { Heading } from '@/components/Heading';
-// import { Anchor } from '@/components/Anchor';
 import styles from './Footer.module.css';
 
 const navigationLinks = [
+  { path: ROUTES.HOME, label: 'Home' },
   { path: ROUTES.ABOUT, label: 'Sobre' },
   { path: ROUTES.PROJECTS.INDEX, label: 'Projetos' },
   { path: ROUTES.COURSE, label: 'Cursos' },
 ];
 
-// fix: remover Anchor e tentar ver se uso em outro canto
 const Footer = () => {
   return (
-    <footer className={styles.footerBg}>
-      <section className={styles.footer}>
-        {/* <ul className={styles.listLinks}>
-          {footer.socials.map((social) => (
-            <li key={social.text}>
-              <Anchor.Root href={social.url} variant="social">
-                <Anchor.Icon src={social.iconPath} />
-                {social.text}
-              </Anchor.Root>
-            </li>
-          ))}
-        </ul> */}
-
+    <footer>
+      <header className={styles.header}>
         <div className={styles.content}>
-          <Link to={ROUTES.HOME}>
-            <Heading as="h2">Lucas Rocha</Heading>
-          </Link>
+          <div className={styles.brand}>
+            <Logo />
+
+            <p className={styles.tagline}>
+              Transformando aprendizado em projetos.
+            </p>
+            <Link.Root
+              href="mailto:lucasbezerrar@gmail.com?subject=Assunto%20do%20e-mail"
+              variant="cta"
+            >
+              Entre em contato
+            </Link.Root>
+          </div>
 
           <nav className={styles.links}>
-            <ul className={styles.list}>
-              <li className={styles.top}>Páginas</li>
+            <div>
+              <Heading as="h3" className={styles.title}>
+                Menu
+              </Heading>
 
-              {navigationLinks.map((link) => (
-                <li key={link.label}>
-                  <Link to={link.path}>{link.label}</Link>
-                </li>
-              ))}
-            </ul>
+              <ul className={styles.list}>
+                {navigationLinks.map((link) => (
+                  <li key={link.label}>
+                    <Link.Root to={link.path} variant="footer">
+                      {link.label}
+                    </Link.Root>
+                  </li>
+                ))}
+              </ul>
+            </div>
 
-            <ul className={styles.list}>
-              <li className={styles.top}>Redes Sociais</li>
-              {profile.socials.map((social) => (
-                <li key={social.text}>
-                  <a href={social.url} target="_blank">
-                    {social.text}
-                  </a>
-                </li>
-              ))}
-            </ul>
+            <div>
+              <Heading as="h3" className={styles.title}>
+                Redes Sociais
+              </Heading>
+
+              <ul className={styles.list}>
+                {profile.socials.map((social) => (
+                  <li key={social.text}>
+                    <Link.Root href={social.url} variant="footer">
+                      {social.text}
+                    </Link.Root>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </nav>
         </div>
+      </header>
 
+      <section className={styles.section}>
         <div className={styles.copyright}>
           <p>{profile.copyright}</p>
 
-          <Link to={ROUTES.CHANGELOG}>
-            <p className={styles.version}>{profile.version}</p>
-          </Link>
+          <Link.Root to={ROUTES.CHANGELOG} variant="status">
+            {profile.version}
+          </Link.Root>
         </div>
       </section>
     </footer>
