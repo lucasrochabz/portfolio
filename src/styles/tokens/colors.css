@@ -8,6 +8,8 @@
   --white-color: #ffffff;
   --white-80-color: #ffffffcc;
   --secondary-color: #ffc627;
+
+  --color-border: rgba(0, 0, 0, 0.2)
 }
 
 /* fix: saber se isso deve ficar aqui mesmo */

@@ -1,7 +1,7 @@
 .primary, .secondary, .cta {
   font-size: var(--font-size-sm);
   letter-spacing: 0.015em;
-  border-radius: 5px;
+  border-radius: var(--radius-sm);
   padding: 0.5rem 1rem;
   text-transform: uppercase;
   font-weight: 600;
@@ -19,7 +19,7 @@
 
 .secondary {
   background-color: transparent;
-  border: 1px solid var(--deep-navy-50-color);
+  border: 1px solid var(--color-border);
 }
 
 .cta {
@@ -42,7 +42,7 @@
 
 .status {
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: var(--radius-sm);
   transition: 0.3s;
   padding: 0.5rem 1rem;
 }
@@ -53,7 +53,7 @@
   height: 8px;
   background-color: #22c55e;
   display: inline-block;
-  border-radius: 100px;
+  border-radius: var(--radius-xl);
   vertical-align: middle;
   margin-right: 0.5rem;
 }

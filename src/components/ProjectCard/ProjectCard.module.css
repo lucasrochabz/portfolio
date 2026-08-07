@@ -2,8 +2,8 @@
   display: grid;
   grid-template-columns: 552px auto;
   background-color: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
   transition: 0.3s;
   gap: var(--space-lg);
   padding: var(--space-lg);
@@ -21,7 +21,7 @@
 }
 
 .figure {
-  border-radius: 10px;
+  border-radius: var(--radius-lg);
   box-shadow: 0 2px 2px var(--deep-navy-50-color);
   overflow: hidden;
   
