@@ -1,4 +1,5 @@
 import { profile } from '@/data/profile';
+import { contact } from '@/data/contact';
 import { ROUTES } from '@/constants/routes';
 import { Logo } from '@/components/Logo';
 import { Link } from '@/components/Link';
@@ -12,6 +13,12 @@ const navigationLinks = [
   { path: ROUTES.COURSE, label: 'Cursos' },
 ];
 
+const socials = [
+  ['LinkedIn', contact.socials.linkedIn],
+  ['GitHub', contact.socials.github],
+  ['Instagram', contact.socials.instagram],
+];
+
 const Footer = () => {
   return (
     <footer className={styles.footerBg}>
@@ -23,10 +30,7 @@ const Footer = () => {
             <p className={styles.tagline}>
               Transformando aprendizado em projetos.
             </p>
-            <Link.Root
-              href="mailto:lucasbezerrar@gmail.com?subject=Assunto%20do%20e-mail"
-              variant="cta"
-            >
+            <Link.Root href={contact.mailto} variant="cta">
               Entre em contato
             </Link.Root>
           </div>
@@ -54,10 +58,10 @@ const Footer = () => {
               </Heading>
 
               <ul className={styles.list}>
-                {profile.socials.map((social) => (
-                  <li key={social.text}>
-                    <Link.Root href={social.url} variant="footer">
-                      {social.text}
+                {socials.map(([name, url]) => (
+                  <li key={name}>
+                    <Link.Root href={url} variant="footer">
+                      {name}
                     </Link.Root>
                   </li>
                 ))}

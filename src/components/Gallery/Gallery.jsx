@@ -6,15 +6,15 @@ import styles from './Gallery.module.css';
 const Gallery = () => {
   return (
     <div className={styles.gallery}>
-      <figure className={`${styles.galleryItem} ${styles.featured}`}>
+      <figure className={`${styles.figure} ${styles.featured}`}>
         <img src={lucas1} alt="Lucas Rocha" />
       </figure>
 
-      <figure className={styles.galleryItem}>
+      <figure className={styles.figure}>
         <img src={lucas2} alt="Lucas Rocha" />
       </figure>
 
-      <figure className={styles.galleryItem}>
+      <figure className={styles.figure}>
         <img src={lucas3} alt="Lucas Rocha" />
       </figure>
     </div>
