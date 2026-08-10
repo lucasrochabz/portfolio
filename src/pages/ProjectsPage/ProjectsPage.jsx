@@ -3,7 +3,6 @@ import { Layout } from '@/components/Layout';
 import { Heading } from '@/components/Heading';
 import { ProjectList } from '@/components/ProjectList';
 
-// fix: resolver depois problema do container no projetcList
 const ProjectsPage = () => {
   const allProjects = projects.items;
 

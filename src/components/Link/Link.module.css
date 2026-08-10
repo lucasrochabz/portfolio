@@ -24,6 +24,7 @@
 
 .cta {
   background: linear-gradient(var(--secondary-color), #ecb51c);
+  color: var(--primary-color);
 }
 
 .icon {

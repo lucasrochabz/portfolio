@@ -14,8 +14,8 @@ const navigationLinks = [
 
 const Footer = () => {
   return (
-    <footer>
-      <header className={styles.header}>
+    <footer className={styles.footerBg}>
+      <div className={styles.footer}>
         <div className={styles.content}>
           <div className={styles.brand}>
             <Logo />
@@ -65,9 +65,6 @@ const Footer = () => {
             </div>
           </nav>
         </div>
-      </header>
-
-      <section className={styles.section}>
         <div className={styles.copyright}>
           <p>{profile.copyright}</p>
 
@@ -75,7 +72,7 @@ const Footer = () => {
             {profile.version}
           </Link.Root>
         </div>
-      </section>
+      </div>
     </footer>
   );
 };

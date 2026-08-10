@@ -3,23 +3,22 @@ body {
   color: var(--text-color);
 }
 
+a {
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-/* fix: acho que tenho que ajustar só para inline-block */
-a {
-  display: block;
-  text-decoration: none;
-  color: inherit;
-}
-
 ul {
   list-style: none;
-}
-
-button {
-  cursor: pointer;
 }
