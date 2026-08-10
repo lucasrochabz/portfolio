@@ -1,5 +1,6 @@
 .headerBg {
   background-color: var(--primary-color);
+  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
   padding: 1.5rem 0;
   margin-bottom: var(--space-xl);
 }

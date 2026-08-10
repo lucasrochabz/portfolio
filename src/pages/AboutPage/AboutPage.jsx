@@ -1,3 +1,4 @@
+import lucas3 from '@/assets/images/lucas3.jpg';
 import { experiences } from '@/data/experiences';
 import { Layout } from '@/components/Layout';
 import { Heading } from '@/components/Heading';
@@ -13,7 +14,7 @@ const AboutPage = () => {
       <p className="subtitle">Aprendizado contínuo, evolução constante</p>
 
       <section className={styles.about}>
-        <img src="/src/assets/images/lucas3.jpg" alt="Lucas Rocha" />
+        <img src={lucas3} alt="Lucas Rocha" />
 
         <div>
           <div className={styles.info}>

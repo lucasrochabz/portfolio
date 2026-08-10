@@ -8,7 +8,7 @@
   letter-spacing: 0.015em;
   font-weight: 600;
   width: fit-content;
-  border-radius: 5px;
+  border-radius: var(--radius-sm);
   transition: 0.3s;
   gap: var(--space-sm);
   padding: 0.5rem 1rem;

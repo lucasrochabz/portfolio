@@ -1,28 +1,27 @@
 .card {
   display: grid;
   grid-template-columns: 552px auto;
-  gap: var(--space-lg);
-  border: 1px solid var(--deep-navy-50-color);
-  border-radius: 10px;
-  box-shadow: 0px 2px 2px var(--deep-navy-50-color);
+  background-color: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
   transition: 0.3s;
+  gap: var(--space-lg);
   padding: var(--space-lg);
 
   grid-template-areas: "figure content";
 }
 
-.card:nth-child(even) {
-  grid-template-areas: "content figure";
-  grid-template-columns: auto 552px;
-}
-
 .card:hover {
-  border-color: var(--primary-color);
+  transform: scale(1.01);
 }
 
-.card figure {
-  width: 100%;
-  border-radius: 10px;
+.reverse {
+  grid-template-columns: auto 552px;
+  grid-template-areas: "content figure";
+}
+
+.figure {
+  border-radius: var(--radius-lg);
   box-shadow: 0 2px 2px var(--deep-navy-50-color);
   overflow: hidden;
   
@@ -54,7 +53,7 @@
 }
 
 @media (max-width: 800px) {
-  .card, .card:nth-child(even) {
+  .card {
     padding: 1.5rem;
     grid-template-columns: 1fr;
     grid-template-areas: 

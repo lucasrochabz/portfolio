@@ -6,8 +6,8 @@ import { ProjectPage } from '@/pages/ProjectPage';
 import { AboutPage } from '@/pages/AboutPage';
 import { CoursePage } from '@/pages/CoursePage';
 import { ChangelogPage } from '@/pages/ChangelogPage';
+import { NotFoundPage } from '@/pages/NotFoundPage';
 
-// fix: add página de rota não encontrada
 export const routes = [
   {
     element: <LayoutRoot />,
@@ -18,6 +18,7 @@ export const routes = [
       { path: ROUTES.ABOUT, element: <AboutPage /> },
       { path: ROUTES.COURSE, element: <CoursePage /> },
       { path: ROUTES.CHANGELOG, element: <ChangelogPage /> },
+      { path: '*', element: <NotFoundPage /> },
     ],
   },
 ];

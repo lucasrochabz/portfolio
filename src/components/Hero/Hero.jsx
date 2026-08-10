@@ -1,5 +1,5 @@
 import { profile } from '@/data/profile';
-import { Anchor } from '@/components/Anchor';
+import { Link } from '@/components/Link';
 import { Gallery } from '@/components/Gallery';
 import { Heading } from '@/components/Heading';
 import styles from './Hero.module.css';
@@ -25,14 +25,14 @@ const Hero = () => {
           ambiente digital.
         </p>
 
-        <Anchor.Root
+        <Link.Root
           href={`mailto:${email}?subject=${encodeURIComponent(
             'Gostaria de falar sobre um projeto',
           )}`}
           variant="cta"
         >
           Entre em contato
-        </Anchor.Root>
+        </Link.Root>
       </div>
     </section>
   );
