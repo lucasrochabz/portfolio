@@ -1,7 +1,7 @@
 .hero {
   display: grid;
   grid-template-columns: 584px auto;
-  gap: var(--space-lg);
+  gap: var(--space-xl);
 }
 
 .content {
@@ -31,7 +31,7 @@
 .content p {
   font-size: var(--font-size-base);
   line-height: 1.5;
-  margin: 2rem 0;
+  margin-block: var(--space-xl);
 }
 
 @media (max-width: 800px) {

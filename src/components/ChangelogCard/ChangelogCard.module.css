@@ -4,14 +4,14 @@
   border-radius: var(--radius-lg);
   overflow: hidden;
   transition: 0.3s;
-  padding: var(--space-lg);
+  padding: var(--space-xl);
 }
 
 .header {
   display: flex;
   align-items: center;
   gap: var(--space-md);
-  margin-bottom: var(--space-lg);
+  margin-bottom: var(--space-xl);
 }
 
 .version {
@@ -34,6 +34,6 @@
 
 @media (max-width: 800px) {
   .card {
-    padding: 1.5rem;
+    padding: var(--space-lg);
   }
 }

@@ -1,12 +1,12 @@
 .footerBg {
   background-color: var(--primary-color);
   border-radius: var(--radius-lg) var(--radius-lg) 0 0;
-  padding: 2rem 0px;
+  padding-block: var(--space-xl);
 }
 
 .footer {
   color: var(--white-color);
-  max-width: 1200px;
+  max-width: var(--container-max-width);
   margin: 0 auto;
 }
 
@@ -16,8 +16,8 @@
   justify-items: start;
   align-items: start;
   border-bottom: 1px solid var(--color-border);
-  padding-bottom: 2rem;
-  margin-bottom: 2rem;
+  padding-bottom: var(--space-xl);
+  margin-bottom: var(--space-xl);
 }
 
 .brand {
@@ -36,7 +36,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: start;
-  gap: var(--space-xl);
+  gap: var(--space-2xl);
 }
 
 .list {
@@ -60,15 +60,15 @@
 
 @media (max-width: 800px) {
   .footerBg {
-    padding: 2rem 1.5rem;
+    padding-inline: 1.5rem;
   }
   .content {
     grid-template-columns: 1fr;
-    gap: var(--space-lg);
+    gap: var(--space-xl);
   }
   .links {
     flex-direction: column;
-    gap: var(--space-lg);
+    gap: var(--space-xl);
   }
   .copyright {
     flex-wrap: wrap;

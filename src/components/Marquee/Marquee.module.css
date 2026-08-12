@@ -1,7 +1,7 @@
 .marquee {
   background-color: var(--primary-color);
   overflow: hidden;
-  padding: 2rem 0;
+  padding-block: var(--space-xl);
   margin-bottom: 4rem;
 }
 
@@ -37,7 +37,7 @@
 
 @media (max-width: 800px) {
   .stacks {
-    gap: var(--space-xl);
+    gap: var(--space-2xl);
     animation: scrollLeftMobile 30s linear infinite;
   }
 }
