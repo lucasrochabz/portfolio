@@ -1,6 +1,5 @@
 import { GraduationCap, ClockFading } from 'lucide-react';
 import { courses } from '@/data/courses';
-import { Layout } from '@/components/Layout';
 import { SEO } from '@/components/SEO';
 import { Heading } from '@/components/Heading';
 import { CourseList } from '@/components/CourseList';
@@ -14,7 +13,7 @@ const CoursePage = () => {
   }, 0);
 
   return (
-    <Layout>
+    <>
       <SEO
         title="Cursos"
         description="Conheça os cursos e estudos realizados por Lucas Rocha."
@@ -50,7 +49,7 @@ const CoursePage = () => {
       </section>
 
       <CourseList />
-    </Layout>
+    </>
   );
 };
 

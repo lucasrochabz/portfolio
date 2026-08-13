@@ -6,6 +6,11 @@
 
 Este projeto é meu portfólio como desenvolvedor, onde apresento um pouco sobre minha trajetória, minhas habilidades e alguns dos projetos que desenvolvi. A ideia é reunir em um só lugar tudo o que representa minha evolução como profissional e minhas principais criações no mundo da programação.
 
+### Preview
+
+Acesse o projeto online:
+https://lucasrochabz.vercel.app/
+
 ### Tecnologias
 
 | Tecnologia   | Descrição                |
@@ -17,21 +22,12 @@ Este projeto é meu portfólio como desenvolvedor, onde apresento um pouco sobre
 | HTML         | Estrutura de páginas     |
 | CSS Modules  | Estilos modulares        |
 
-### Funcionalidades
-
-- [] Adicionar
-
-### Preview
-
-Acesse o projeto online:
-https://lucasrochabz.vercel.app/
-
 ### Requisitos
 
-- Node na versão versão 22.12 ou superior
+- Node na versão 22.12 ou superior
 - NPM na versão 10.9 ou superior.
 
-### Como instalar?
+### Como executar
 
 1. Faça o clone do projeto.
 2. Abra o terminal e navegue até a pasta do projeto.
@@ -62,7 +58,7 @@ portfolio/
 │   │   └── ...
 │   │
 │   ├── constants/
-│   │   └── routes.js
+│   │   └── paths.js
 │   │
 │   ├── data/
 │   │   ├── changelog.js
@@ -82,8 +78,8 @@ portfolio/
 │   ├── routes/
 │   ├── styles/
 │   │   ├── base/
-│   │   └── tokens/
-│   │   └── utilities/
+│   │   ├── tokens/
+│   │   ├── utilities/
 │   │   └── index.css
 │   │
 │   ├── App.jsx

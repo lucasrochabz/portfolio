@@ -1,16 +1,16 @@
 import { profile } from '@/data/profile';
 import { contact } from '@/data/contact';
-import { ROUTES } from '@/constants/routes';
+import { PATHS } from '@/constants/paths';
 import { Logo } from '@/components/Logo';
 import { Link } from '@/components/Link';
 import { Heading } from '@/components/Heading';
 import styles from './Footer.module.css';
 
 const navigationLinks = [
-  { path: ROUTES.HOME, label: 'Home' },
-  { path: ROUTES.ABOUT, label: 'Sobre' },
-  { path: ROUTES.PROJECTS.INDEX, label: 'Projetos' },
-  { path: ROUTES.COURSE, label: 'Cursos' },
+  { path: PATHS.HOME, label: 'Home' },
+  { path: PATHS.ABOUT, label: 'Sobre' },
+  { path: PATHS.PROJECTS.INDEX, label: 'Projetos' },
+  { path: PATHS.COURSE, label: 'Cursos' },
 ];
 
 const socials = [
@@ -72,7 +72,7 @@ const Footer = () => {
         <div className={styles.copyright}>
           <p>{profile.copyright}</p>
 
-          <Link.Root to={ROUTES.CHANGELOG} variant="status">
+          <Link.Root to={PATHS.CHANGELOG} variant="status">
             {profile.version}
           </Link.Root>
         </div>

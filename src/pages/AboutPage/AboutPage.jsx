@@ -1,6 +1,5 @@
 import lucas3 from '@/assets/images/lucas3.jpg';
 import { experiences } from '@/data/experiences';
-import { Layout } from '@/components/Layout';
 import { SEO } from '@/components/SEO';
 import { Heading } from '@/components/Heading';
 import { DownloadButton } from '@/components/DownloadButton';
@@ -10,7 +9,7 @@ import styles from './AboutPage.module.css';
 
 const AboutPage = () => {
   return (
-    <Layout>
+    <>
       <SEO
         title="Sobre"
         description="Conheça Lucas Rocha, desenvolvedor Full Stack, sua trajetória, conhecimentos e interesses em desenvolvimento web."
@@ -55,7 +54,7 @@ const AboutPage = () => {
       <ExperienceList experiences={experiences} />
 
       <LanguageList />
-    </Layout>
+    </>
   );
 };
 

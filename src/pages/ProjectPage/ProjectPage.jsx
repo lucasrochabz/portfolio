@@ -1,7 +1,6 @@
 import { useParams } from 'react-router-dom';
 import { projects } from '@/data/projects';
 import { NotFoundPage } from '@/pages/NotFoundPage';
-import { Layout } from '@/components/Layout';
 import { SEO } from '@/components/SEO';
 import { Heading } from '@/components/Heading';
 import styles from './ProjectPage.module.css';
@@ -23,7 +22,7 @@ const ProjectPage = () => {
   const imagePath = imageModule?.default;
 
   return (
-    <Layout>
+    <>
       <SEO title={project.name} description={project.summary} />
 
       <section className={styles.project}>
@@ -33,7 +32,7 @@ const ProjectPage = () => {
           <p>{project.summary}</p>
         </div>
       </section>
-    </Layout>
+    </>
   );
 };
 
