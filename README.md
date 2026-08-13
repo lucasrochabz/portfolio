@@ -65,8 +65,7 @@ portfolio/
 │   │   ├── courses.js
 │   │   ├── experiences.js
 │   │   ├── profile.js
-│   │   ├── projects.js
-│   │   └── seo.js
+│   │   └── projects.js
 │   │
 │   ├── pages/
 │   │   ├── AboutPage/

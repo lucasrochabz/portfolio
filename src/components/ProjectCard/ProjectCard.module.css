@@ -22,7 +22,7 @@
 
 .figure {
   border-radius: var(--radius-lg);
-  box-shadow: 0 2px 2px var(--deep-navy-50-color);
+  box-shadow: 0 2px 2px var(--color-border);
   overflow: hidden;
   
   grid-area: figure;
