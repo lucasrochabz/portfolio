@@ -1,0 +1,12 @@
+.menuButton {
+  color: #fff;
+  display: none;
+  background-color: transparent;
+  border: none;
+}
+
+@media (max-width: 800px) {
+  .menuButton {
+    display: block;
+  }
+}

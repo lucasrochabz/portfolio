@@ -1,0 +1,8 @@
+.menuMobile {
+  /* background-color: var(--primary-color); */
+  /* color: #fff; */
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem 1.5rem;
+}
