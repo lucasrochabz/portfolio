@@ -1,7 +1,9 @@
 import PropTypes from 'prop-types';
+import { PATHS } from '@/constants/paths';
 import { Heading } from '@/components/Heading';
 import { ToolList } from '@/components/ToolList';
 import { Link } from '@/components/Link';
+import { LearnMore } from '@/components/LearnMore';
 import styles from './ProjectCard.module.css';
 
 const images = import.meta.glob('/src/assets/projects/*', {
@@ -32,9 +34,7 @@ const ProjectCard = ({ project, reverse }) => {
             Site
           </Link.Root>
 
-          <Link.Root href={project.links.repository} variant="secondary">
-            Repositório
-          </Link.Root>
+          <LearnMore to={PATHS.PROJECTS.detailsPath(project.slug)} />
         </nav>
       </div>
     </article>
@@ -46,6 +46,7 @@ ProjectCard.propTypes = {
   project: PropTypes.shape({
     image: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
+    slug: PropTypes.string.isRequired,
     tools: PropTypes.arrayOf(PropTypes.string).isRequired,
     links: PropTypes.shape({
       demo: PropTypes.string.isRequired,

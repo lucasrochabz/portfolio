@@ -1,0 +1,12 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  text-decoration: underline;
+}

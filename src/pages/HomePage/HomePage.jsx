@@ -24,7 +24,7 @@ const HomePage = () => {
         <Marquee />
 
         <section className={styles.projects}>
-          <ProjectList withContainer={false} projects={featuredProjects} />
+          <ProjectList projects={featuredProjects} />
 
           <Link.Root to={'/projetos'} variant="secondary">
             Ver todos os projetos

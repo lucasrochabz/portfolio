@@ -1,17 +1,11 @@
 import { profile } from '@/data/profile';
 import { contact } from '@/data/contact';
+import { NAVIGATION_LINKS } from '@/constants/navigation';
 import { PATHS } from '@/constants/paths';
 import { Logo } from '@/components/Logo';
 import { Link } from '@/components/Link';
 import { Heading } from '@/components/Heading';
 import styles from './Footer.module.css';
-
-const navigationLinks = [
-  { path: PATHS.HOME, label: 'Home' },
-  { path: PATHS.ABOUT, label: 'Sobre' },
-  { path: PATHS.PROJECTS.INDEX, label: 'Projetos' },
-  { path: PATHS.COURSE, label: 'Cursos' },
-];
 
 const socials = [
   ['LinkedIn', contact.socials.linkedIn],
@@ -42,7 +36,7 @@ const Footer = () => {
               </Heading>
 
               <ul className={styles.list}>
-                {navigationLinks.map((link) => (
+                {NAVIGATION_LINKS.map((link) => (
                   <li key={link.label}>
                     <Link.Root to={link.path} variant="footer">
                       {link.label}

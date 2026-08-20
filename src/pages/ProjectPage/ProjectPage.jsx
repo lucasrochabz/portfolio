@@ -3,6 +3,7 @@ import { projects } from '@/data/projects';
 import { NotFoundPage } from '@/pages/NotFoundPage';
 import { SEO } from '@/components/SEO';
 import { Heading } from '@/components/Heading';
+import { Link } from '@/components/Link';
 import styles from './ProjectPage.module.css';
 
 const images = import.meta.glob('/src/assets/projects/*', {
@@ -27,10 +28,16 @@ const ProjectPage = () => {
 
       <section className={styles.project}>
         <Heading variant="title">{project.name}</Heading>
+
         <div className={styles.content}>
           <img src={imagePath} alt="Imagem do projeto" />
+
           <p>{project.summary}</p>
         </div>
+
+        <Link.Root href={project.links.repository} variant="secondary">
+          Repositório
+        </Link.Root>
       </section>
     </>
   );

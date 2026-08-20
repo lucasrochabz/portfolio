@@ -4,6 +4,8 @@ export const PATHS = Object.freeze({
   PROJECTS: {
     INDEX: '/projetos',
     DETAILS: '/projetos/:slug',
+
+    detailsPath: (slug) => `/projetos/${slug}`,
   },
   COURSE: '/cursos',
   CONTACT: '/contato',
