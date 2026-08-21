@@ -1,17 +1,20 @@
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
+import { ChevronRight } from 'lucide-react';
 import { NAVIGATION_LINKS } from '@/constants/navigation';
-import { Link } from '@/components/Link';
 import styles from './MenuMobile.module.css';
 
+// fix: acho que tenho que usar o Link.Root
 const MenuMobile = ({ isOpen }) => {
   if (!isOpen) return null;
 
   return (
     <nav className={styles.menuMobile}>
       {NAVIGATION_LINKS.map((link) => (
-        <Link.Root to={link.path} key={link.label}>
-          {link.label}
-        </Link.Root>
+        <Link key={link.label} to={link.path} className={styles.link}>
+          <span>{link.label}</span>
+          <ChevronRight />
+        </Link>
       ))}
     </nav>
   );

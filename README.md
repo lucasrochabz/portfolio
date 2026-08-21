@@ -72,6 +72,7 @@ portfolio/
 │   │   ├── profile.js
 │   │   └── projects.js
 │   │
+│   ├── layouts/
 │   ├── pages/
 │   │   ├── AboutPage/
 │   │   │   ├── AboutPage.jsx

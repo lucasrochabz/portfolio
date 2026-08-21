@@ -4,7 +4,6 @@
   color: var(--primary-color);
   align-items: center;  
   font-size: var(--font-size-sm);
-  text-transform: uppercase;
   letter-spacing: 0.015em;
   font-weight: 600;
   width: fit-content;

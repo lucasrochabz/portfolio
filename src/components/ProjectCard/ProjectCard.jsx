@@ -31,7 +31,7 @@ const ProjectCard = ({ project, reverse }) => {
 
         <nav className={styles.links}>
           <Link.Root href={project.links.demo} variant="primary">
-            Site
+            Ver site
           </Link.Root>
 
           <LearnMore to={PATHS.PROJECTS.detailsPath(project.slug)} />

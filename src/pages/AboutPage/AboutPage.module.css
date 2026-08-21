@@ -10,12 +10,9 @@
 .info {
   display: flex;
   flex-direction: column;
+  font-size: var(--font-size-base);
   gap: var(--space-md);
   margin-bottom: var(--space-xl);
-}
-
-.info p {
-  font-size: var(--font-size-base);
 }
 
 .info span {

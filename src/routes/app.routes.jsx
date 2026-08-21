@@ -1,6 +1,6 @@
 import { PATHS } from '@/constants/paths';
-import { LayoutRoot } from '@/components/LayoutRoot';
-import { MainLayout } from '@/components/MainLayout';
+import { LayoutRoot } from '@/layouts/LayoutRoot';
+import { MainLayout } from '@/layouts/MainLayout';
 import { HomePage } from '@/pages/HomePage';
 import { ProjectsPage } from '@/pages/ProjectsPage';
 import { ProjectPage } from '@/pages/ProjectPage';

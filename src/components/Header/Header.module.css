@@ -16,8 +16,8 @@
 }
 
 @media (max-width: 800px) {
-  .header {
-    padding-inline: 1.5rem;
+  .headerBg {
+    padding: 1.5rem;
   }
   .mailto {
     display: none;

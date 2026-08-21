@@ -26,7 +26,7 @@ const HomePage = () => {
         <section className={styles.projects}>
           <ProjectList projects={featuredProjects} />
 
-          <Link.Root to={'/projetos'} variant="secondary">
+          <Link.Root to={'/projetos'} variant="tertiary">
             Ver todos os projetos
           </Link.Root>
         </section>
