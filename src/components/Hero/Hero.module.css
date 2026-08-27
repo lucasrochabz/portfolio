@@ -19,7 +19,7 @@
 }
 
 .content h3::before {
-  background-color: var(--primary-color);
+  background-color: var(--color-primary);
   content: '';
   display: inline-block;
   vertical-align: middle;

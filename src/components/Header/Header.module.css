@@ -1,5 +1,5 @@
 .headerBg {
-  background-color: var(--primary-color);
+  background-color: var(--color-primary);
   border-radius: 0 0 var(--radius-lg) var(--radius-lg);
   padding-block: var(--space-lg);
   margin-bottom: var(--space-2xl);
@@ -17,7 +17,7 @@
 
 @media (max-width: 800px) {
   .headerBg {
-    padding: 1.5rem;
+    padding-inline: var(--container-padding);
   }
   .mailto {
     display: none;

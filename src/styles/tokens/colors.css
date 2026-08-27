@@ -1,10 +1,11 @@
 :root {
-  --base-color: #f5f5f7;
-  --text-color: #0C2340;
-
-  --white-color: #ffffff;
-  --primary-color: #0C2340;
-  --secondary-color: #ffc627;
+  --color-base: #f5f5f7;
+  --color-surface: #ffffff;
+  
+  --color-text: #0C2340;
+  --color-white: #ffffff;
+  --color-primary: #0C2340;
+  --color-secondary: #ffc627;
 
   --color-border: rgba(0, 0, 0, 0.2)
 }

@@ -1,8 +1,6 @@
 .menuButton {
-  color: #fff;
+  color: var(--color-white);
   display: none;
-  background-color: transparent;
-  border: none;
 }
 
 @media (max-width: 800px) {

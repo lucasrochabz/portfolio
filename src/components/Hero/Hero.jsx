@@ -1,14 +1,14 @@
 import { profile } from '@/data/profile';
 import { contact } from '@/data/contact';
 import { Link } from '@/components/Link';
-import { Gallery } from '@/components/Gallery';
+import { ProfileImages } from '@/components/ProfileImages';
 import { Heading } from '@/components/Heading';
 import styles from './Hero.module.css';
 
 const Hero = () => {
   return (
     <section className={`container ${styles.hero}`}>
-      <Gallery />
+      <ProfileImages />
 
       <div className={styles.content}>
         <Heading as="h3">Olá, eu sou Lucas Rocha 👋</Heading>

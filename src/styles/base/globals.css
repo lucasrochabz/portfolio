@@ -1,6 +1,6 @@
 body {
-  background-color: var(--base-color);
-  color: var(--text-color);
+  background-color: var(--color-base);
+  color: var(--color-text);
 }
 
 a {
@@ -10,6 +10,8 @@ a {
 }
 
 button {
+  background-color: transparent;
+  border: none;
   cursor: pointer;
 }
 

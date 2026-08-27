@@ -9,6 +9,35 @@
   margin-bottom: 2rem;
 }
 
+.content figure {
+  border: 1px solid var(--color-border);
+  overflow: hidden;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+
+.list {
+  /* background-color: tomato; */
+  display: flex;
+  gap: 1rem;
+}
+
+.nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.content figure img {
+  /* height: 500px; */
+  /* width: 100%; */
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.teste p {
+  margin-bottom: 2rem;
+}
+
 @media (max-width: 800px) {
   .content {
     grid-template-columns: 1fr;

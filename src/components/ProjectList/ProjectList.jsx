@@ -21,7 +21,7 @@ ProjectList.propTypes = {
       name: PropTypes.string.isRequired,
       featured: PropTypes.bool,
       slug: PropTypes.string.isRequired,
-      image: PropTypes.string.isRequired,
+      images: PropTypes.arrayOf(PropTypes.string).isRequired,
       tools: PropTypes.arrayOf(PropTypes.string).isRequired,
       summary: PropTypes.string.isRequired,
       links: PropTypes.shape({

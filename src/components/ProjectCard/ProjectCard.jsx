@@ -11,7 +11,7 @@ const images = import.meta.glob('/src/assets/projects/*', {
 });
 
 const ProjectCard = ({ project, reverse }) => {
-  const imageModule = images[`/src/assets/projects/${project.image}`];
+  const imageModule = images[`/src/assets/projects/${project.images[0]}`];
   const imagePath = imageModule?.default;
 
   return (
@@ -44,13 +44,12 @@ const ProjectCard = ({ project, reverse }) => {
 ProjectCard.propTypes = {
   reverse: PropTypes.bool,
   project: PropTypes.shape({
-    image: PropTypes.string.isRequired,
+    images: PropTypes.arrayOf(PropTypes.string).isRequired,
     name: PropTypes.string.isRequired,
     slug: PropTypes.string.isRequired,
     tools: PropTypes.arrayOf(PropTypes.string).isRequired,
     links: PropTypes.shape({
       demo: PropTypes.string.isRequired,
-      repository: PropTypes.string.isRequired,
     }),
     summary: PropTypes.string.isRequired,
   }).isRequired,

@@ -1,7 +1,7 @@
 .download {
   display: flex;
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
   align-items: center;  
   font-size: var(--font-size-sm);
   letter-spacing: 0.015em;
@@ -14,6 +14,6 @@
 }
 
 .download:hover {
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
 }

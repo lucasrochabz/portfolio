@@ -1,11 +1,11 @@
 .footerBg {
-  background-color: var(--primary-color);
+  background-color: var(--color-primary);
   border-radius: var(--radius-lg) var(--radius-lg) 0 0;
   padding-block: var(--space-xl);
 }
 
 .footer {
-  color: var(--white-color);
+  color: var(--color-white);
   max-width: var(--container-max-width);
   margin: 0 auto;
 }
@@ -60,7 +60,7 @@
 
 @media (max-width: 800px) {
   .footerBg {
-    padding-inline: 1.5rem;
+    padding-inline: var(--container-padding);
   }
   .content {
     grid-template-columns: 1fr;

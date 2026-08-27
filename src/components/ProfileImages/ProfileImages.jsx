@@ -1,9 +1,9 @@
-import lucas1 from '../../assets/images/lucas1.jpg';
-import lucas2 from '../../assets/images/lucas2.jpg';
-import lucas3 from '../../assets/images/lucas3.jpg';
-import styles from './Gallery.module.css';
+import lucas1 from '@/assets/images/lucas1.jpg';
+import lucas2 from '@/assets/images/lucas2.jpg';
+import lucas3 from '@/assets/images/lucas3.jpg';
+import styles from './ProfileImages.module.css';
 
-const Gallery = () => {
+const ProfileImages = () => {
   return (
     <div className={styles.gallery}>
       <figure className={`${styles.figure} ${styles.featured}`}>
@@ -21,4 +21,4 @@ const Gallery = () => {
   );
 };
 
-export default Gallery;
+export default ProfileImages;
