@@ -1,4 +1,5 @@
 import { projects } from '@/data/projects';
+import { SEO } from '@/components/SEO';
 import { Header } from '@/components/Header';
 import { Hero } from '@/components/Hero';
 import { Marquee } from '@/components/Marquee';
@@ -12,15 +13,20 @@ const HomePage = () => {
 
   return (
     <>
+      <SEO
+        title="Home"
+        description="Lucas Rocha é desenvolvedor Full Stack. Conheça seus projetos, experiências, estudos e conhecimentos em desenvolvimento web."
+      />
+
       <Header />
       <main>
         <Hero />
         <Marquee />
 
         <section className={styles.projects}>
-          <ProjectList withContainer={false} projects={featuredProjects} />
+          <ProjectList projects={featuredProjects} />
 
-          <Link.Root to={'/projetos'} variant="secondary">
+          <Link.Root to={'/projetos'} variant="tertiary">
             Ver todos os projetos
           </Link.Root>
         </section>

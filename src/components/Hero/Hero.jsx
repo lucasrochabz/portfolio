@@ -1,22 +1,21 @@
 import { profile } from '@/data/profile';
+import { contact } from '@/data/contact';
 import { Link } from '@/components/Link';
-import { Gallery } from '@/components/Gallery';
+import { ProfileImages } from '@/components/ProfileImages';
 import { Heading } from '@/components/Heading';
 import styles from './Hero.module.css';
-
-const { role, specialization, email } = profile;
 
 const Hero = () => {
   return (
     <section className={`container ${styles.hero}`}>
-      <Gallery />
+      <ProfileImages />
 
       <div className={styles.content}>
         <Heading as="h3">Olá, eu sou Lucas Rocha 👋</Heading>
         <Heading variant="title">
-          {role}
+          {profile.role}
           <br />
-          {specialization}
+          {profile.specialization}
         </Heading>
 
         <p>
@@ -25,12 +24,7 @@ const Hero = () => {
           ambiente digital.
         </p>
 
-        <Link.Root
-          href={`mailto:${email}?subject=${encodeURIComponent(
-            'Gostaria de falar sobre um projeto',
-          )}`}
-          variant="cta"
-        >
+        <Link.Root href={contact.mailto} variant="cta">
           Entre em contato
         </Link.Root>
       </div>

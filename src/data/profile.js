@@ -2,28 +2,10 @@ export const profile = {
   name: 'Lucas Rocha',
   role: 'Desenvolvedor Web',
   specialization: 'Full Stack',
-  email: 'lucasbezerrar@gmail.com',
   location: 'Fortaleza, Ceará',
   languages: [
     { name: 'Português', level: 'Nativo' },
     { name: 'Inglês', level: 'Intermediário' },
-  ],
-  socials: [
-    {
-      text: 'LinkedIn',
-      url: 'https://www.linkedin.com/in/lucasrochabz',
-      iconPath: '/linkedin.svg',
-    },
-    {
-      text: 'GitHub',
-      url: 'https://github.com/lucasrochabz',
-      iconPath: '/github.svg',
-    },
-    {
-      text: 'Instagram',
-      url: 'https://www.instagram.com/lucasrochabz',
-      iconPath: '/instagram.svg',
-    },
   ],
   tools: [
     'JavaScript',

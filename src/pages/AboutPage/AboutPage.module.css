@@ -1,21 +1,18 @@
 .about {
   display: grid;
   grid-template-columns: 585px auto;
-  gap: var(--space-lg);
+  gap: var(--space-xl);
   border-bottom: 1px solid var(--color-border);
-  padding-bottom: var(--space-lg);
-  margin-bottom: var(--space-lg);
+  padding-bottom: var(--space-xl);
+  margin-bottom: var(--space-xl);
 }
 
 .info {
   display: flex;
   flex-direction: column;
-  gap: var(--space-md);
-  margin-bottom: var(--space-lg);
-}
-
-.info p {
   font-size: var(--font-size-base);
+  gap: var(--space-md);
+  margin-bottom: var(--space-xl);
 }
 
 .info span {

@@ -1,12 +1,17 @@
-## Portfolio
+# Portfolio
 
 ![Imagem do projeto](./src/assets/projects/portfolio.png)
 
-### Sobre
+## Sobre
 
 Este projeto é meu portfólio como desenvolvedor, onde apresento um pouco sobre minha trajetória, minhas habilidades e alguns dos projetos que desenvolvi. A ideia é reunir em um só lugar tudo o que representa minha evolução como profissional e minhas principais criações no mundo da programação.
 
-### Tecnologias
+## Preview
+
+Acesse o projeto online:
+https://lucasrochabz.vercel.app/
+
+## Tecnologias
 
 | Tecnologia   | Descrição                |
 | ------------ | ------------------------ |
@@ -17,21 +22,12 @@ Este projeto é meu portfólio como desenvolvedor, onde apresento um pouco sobre
 | HTML         | Estrutura de páginas     |
 | CSS Modules  | Estilos modulares        |
 
-### Funcionalidades
+## Requisitos
 
-- [] Adicionar
-
-### Preview
-
-Acesse o projeto online:
-https://lucasrochabz.vercel.app/
-
-### Requisitos
-
-- Node na versão versão 22.12 ou superior
+- Node na versão 22.12 ou superior
 - NPM na versão 10.9 ou superior.
 
-### Como instalar?
+## Como executar
 
 1. Faça o clone do projeto.
 2. Abra o terminal e navegue até a pasta do projeto.
@@ -44,11 +40,16 @@ https://lucasrochabz.vercel.app/
    npm run dev
    ```
 
-### Estrutura do projeto
+## Estrutura do projeto
 
 ```bash
 portfolio/
 ├── public/
+│   ├── favicon.svg
+│   ├── icon-192.png
+│   ├── icon-512.png
+│   └── manifest.json
+│
 ├── src/
 │   ├── assets/
 │   │   ├── images/
@@ -62,16 +63,16 @@ portfolio/
 │   │   └── ...
 │   │
 │   ├── constants/
-│   │   └── routes.js
+│   │   └── paths.js
 │   │
 │   ├── data/
 │   │   ├── changelog.js
 │   │   ├── courses.js
 │   │   ├── experiences.js
 │   │   ├── profile.js
-│   │   ├── projects.js
-│   │   └── seo.js
+│   │   └── projects.js
 │   │
+│   ├── layouts/
 │   ├── pages/
 │   │   ├── AboutPage/
 │   │   │   ├── AboutPage.jsx
@@ -82,9 +83,12 @@ portfolio/
 │   ├── routes/
 │   ├── styles/
 │   │   ├── base/
-│   │   └── tokens/
-│   │   └── utilities/
+│   │   ├── tokens/
+│   │   ├── utilities/
 │   │   └── index.css
+│   │
+│   ├── utils/
+│   │   └── getImage.js
 │   │
 │   ├── App.jsx
 │   └── main.jsx
@@ -100,6 +104,6 @@ portfolio/
 └── vite.config.js
 ```
 
-### Encontrou algum problema?
+## Encontrou algum problema?
 
 Abra uma [issue](https://github.com/lucasrochabz/portifolio/issues) com sua sugestão ou crítica.

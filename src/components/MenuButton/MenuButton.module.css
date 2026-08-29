@@ -1,0 +1,10 @@
+.menuButton {
+  color: var(--color-white);
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .menuButton {
+    display: block;
+  }
+}

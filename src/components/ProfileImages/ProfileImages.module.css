@@ -2,12 +2,17 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: var(--space-lg);
+  gap: var(--space-xl);
 }
 
-.galleryItem {
+.figure {
   border-radius: var(--radius-lg);
   overflow: hidden;
+}
+
+.figure img {
+  height: 100%;
+  object-fit: cover;
 }
 
 .featured {

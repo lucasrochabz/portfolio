@@ -1,15 +1,16 @@
 import { profile } from '@/data/profile';
-import { ROUTES } from '@/constants/routes';
+import { contact } from '@/data/contact';
+import { NAVIGATION_LINKS } from '@/constants/navigation';
+import { PATHS } from '@/constants/paths';
 import { Logo } from '@/components/Logo';
 import { Link } from '@/components/Link';
 import { Heading } from '@/components/Heading';
 import styles from './Footer.module.css';
 
-const navigationLinks = [
-  { path: ROUTES.HOME, label: 'Home' },
-  { path: ROUTES.ABOUT, label: 'Sobre' },
-  { path: ROUTES.PROJECTS.INDEX, label: 'Projetos' },
-  { path: ROUTES.COURSE, label: 'Cursos' },
+const socials = [
+  ['LinkedIn', contact.socials.linkedIn],
+  ['GitHub', contact.socials.github],
+  ['Instagram', contact.socials.instagram],
 ];
 
 const Footer = () => {
@@ -23,10 +24,7 @@ const Footer = () => {
             <p className={styles.tagline}>
               Transformando aprendizado em projetos.
             </p>
-            <Link.Root
-              href="mailto:lucasbezerrar@gmail.com?subject=Assunto%20do%20e-mail"
-              variant="cta"
-            >
+            <Link.Root href={contact.mailto} variant="cta">
               Entre em contato
             </Link.Root>
           </div>
@@ -38,7 +36,7 @@ const Footer = () => {
               </Heading>
 
               <ul className={styles.list}>
-                {navigationLinks.map((link) => (
+                {NAVIGATION_LINKS.map((link) => (
                   <li key={link.label}>
                     <Link.Root to={link.path} variant="footer">
                       {link.label}
@@ -54,10 +52,10 @@ const Footer = () => {
               </Heading>
 
               <ul className={styles.list}>
-                {profile.socials.map((social) => (
-                  <li key={social.text}>
-                    <Link.Root href={social.url} variant="footer">
-                      {social.text}
+                {socials.map(([name, url]) => (
+                  <li key={name}>
+                    <Link.Root href={url} variant="footer">
+                      {name}
                     </Link.Root>
                   </li>
                 ))}
@@ -68,7 +66,7 @@ const Footer = () => {
         <div className={styles.copyright}>
           <p>{profile.copyright}</p>
 
-          <Link.Root to={ROUTES.CHANGELOG} variant="status">
+          <Link.Root to={PATHS.CHANGELOG} variant="status">
             {profile.version}
           </Link.Root>
         </div>

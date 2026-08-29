@@ -1,9 +1,8 @@
-import { GraduationCap } from 'lucide-react';
-import { ClockFading } from 'lucide-react';
+import { GraduationCap, ClockFading } from 'lucide-react';
 import { courses } from '@/data/courses';
-import { CourseList } from '@/components/CourseList';
-import { Layout } from '@/components/Layout';
+import { SEO } from '@/components/SEO';
 import { Heading } from '@/components/Heading';
+import { CourseList } from '@/components/CourseList';
 import styles from './CoursePage.module.css';
 
 const CoursePage = () => {
@@ -14,7 +13,12 @@ const CoursePage = () => {
   }, 0);
 
   return (
-    <Layout>
+    <>
+      <SEO
+        title="Cursos"
+        description="Conheça os cursos e estudos realizados por Lucas Rocha."
+      />
+
       <Heading variant="title">{courses.title}</Heading>
       <p className="subtitle">{courses.subtitle}</p>
 
@@ -45,7 +49,7 @@ const CoursePage = () => {
       </section>
 
       <CourseList />
-    </Layout>
+    </>
   );
 };
 

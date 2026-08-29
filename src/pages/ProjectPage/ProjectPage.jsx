@@ -1,31 +1,61 @@
+import { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { projects } from '@/data/projects';
-import { Layout } from '@/components/Layout';
+import { getImage } from '@/utils/getImage';
+import { NotFoundPage } from '@/pages/NotFoundPage';
+import { SEO } from '@/components/SEO';
+import { ProjectGallery } from '@/components/ProjectGallery';
 import { Heading } from '@/components/Heading';
+import { ToolList } from '@/components/ToolList';
+import { Link } from '@/components/Link';
 import styles from './ProjectPage.module.css';
 
-const images = import.meta.glob('/src/assets/projects/*', {
-  eager: true,
-});
-
-// Fix: melhorar essa página
+// fix: observar se é melhor colocar navigate no lugar do if
+// Fix: melhorar essa página corrigir css
 const ProjectPage = () => {
   const { slug } = useParams();
   const project = projects.items.find((project) => project.slug === slug);
 
-  const imageModule = images[`/src/assets/projects/${project.image}`];
-  const imagePath = imageModule?.default;
+  const [selectedImage, setSelectedImage] = useState(project.images[0]);
+  const imagePath = getImage(selectedImage);
+
+  if (!project) return <NotFoundPage />;
 
   return (
-    <Layout>
-      <section className={styles.project}>
-        <Heading variant="title">{project.name}</Heading>
+    <>
+      <SEO title={project.name} description={project.summary} />
+
+      <section className={styles.section}>
+        <div>
+          <figure className={styles.figure}>
+            <img src={imagePath} alt={`Imagem do projeto ${project.name}`} />
+          </figure>
+
+          <ul className={styles.list}>
+            <ProjectGallery
+              images={project.images}
+              onSelectedImage={setSelectedImage}
+            />
+          </ul>
+        </div>
+
         <div className={styles.content}>
-          <img src={imagePath} alt="Imagem do projeto" />
-          <p>{project.summary}</p>
+          <Heading variant="title">{project.name}</Heading>
+
+          <ToolList tools={project.tools} />
+
+          <p className={styles.summary}>{project.summary}</p>
+
+          <nav className={styles.nav}>
+            <Link.Root href={project.links.repository} variant="tertiary">
+              Ver código
+            </Link.Root>
+
+            <Link.Root href={project.links.demo}>Ver site</Link.Root>
+          </nav>
         </div>
       </section>
-    </Layout>
+    </>
   );
 };
 

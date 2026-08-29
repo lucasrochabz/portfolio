@@ -1,16 +1,14 @@
 import PropTypes from 'prop-types';
+import { PATHS } from '@/constants/paths';
+import { getImage } from '@/utils/getImage';
 import { Heading } from '@/components/Heading';
 import { ToolList } from '@/components/ToolList';
 import { Link } from '@/components/Link';
+import { LearnMore } from '@/components/LearnMore';
 import styles from './ProjectCard.module.css';
 
-const images = import.meta.glob('/src/assets/projects/*', {
-  eager: true,
-});
-
 const ProjectCard = ({ project, reverse }) => {
-  const imageModule = images[`/src/assets/projects/${project.image}`];
-  const imagePath = imageModule?.default;
+  const imagePath = getImage(project.images[0]);
 
   return (
     <article className={`${styles.card} ${reverse ? styles.reverse : ''}`}>
@@ -29,12 +27,10 @@ const ProjectCard = ({ project, reverse }) => {
 
         <nav className={styles.links}>
           <Link.Root href={project.links.demo} variant="primary">
-            Site
+            Ver site
           </Link.Root>
 
-          <Link.Root href={project.links.repository} variant="secondary">
-            Repositório
-          </Link.Root>
+          <LearnMore to={PATHS.PROJECTS.detailsPath(project.slug)} />
         </nav>
       </div>
     </article>
@@ -44,12 +40,12 @@ const ProjectCard = ({ project, reverse }) => {
 ProjectCard.propTypes = {
   reverse: PropTypes.bool,
   project: PropTypes.shape({
-    image: PropTypes.string.isRequired,
+    images: PropTypes.arrayOf(PropTypes.string).isRequired,
     name: PropTypes.string.isRequired,
+    slug: PropTypes.string.isRequired,
     tools: PropTypes.arrayOf(PropTypes.string).isRequired,
     links: PropTypes.shape({
       demo: PropTypes.string.isRequired,
-      repository: PropTypes.string.isRequired,
     }),
     summary: PropTypes.string.isRequired,
   }).isRequired,
