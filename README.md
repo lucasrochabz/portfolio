@@ -87,6 +87,9 @@ portfolio/
 │   │   ├── utilities/
 │   │   └── index.css
 │   │
+│   ├── utils/
+│   │   └── getImage.js
+│   │
 │   ├── App.jsx
 │   └── main.jsx
 │

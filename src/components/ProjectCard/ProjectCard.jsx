@@ -1,18 +1,14 @@
 import PropTypes from 'prop-types';
 import { PATHS } from '@/constants/paths';
+import { getImage } from '@/utils/getImage';
 import { Heading } from '@/components/Heading';
 import { ToolList } from '@/components/ToolList';
 import { Link } from '@/components/Link';
 import { LearnMore } from '@/components/LearnMore';
 import styles from './ProjectCard.module.css';
 
-const images = import.meta.glob('/src/assets/projects/*', {
-  eager: true,
-});
-
 const ProjectCard = ({ project, reverse }) => {
-  const imageModule = images[`/src/assets/projects/${project.images[0]}`];
-  const imagePath = imageModule?.default;
+  const imagePath = getImage(project.images[0]);
 
   return (
     <article className={`${styles.card} ${reverse ? styles.reverse : ''}`}>
