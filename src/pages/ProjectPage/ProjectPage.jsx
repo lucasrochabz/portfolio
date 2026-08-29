@@ -12,13 +12,12 @@ import styles from './ProjectPage.module.css';
 
 // fix: observar se é melhor colocar navigate no lugar do if
 // Fix: melhorar essa página corrigir css
-// fix: estou com problema na imagem pois ela começa com número e depois vira string
 const ProjectPage = () => {
   const { slug } = useParams();
   const project = projects.items.find((project) => project.slug === slug);
 
-  const [selectedImage, setSelectedImage] = useState(0);
-  const imagePath = getImage(project.images[selectedImage]);
+  const [selectedImage, setSelectedImage] = useState(project.images[0]);
+  const imagePath = getImage(selectedImage);
 
   if (!project) return <NotFoundPage />;
 

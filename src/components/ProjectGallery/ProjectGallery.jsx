@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 import { getImage } from '@/utils/getImage';
 import styles from './ProjectGallery.module.css';
 
-// fix: corrigir esse componente
 const ProjectGallery = ({ images, onSelectedImage }) => {
   return (
     <>
