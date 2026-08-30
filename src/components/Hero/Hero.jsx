@@ -1,9 +1,8 @@
 import { profile } from '@/data/profile';
-import { contact } from '@/data/contact';
-import { Link } from '@/components/Link';
 import { ProfileImages } from '@/components/ProfileImages';
 import { Heading } from '@/components/Heading';
 import styles from './Hero.module.css';
+import { ContactButton } from '../ContactButton';
 
 const Hero = () => {
   return (
@@ -24,9 +23,7 @@ const Hero = () => {
           ambiente digital.
         </p>
 
-        <Link.Root href={contact.mailto} variant="cta">
-          Entre em contato
-        </Link.Root>
+        <ContactButton />
       </div>
     </section>
   );

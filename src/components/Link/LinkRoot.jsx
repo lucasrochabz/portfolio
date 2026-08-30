@@ -3,6 +3,7 @@ import { Link as RouterLink } from 'react-router-dom';
 import styles from './Link.module.css';
 
 // fix: corrigir os estilos diminuir as variações
+// fix: acho melhor chamar o footer de basic ou simple
 const LinkRoot = ({ href, to, variant = 'primary', children }) => {
   const variantClass = styles[variant] || styles.primary;
 
@@ -27,14 +28,7 @@ const LinkRoot = ({ href, to, variant = 'primary', children }) => {
 };
 
 LinkRoot.propTypes = {
-  variant: PropTypes.oneOf([
-    'primary',
-    'secondary',
-    'tertiary',
-    'cta',
-    'footer',
-    'status',
-  ]),
+  variant: PropTypes.oneOf(['primary', 'secondary', 'tertiary', 'footer']),
   href: PropTypes.string,
   to: PropTypes.string,
   children: PropTypes.node.isRequired,

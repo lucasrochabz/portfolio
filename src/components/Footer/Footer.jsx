@@ -1,10 +1,11 @@
 import { profile } from '@/data/profile';
 import { contact } from '@/data/contact';
 import { NAVIGATION_LINKS } from '@/constants/navigation';
-import { PATHS } from '@/constants/paths';
 import { Logo } from '@/components/Logo';
 import { Link } from '@/components/Link';
 import { Heading } from '@/components/Heading';
+import { ContactButton } from '@/components/ContactButton';
+import { StatusButton } from '../StatusButton';
 import styles from './Footer.module.css';
 
 const socials = [
@@ -24,9 +25,7 @@ const Footer = () => {
             <p className={styles.tagline}>
               Transformando aprendizado em projetos.
             </p>
-            <Link.Root href={contact.mailto} variant="cta">
-              Entre em contato
-            </Link.Root>
+            <ContactButton />
           </div>
 
           <nav className={styles.links}>
@@ -65,10 +64,7 @@ const Footer = () => {
         </div>
         <div className={styles.copyright}>
           <p>{profile.copyright}</p>
-
-          <Link.Root to={PATHS.CHANGELOG} variant="status">
-            {profile.version}
-          </Link.Root>
+          <StatusButton />
         </div>
       </div>
     </footer>
