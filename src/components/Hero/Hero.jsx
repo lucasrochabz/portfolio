@@ -1,8 +1,8 @@
 import { profile } from '@/data/profile';
 import { ProfileImages } from '@/components/ProfileImages';
 import { Heading } from '@/components/Heading';
+import { ContactButton } from '@/components/ContactButton';
 import styles from './Hero.module.css';
-import { ContactButton } from '../ContactButton';
 
 const Hero = () => {
   return (

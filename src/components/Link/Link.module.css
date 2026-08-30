@@ -40,12 +40,3 @@
   width: 20px;
   height: 20px;
 }
-
-.footer {
-  opacity: 0.8;
-  transition: 0.3s;
-}
-
-.footer:hover {
-  opacity: 1;
-}

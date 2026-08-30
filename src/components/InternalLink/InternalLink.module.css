@@ -1,0 +1,8 @@
+.internal {
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+.internal:hover {
+  opacity: 1;
+}
