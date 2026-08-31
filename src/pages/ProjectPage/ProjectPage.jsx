@@ -7,7 +7,7 @@ import { SEO } from '@/components/SEO';
 import { ProjectGallery } from '@/components/ProjectGallery';
 import { Heading } from '@/components/Heading';
 import { ToolList } from '@/components/ToolList';
-import { Link } from '@/components/Link';
+import { ExternalLink } from '@/components/ExternalLink';
 import styles from './ProjectPage.module.css';
 
 // fix: observar se é melhor colocar navigate no lugar do if
@@ -47,11 +47,13 @@ const ProjectPage = () => {
           <p className={styles.summary}>{project.summary}</p>
 
           <nav className={styles.nav}>
-            <Link.Root href={project.links.repository} variant="tertiary">
+            <ExternalLink href={project.links.repository} variant={'outline'}>
               Ver código
-            </Link.Root>
+            </ExternalLink>
 
-            <Link.Root href={project.links.demo}>Ver site</Link.Root>
+            <ExternalLink href={project.links.demo} variant={'fill'}>
+              Ver site
+            </ExternalLink>
           </nav>
         </div>
       </section>

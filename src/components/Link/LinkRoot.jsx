@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import { Link as RouterLink } from 'react-router-dom';
 import styles from './Link.module.css';
 
+// fix: acho que já pode apagar o css
 // fix: mudar o nome do componente ou ver junto com o InternalLink
 const LinkRoot = ({ href, to, variant = 'primary', children }) => {
   const variantClass = styles[variant] || styles.primary;
