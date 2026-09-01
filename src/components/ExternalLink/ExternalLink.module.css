@@ -21,12 +21,3 @@
 .fill:hover, .outline:hover {
   opacity: 0.9;
 }
-
-.external {
-  opacity: 0.8;
-  transition: 0.3s;
-}
-
-.external:hover {
-  opacity: 1;
-}

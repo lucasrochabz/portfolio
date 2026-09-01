@@ -3,8 +3,8 @@ import styles from './ExternalLink.module.css';
 
 // fix: corrigir esse componente
 // fix: add variant ghost
-const ExternalLink = ({ href, variant, children }) => {
-  const variantClass = styles[variant] || styles.external;
+const ExternalLink = ({ href, variant = 'fill', children }) => {
+  const variantClass = styles[variant] || styles.fill;
 
   return (
     <a
@@ -20,7 +20,7 @@ const ExternalLink = ({ href, variant, children }) => {
 
 ExternalLink.propTypes = {
   href: PropTypes.string,
-  variant: PropTypes.oneOf(['fill', 'outline', 'external']),
+  variant: PropTypes.oneOf(['fill', 'outline']),
   children: PropTypes.node.isRequired,
 };
 

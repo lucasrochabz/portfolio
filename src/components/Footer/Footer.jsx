@@ -1,12 +1,11 @@
+import { Link } from 'react-router-dom';
+import { NAVIGATION_LINKS } from '@/constants/navigation';
 import { profile } from '@/data/profile';
 import { contact } from '@/data/contact';
-import { NAVIGATION_LINKS } from '@/constants/navigation';
 import { Logo } from '@/components/Logo';
 import { Heading } from '@/components/Heading';
 import { ContactButton } from '@/components/ContactButton';
 import { StatusButton } from '@/components/StatusButton';
-import { InternalLink } from '@/components/InternalLink';
-import { ExternalLink } from '@/components/ExternalLink';
 import styles from './Footer.module.css';
 
 const socials = [
@@ -38,7 +37,9 @@ const Footer = () => {
               <ul className={styles.list}>
                 {NAVIGATION_LINKS.map((link) => (
                   <li key={link.label}>
-                    <InternalLink to={link.path}>{link.label}</InternalLink>
+                    <Link to={link.path} className={styles.link}>
+                      {link.label}
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -52,7 +53,14 @@ const Footer = () => {
               <ul className={styles.list}>
                 {socials.map(([name, url]) => (
                   <li key={name}>
-                    <ExternalLink href={url}>{name}</ExternalLink>
+                    <a
+                      href={url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={styles.link}
+                    >
+                      {name}
+                    </a>
                   </li>
                 ))}
               </ul>
