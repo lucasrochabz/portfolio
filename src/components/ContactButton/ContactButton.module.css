@@ -1,0 +1,14 @@
+.contact {
+  background: linear-gradient(var(--color-secondary), #ecb51c);
+  color: var(--color-primary);
+  font-size: var(--font-size-sm);
+  letter-spacing: 0.015em;
+  border-radius: var(--radius-sm);
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.contact:hover {
+  opacity: 0.9;
+}

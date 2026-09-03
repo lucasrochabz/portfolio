@@ -2,7 +2,8 @@ import PropTypes from 'prop-types';
 import { Link as RouterLink } from 'react-router-dom';
 import styles from './Link.module.css';
 
-// fix: corrigir os estilos diminuir as variações
+// fix: acho que já pode apagar o css
+// fix: mudar o nome do componente ou ver junto com o InternalLink
 const LinkRoot = ({ href, to, variant = 'primary', children }) => {
   const variantClass = styles[variant] || styles.primary;
 
@@ -27,14 +28,7 @@ const LinkRoot = ({ href, to, variant = 'primary', children }) => {
 };
 
 LinkRoot.propTypes = {
-  variant: PropTypes.oneOf([
-    'primary',
-    'secondary',
-    'tertiary',
-    'cta',
-    'footer',
-    'status',
-  ]),
+  variant: PropTypes.oneOf(['primary', 'secondary', 'tertiary']),
   href: PropTypes.string,
   to: PropTypes.string,
   children: PropTypes.node.isRequired,
