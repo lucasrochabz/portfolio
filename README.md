@@ -52,6 +52,7 @@ portfolio/
 │
 ├── src/
 │   ├── assets/
+│   │   ├── illustrations/
 │   │   ├── images/
 │   │   └── projects/
 │   │
