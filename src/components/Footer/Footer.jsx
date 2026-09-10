@@ -1,10 +1,11 @@
+import { Link } from 'react-router-dom';
+import { NAVIGATION_LINKS } from '@/constants/navigation';
 import { profile } from '@/data/profile';
 import { contact } from '@/data/contact';
-import { NAVIGATION_LINKS } from '@/constants/navigation';
-import { PATHS } from '@/constants/paths';
 import { Logo } from '@/components/Logo';
-import { Link } from '@/components/Link';
 import { Heading } from '@/components/Heading';
+import { ContactButton } from '@/components/ContactButton';
+import { StatusButton } from '@/components/StatusButton';
 import styles from './Footer.module.css';
 
 const socials = [
@@ -18,19 +19,17 @@ const Footer = () => {
     <footer className={styles.footerBg}>
       <div className={styles.footer}>
         <div className={styles.content}>
-          <div className={styles.brand}>
+          <section className={styles.brand}>
             <Logo />
 
             <p className={styles.tagline}>
               Transformando aprendizado em projetos.
             </p>
-            <Link.Root href={contact.mailto} variant="cta">
-              Entre em contato
-            </Link.Root>
-          </div>
+            <ContactButton />
+          </section>
 
-          <nav className={styles.links}>
-            <div>
+          <div className={styles.links}>
+            <nav>
               <Heading as="h3" className={styles.title}>
                 Menu
               </Heading>
@@ -38,15 +37,15 @@ const Footer = () => {
               <ul className={styles.list}>
                 {NAVIGATION_LINKS.map((link) => (
                   <li key={link.label}>
-                    <Link.Root to={link.path} variant="footer">
+                    <Link to={link.path} className={styles.link}>
                       {link.label}
-                    </Link.Root>
+                    </Link>
                   </li>
                 ))}
               </ul>
-            </div>
+            </nav>
 
-            <div>
+            <nav>
               <Heading as="h3" className={styles.title}>
                 Redes Sociais
               </Heading>
@@ -54,21 +53,23 @@ const Footer = () => {
               <ul className={styles.list}>
                 {socials.map(([name, url]) => (
                   <li key={name}>
-                    <Link.Root href={url} variant="footer">
+                    <a
+                      href={url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={styles.link}
+                    >
                       {name}
-                    </Link.Root>
+                    </a>
                   </li>
                 ))}
               </ul>
-            </div>
-          </nav>
+            </nav>
+          </div>
         </div>
         <div className={styles.copyright}>
           <p>{profile.copyright}</p>
-
-          <Link.Root to={PATHS.CHANGELOG} variant="status">
-            {profile.version}
-          </Link.Root>
+          <StatusButton />
         </div>
       </div>
     </footer>

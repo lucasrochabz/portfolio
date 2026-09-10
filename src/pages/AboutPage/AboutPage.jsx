@@ -24,23 +24,25 @@ const AboutPage = () => {
         <div>
           <div className={styles.info}>
             <p>
-              Olá! Sou Lucas Rocha, desenvolvedor web de Fortaleza, CE. Atuo na
-              criação de sites e aplicações modernas, buscando unir desempenho,
-              usabilidade e qualidade em cada projeto.
+              Olá! Sou Lucas Rocha, desenvolvedor web de{' '}
+              <span>Fortaleza, CE</span>. Atuo na criação de{' '}
+              <span>sites e aplicações modernas</span>, buscando unir
+              desempenho, usabilidade e qualidade em cada projeto.
             </p>
 
             <p>
-              Tenho experiência com JavaScript, TypeScript, React e Node.js,
+              Tenho experiência com{' '}
+              <span>JavaScript, TypeScript, React e Node.js</span>,
               desenvolvendo soluções responsivas e escaláveis para diferentes
               plataformas e dispositivos.
             </p>
 
             <p>
               Estou sempre aprimorando minhas habilidades e acompanhando novas
-              tecnologias, com foco em boas práticas e desenvolvimento contínuo.
-              Meu objetivo é transformar ideias em produtos digitais eficientes
-              que gerem valor para empresas e proporcionem uma ótima experiência
-              aos usuários.
+              tecnologias, com foco em <span>boas práticas</span> e
+              desenvolvimento contínuo. Meu objetivo é transformar ideias em{' '}
+              <span>produtos digitais eficientes</span> que gerem valor para
+              empresas e proporcionem uma ótima experiência aos usuários.
             </p>
           </div>
 

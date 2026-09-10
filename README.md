@@ -52,6 +52,7 @@ portfolio/
 │
 ├── src/
 │   ├── assets/
+│   │   ├── illustrations/
 │   │   ├── images/
 │   │   └── projects/
 │   │
@@ -63,10 +64,12 @@ portfolio/
 │   │   └── ...
 │   │
 │   ├── constants/
+│   │   ├── navigation.js
 │   │   └── paths.js
 │   │
 │   ├── data/
 │   │   ├── changelog.js
+│   │   ├── contact.js
 │   │   ├── courses.js
 │   │   ├── experiences.js
 │   │   ├── profile.js
@@ -81,6 +84,8 @@ portfolio/
 │   │   └── ...
 │   │
 │   ├── routes/
+│   │   └── app.routes.jsx
+│   │
 │   ├── styles/
 │   │   ├── base/
 │   │   ├── tokens/

@@ -4,7 +4,6 @@ import { ChevronRight } from 'lucide-react';
 import { NAVIGATION_LINKS } from '@/constants/navigation';
 import styles from './MenuMobile.module.css';
 
-// fix: acho que tenho que usar o Link.Root
 const MenuMobile = ({ isOpen }) => {
   if (!isOpen) return null;
 

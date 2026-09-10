@@ -1,10 +1,11 @@
+import { PATHS } from '@/constants/paths';
 import { projects } from '@/data/projects';
 import { SEO } from '@/components/SEO';
 import { Header } from '@/components/Header';
 import { Hero } from '@/components/Hero';
 import { Marquee } from '@/components/Marquee';
 import { ProjectList } from '@/components/ProjectList';
-import { Link } from '@/components/Link';
+import { InternalLink } from '@/components/InternalLink';
 import { Footer } from '@/components/Footer';
 import styles from './HomePage.module.css';
 
@@ -25,10 +26,9 @@ const HomePage = () => {
 
         <section className={styles.projects}>
           <ProjectList projects={featuredProjects} />
-
-          <Link.Root to={'/projetos'} variant="tertiary">
+          <InternalLink to={PATHS.PROJECTS.INDEX} variant={'outline'}>
             Ver todos os projetos
-          </Link.Root>
+          </InternalLink>
         </section>
       </main>
       <Footer />

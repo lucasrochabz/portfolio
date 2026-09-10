@@ -1,6 +1,7 @@
-/* fix: resolver isso. Acho que tem que fazer um padrão */
-.language h2 {
-  margin-bottom: var(--space-xl);
+.language {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
 }
 
 .list {
