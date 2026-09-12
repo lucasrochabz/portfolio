@@ -69,7 +69,11 @@ export const projects = {
       date: 2026,
       featured: false,
       slug: 'portfolio',
-      images: ['portfolio.png'],
+      images: [
+        'portfolio-desktop-01.png',
+        'portfolio-desktop-02.png',
+        'portfolio-desktop-03.png',
+      ],
       tools: ['JavaScript', 'React', 'React Router'],
       summary:
         'Este projeto é meu portfólio como desenvolvedor, reunindo minha trajetória, habilidades e principais projetos em um só lugar, representando minha evolução na programação.',

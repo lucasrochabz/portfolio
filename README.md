@@ -2,14 +2,9 @@
 
 ![Imagem do projeto](./src/assets/projects/portfolio.png)
 
-## Sobre
+Este projeto é meu portfólio como desenvolvedor, onde apresento minha trajetória, habilidades e alguns dos projetos que fazem parte da minha evolução profissional.
 
-Este projeto é meu portfólio como desenvolvedor, onde apresento um pouco sobre minha trajetória, minhas habilidades e alguns dos projetos que desenvolvi. A ideia é reunir em um só lugar tudo o que representa minha evolução como profissional e minhas principais criações no mundo da programação.
-
-## Preview
-
-Acesse o projeto online:
-https://lucasrochabz.vercel.app/
+**Acesse**: https://lucasrochabz.vercel.app/
 
 ## Tecnologias
 
