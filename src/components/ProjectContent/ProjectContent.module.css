@@ -28,6 +28,7 @@
 }
 
 .summary {
+  font-size: var(--font-size-base);
   margin-bottom: 2rem;
 }
 

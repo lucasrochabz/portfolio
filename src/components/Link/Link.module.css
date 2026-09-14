@@ -17,7 +17,7 @@
 }
 
 .tertiary {
-  background-color: rgba(12, 35, 64, 0.1);
+  background-color: var(--color-primary-muted);
   color: #0C2340;
   font-weight: 600;
   letter-spacing: 0.015em;

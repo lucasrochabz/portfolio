@@ -13,9 +13,9 @@
 }
 
 .outline {
-  background-color: rgba(12, 35, 64, 0.1);
-  color: #0C2340;
-  border: 1px solid #0C2340;
+  background-color: var(--color-primary-muted);
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
 }
 
 .fill:hover, .outline:hover {

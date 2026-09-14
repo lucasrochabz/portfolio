@@ -4,7 +4,10 @@
   
   --color-text: #0C2340;
   --color-white: #ffffff;
+  
   --color-primary: #0C2340;
+  --color-primary-muted: rgba(12, 35, 64, 0.1);
+
   --color-secondary: #ffc627;
 
   --color-border: rgba(0, 0, 0, 0.2)
