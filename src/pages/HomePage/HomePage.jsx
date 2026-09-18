@@ -5,7 +5,7 @@ import { Header } from '@/components/Header';
 import { Hero } from '@/components/Hero';
 import { Marquee } from '@/components/Marquee';
 import { ProjectList } from '@/components/ProjectList';
-import { InternalLink } from '@/components/InternalLink';
+import { ButtonLink } from '@/components/ButtonLink';
 import { Footer } from '@/components/Footer';
 import styles from './HomePage.module.css';
 
@@ -26,9 +26,10 @@ const HomePage = () => {
 
         <section className={styles.projects}>
           <ProjectList projects={featuredProjects} />
-          <InternalLink to={PATHS.PROJECTS.INDEX} variant={'outline'}>
+
+          <ButtonLink to={PATHS.PROJECTS.INDEX} variant="outline">
             Ver todos os projetos
-          </InternalLink>
+          </ButtonLink>
         </section>
       </main>
       <Footer />

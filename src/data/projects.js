@@ -35,11 +35,11 @@ export const projects = {
     },
     {
       id: 3,
-      name: 'To-do List',
+      name: 'Taski',
       date: 2026,
       featured: true,
-      slug: 'to-do-list',
-      images: ['to-do-list.png'],
+      slug: 'taski',
+      images: ['taski-desktop-01.png', 'taski-desktop-02.png'],
       tools: ['TypeScript', 'React', 'React Router'],
       summary:
         'Aplicação de lista de tarefas desenvolvida com JavaScript e React em arquitetura SPA, permitindo criar, editar, concluir, restaurar e excluir tarefas, com filtros, busca e persistência de dados no localStorage.',

@@ -4,7 +4,7 @@ import { getImage } from '@/utils/getImage';
 import { ProjectGallery } from '@/components/ProjectGallery';
 import { Heading } from '@/components/Heading';
 import { ToolList } from '@/components/ToolList';
-import { ExternalLink } from '@/components/ExternalLink';
+import { ButtonLink } from '@/components/ButtonLink';
 import styles from './ProjectContent.module.css';
 
 export const ProjectContent = ({ project }) => {
@@ -34,13 +34,17 @@ export const ProjectContent = ({ project }) => {
         <p className={styles.summary}>{project.summary}</p>
 
         <nav className={styles.nav}>
-          <ExternalLink href={project.links.repository} variant={'outline'}>
+          <ButtonLink
+            href={project.links.repository}
+            variant="outline"
+            external
+          >
             Ver código
-          </ExternalLink>
+          </ButtonLink>
 
-          <ExternalLink href={project.links.demo} variant={'fill'}>
+          <ButtonLink href={project.links.demo} external>
             Ver site
-          </ExternalLink>
+          </ButtonLink>
         </nav>
       </div>
     </section>

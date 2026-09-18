@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom';
 import { NAVIGATION_LINKS } from '@/constants/navigation';
-import { profile } from '@/data/profile';
 import { contact } from '@/data/contact';
+import { profile } from '@/data/profile';
 import { Logo } from '@/components/Logo';
 import { Heading } from '@/components/Heading';
-import { ContactButton } from '@/components/ContactButton';
+import { ButtonLink } from '@/components/ButtonLink';
 import { StatusButton } from '@/components/StatusButton';
 import styles from './Footer.module.css';
 
@@ -25,7 +25,10 @@ const Footer = () => {
             <p className={styles.tagline}>
               Transformando aprendizado em projetos.
             </p>
-            <ContactButton />
+
+            <ButtonLink href={contact.mailto} variant="contact" external>
+              Entre em contato
+            </ButtonLink>
           </section>
 
           <div className={styles.links}>
