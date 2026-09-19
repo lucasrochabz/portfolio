@@ -47,13 +47,13 @@ portfolio/
 │   │   ├── Header/
 │   │   └── ...
 │   │
-│   ├── constants/
-│   ├── data/
-│   ├── layouts/
 │   ├── pages/
 │   │   ├── AboutPage/
 │   │   └── ...
 │   │
+│   ├── layouts/
+│   ├── constants/
+│   ├── data/
 │   ├── routes/
 │   ├── styles/
 │   ├── utils/

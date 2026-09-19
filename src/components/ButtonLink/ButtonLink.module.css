@@ -7,10 +7,14 @@
   border-radius: var(--radius-sm);
   transition: 0.3s;
   padding: 0.5rem 1rem;
+
+  &:hover {
+    opacity: 0.9;
+  }
 }
 
 .fill {
-  background: linear-gradient(var(--color-primary), #040f1d);
+  background: var(--gradient-primary);
   color: var(--color-white);
 }
 
@@ -21,12 +25,6 @@
 }
 
 .contact {
-  background: linear-gradient(var(--color-secondary), #ecb51c);
+  background: var(--gradient-secondary);
   color: var(--color-primary);
-}
-
-.fill:hover,
-.outline:hover,
-.contact:hover {
-  opacity: 0.9;
 }
