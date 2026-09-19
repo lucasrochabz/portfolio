@@ -1,6 +1,6 @@
 .section {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   gap: var(--space-xl);
 }
 
@@ -21,6 +21,7 @@
 .list {
   display: flex;
   gap: 1rem;
+  overflow-y: auto;
 }
 
 .content h1 {
@@ -39,6 +40,6 @@
 
 @media (max-width: 800px) {
   .section {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 }
