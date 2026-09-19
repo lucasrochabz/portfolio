@@ -3,7 +3,7 @@ import { PATHS } from '@/constants/paths';
 import { getImage } from '@/utils/getImage';
 import { Heading } from '@/components/Heading';
 import { ToolList } from '@/components/ToolList';
-import { ExternalLink } from '@/components/ExternalLink';
+import { ButtonLink } from '@/components/ButtonLink';
 import { LearnMore } from '@/components/LearnMore';
 import styles from './ProjectCard.module.css';
 
@@ -26,9 +26,9 @@ const ProjectCard = ({ project, reverse }) => {
         <p className={styles.summary}>{project.summary}</p>
 
         <nav className={styles.links}>
-          <ExternalLink href={project.links.demo} variant={'fill'}>
+          <ButtonLink href={project.links.demo} external>
             Ver site
-          </ExternalLink>
+          </ButtonLink>
 
           <LearnMore to={PATHS.PROJECTS.detailsPath(project.slug)} />
         </nav>

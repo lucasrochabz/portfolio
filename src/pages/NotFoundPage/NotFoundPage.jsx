@@ -1,6 +1,6 @@
 import { PATHS } from '@/constants/paths';
 import { Heading } from '@/components/Heading';
-import { InternalLink } from '@/components/InternalLink';
+import { ButtonLink } from '@/components/ButtonLink';
 import warning from '@/assets/illustrations/warning.svg';
 import styles from './NotFoundPage.module.css';
 
@@ -12,9 +12,8 @@ const NotFoundPage = () => {
 
       <div>
         <Heading>Página não encontrada</Heading>
-        <InternalLink to={PATHS.HOME} variant={'fill'}>
-          Voltar à página inicial
-        </InternalLink>
+
+        <ButtonLink to={PATHS.HOME}>Voltar à página inicial</ButtonLink>
       </div>
     </section>
   );
