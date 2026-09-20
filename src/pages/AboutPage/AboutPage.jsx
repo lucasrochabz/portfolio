@@ -46,10 +46,9 @@ const AboutPage = () => {
             </p>
           </div>
 
-          <DownloadButton
-            file="/documents/curriculo-lucas-rocha-fullstack.pdf"
-            label="Currículo"
-          />
+          <DownloadButton href="/documents/curriculo-lucas-rocha-fullstack.pdf">
+            Currículo
+          </DownloadButton>
         </div>
       </section>
 
