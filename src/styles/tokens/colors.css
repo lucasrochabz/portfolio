@@ -2,16 +2,16 @@
   /* Colors */
   --color-base: #f5f5f7;
   --color-surface: #ffffff;
-  --color-text: #0C2340;
+  --color-text: #0c2340;
   --color-white: #ffffff;
 
-  --color-primary: #0C2340;
+  --color-primary: #0c2340;
   --color-primary-muted: rgba(12, 35, 64, 0.1);
   --color-secondary: #ffc627;
   --color-border: rgba(0, 0, 0, 0.2);
 
   /* Gradients */
-  --gradient-primary: linear-gradient(#0C2340, #040f1d);
+  --gradient-primary: linear-gradient(#0c2340, #040f1d);
   --gradient-secondary: linear-gradient(#ffc627, #ecb51c);
 }
 
@@ -22,7 +22,7 @@
   --text-color: #ffffff;
 
   --white-color: #ffffff;
-  --primary-color: #0C2340;
+  --primary-color: #0c2340;
   --secondary-color: #ffc627;
 
   --color-border: rgba(0, 0, 0, 0.2)
