@@ -5,9 +5,9 @@ import styles from './ProjectList.module.css';
 const ProjectList = ({ projects }) => {
   return (
     <ul className={styles.list}>
-      {projects.map((project, index) => (
+      {projects.map((project) => (
         <li key={project.id}>
-          <ProjectCard project={project} reverse={index % 2 !== 0} />
+          <ProjectCard project={project} />
         </li>
       ))}
     </ul>

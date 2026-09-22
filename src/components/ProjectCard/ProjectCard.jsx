@@ -7,11 +7,11 @@ import { ButtonLink } from '@/components/ButtonLink';
 import { LearnMore } from '@/components/LearnMore';
 import styles from './ProjectCard.module.css';
 
-const ProjectCard = ({ project, reverse }) => {
+const ProjectCard = ({ project }) => {
   const imagePath = getImage(project.images[0]);
 
   return (
-    <article className={`${styles.card} ${reverse ? styles.reverse : ''}`}>
+    <article className={styles.card}>
       <figure className={styles.figure}>
         <img src={imagePath} alt={project.name} />
       </figure>
@@ -38,7 +38,6 @@ const ProjectCard = ({ project, reverse }) => {
 };
 
 ProjectCard.propTypes = {
-  reverse: PropTypes.bool,
   project: PropTypes.shape({
     images: PropTypes.arrayOf(PropTypes.string).isRequired,
     name: PropTypes.string.isRequired,
