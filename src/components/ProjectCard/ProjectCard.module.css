@@ -7,32 +7,21 @@
   transition: 0.3s;
   gap: var(--space-xl);
   padding: var(--space-xl);
-
-  grid-template-areas: "figure content";
 }
 
 .card:hover {
   transform: scale(1.01);
 }
 
-.reverse {
-  grid-template-columns: auto 552px;
-  grid-template-areas: "content figure";
-}
-
 .figure {
   border-radius: var(--radius-lg);
   box-shadow: 0 2px 2px var(--color-border);
   overflow: hidden;
-  
-  grid-area: figure;
 }
 
 .content {
   display: flex;
   flex-direction: column;
-
-  grid-area: content;
 }
 
 .name {
@@ -56,8 +45,5 @@
   .card {
     padding: var(--space-lg);
     grid-template-columns: 1fr;
-    grid-template-areas: 
-    "figure"
-    "content";
   }
 }

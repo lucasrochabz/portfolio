@@ -1,8 +1,9 @@
 import { useState } from 'react';
+import { contact } from '@/data/contact';
 import { Logo } from '@/components/Logo';
 import { MenuButton } from '@/components/MenuButton';
 import { MenuMobile } from '@/components/MenuMobile';
-import { ContactButton } from '@/components/ContactButton';
+import { ButtonLink } from '@/components/ButtonLink';
 import styles from './Header.module.css';
 
 const Header = () => {
@@ -14,7 +15,9 @@ const Header = () => {
         <Logo isHeader={true} />
 
         <nav className={styles.mailto}>
-          <ContactButton />
+          <ButtonLink href={contact.mailto} variant="contact" external>
+            Entre em contato
+          </ButtonLink>
         </nav>
 
         <MenuButton isOpen={isOpen} setIsOpen={setIsOpen} />

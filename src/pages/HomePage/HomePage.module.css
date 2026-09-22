@@ -1,10 +1,8 @@
 .projects {
   max-width: var(--container-max-width);
-
   display: flex;
   flex-direction: column;
   align-items: center;
-
   gap: var(--space-2xl);
   margin: 0 auto 4rem;
 }

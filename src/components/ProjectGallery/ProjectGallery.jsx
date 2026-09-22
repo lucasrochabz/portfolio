@@ -7,8 +7,12 @@ const ProjectGallery = ({ images, onSelectedImage }) => {
     <>
       {images.map((img) => (
         <li key={img}>
-          <button type="button" onClick={() => onSelectedImage(img)}>
-            <img src={getImage(img)} alt="" className={styles.item} />
+          <button
+            type="button"
+            onClick={() => onSelectedImage(img)}
+            className={styles.button}
+          >
+            <img src={getImage(img)} alt="" className={styles.image} />
           </button>
         </li>
       ))}
