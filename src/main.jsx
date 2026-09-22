@@ -5,7 +5,6 @@ import App from './App.jsx';
 
 import '@/styles/index.css';
 
-// fix: testando git commit
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <App />
