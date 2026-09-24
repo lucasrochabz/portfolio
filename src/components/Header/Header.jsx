@@ -1,9 +1,10 @@
 import { useState } from 'react';
+import { NAVIGATION_LINKS } from '@/constants/navigation';
 import { contact } from '@/data/contact';
 import { Logo } from '@/components/Logo';
+import { ButtonLink } from '@/components/ButtonLink';
 import { MenuButton } from '@/components/MenuButton';
 import { MenuMobile } from '@/components/MenuMobile';
-import { ButtonLink } from '@/components/ButtonLink';
 import styles from './Header.module.css';
 
 const Header = () => {
@@ -14,11 +15,19 @@ const Header = () => {
       <div className={styles.header}>
         <Logo isHeader={true} />
 
-        <nav className={styles.mailto}>
+        <nav className={styles.navigation}>
+          {NAVIGATION_LINKS.map((link) => (
+            <ButtonLink to={link.path} variant="ghost" key={link.label}>
+              {link.label}
+            </ButtonLink>
+          ))}
+        </nav>
+
+        <div className={styles.mailto}>
           <ButtonLink href={contact.mailto} variant="contact" external>
             Entre em contato
           </ButtonLink>
-        </nav>
+        </div>
 
         <MenuButton isOpen={isOpen} setIsOpen={setIsOpen} />
       </div>
