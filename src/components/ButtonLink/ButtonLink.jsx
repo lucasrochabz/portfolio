@@ -37,7 +37,7 @@ ButtonLink.propTypes = {
   to: PropTypes.string,
   href: PropTypes.string,
   external: PropTypes.bool,
-  variant: PropTypes.oneOf(['fill', 'outline', 'contact']),
+  variant: PropTypes.oneOf(['fill', 'outline', 'ghost', 'contact']),
   children: PropTypes.node.isRequired,
 };
 
