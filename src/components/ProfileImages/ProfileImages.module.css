@@ -1,12 +1,9 @@
 .gallery {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: var(--space-md);
-}
-
-.figure {
   border-radius: var(--radius-lg);
   overflow: hidden;
+  gap: var(--space-md);
 }
 
 .figure img {
@@ -17,10 +14,4 @@
 
 .featured {
   grid-row: span 2;
-}
-
-@media (max-width: 800px) {
-  .gallery {
-    gap: var(--space-md);
-  }
 }
