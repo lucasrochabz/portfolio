@@ -44,8 +44,8 @@ export const projects = {
       summary:
         'Aplicação de lista de tarefas desenvolvida com JavaScript e React em arquitetura SPA, permitindo criar, editar, concluir, restaurar e excluir tarefas, com filtros, busca e persistência de dados no localStorage.',
       links: {
-        demo: 'https://todolistlucas.vercel.app',
-        repository: 'https://github.com/lucasrochabz/to-do-list',
+        demo: 'https://taskiapp.vercel.app',
+        repository: 'https://github.com/lucasrochabz/taski',
       },
     },
     {
