@@ -17,7 +17,7 @@ const Header = () => {
 
         <nav className={styles.navigation}>
           {NAVIGATION_LINKS.map((link) => (
-            <ButtonLink to={link.path} variant="ghost" key={link.label}>
+            <ButtonLink key={link.label} to={link.path} variant="ghost">
               {link.label}
             </ButtonLink>
           ))}

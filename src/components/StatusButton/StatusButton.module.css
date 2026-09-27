@@ -1,5 +1,5 @@
 .status {
-  border-radius: var(--radius-sm);
+  border-radius: var(--radius-xl);
   transition: 0.3s;
   padding: 0.5rem 1rem;
 }

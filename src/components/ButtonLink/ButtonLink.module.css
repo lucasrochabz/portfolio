@@ -5,7 +5,7 @@
   font-size: var(--font-size-sm);
   font-weight: 600;
   letter-spacing: 0.015em;
-  border-radius: var(--radius-sm);
+  border-radius: var(--radius-xl);
   transition: 0.3s;
   padding: 0.5rem 1rem;
 
