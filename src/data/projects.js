@@ -8,9 +8,10 @@ export const projects = {
       date: 2026,
       featured: true,
       slug: 'bodega',
-      images: ['bodega.png'],
+      images: ['bodega-desktop-01.jpg', 'bodega-desktop-02.jpg'],
       roles: ['Desenvolvedor', 'Designer'],
       tools: ['JavaScript', 'React', 'React Router'],
+      hosting: 'Vercel',
       summary:
         'Este projeto é uma simulação de e-commerce, desenvolvido com JavaScript e React no front-end, proporcionando uma experiência de compra online completa e eficiente.',
       links: {
@@ -26,6 +27,7 @@ export const projects = {
       slug: 'bodega-api',
       images: ['bodega-api.png'],
       tools: ['Node.js', 'Express', 'MySQL', 'Json Web Token', 'Bcrypt'],
+      hosting: 'Railway',
       summary:
         'API de e-commerce em Node.js e Express que conecta o front-end ao banco de dados, com funcionalidades de autenticação, gerenciamento de produtos, estoque e pedidos.',
       links: {
@@ -41,6 +43,7 @@ export const projects = {
       slug: 'taski',
       images: ['taski-desktop-01.png', 'taski-desktop-02.png'],
       tools: ['TypeScript', 'React', 'React Router'],
+      hosting: 'Vercel',
       summary:
         'Aplicação de lista de tarefas desenvolvida com JavaScript e React em arquitetura SPA, permitindo criar, editar, concluir, restaurar e excluir tarefas, com filtros, busca e persistência de dados no localStorage.',
       links: {
@@ -56,6 +59,7 @@ export const projects = {
       slug: 'news-scraper',
       images: ['news-scraper.png'],
       tools: ['JavaScript', 'Python', 'BeautifulSoup'],
+      hosting: 'GitHub Pages',
       summary:
         'Aplicação que extrai e exibe manchetes de notícias usando Python com BeautifulSoup para web scraping e JavaScript para renderização dinâmica no navegador.',
       links: {
@@ -75,6 +79,7 @@ export const projects = {
         'portfolio-desktop-03.png',
       ],
       tools: ['JavaScript', 'React', 'React Router'],
+      hosting: 'Vercel',
       summary:
         'Este projeto é meu portfólio como desenvolvedor, reunindo minha trajetória, habilidades e principais projetos em um só lugar, representando minha evolução na programação.',
       links: {

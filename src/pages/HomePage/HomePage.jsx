@@ -6,6 +6,7 @@ import { Hero } from '@/components/Hero';
 import { Marquee } from '@/components/Marquee';
 import { ProjectList } from '@/components/ProjectList';
 import { ButtonLink } from '@/components/ButtonLink';
+import { SocialMedia } from '@/components/SocialMedia';
 import { Footer } from '@/components/Footer';
 import styles from './HomePage.module.css';
 
@@ -31,6 +32,8 @@ const HomePage = () => {
             Ver todos os projetos
           </ButtonLink>
         </section>
+
+        <SocialMedia />
       </main>
       <Footer />
     </>
