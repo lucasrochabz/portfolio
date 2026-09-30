@@ -1,18 +1,12 @@
-import { PATHS } from '@/constants/paths';
-import { projects } from '@/data/projects';
 import { SEO } from '@/components/SEO';
 import { Header } from '@/components/Header';
 import { Hero } from '@/components/Hero';
 import { Marquee } from '@/components/Marquee';
-import { ProjectList } from '@/components/ProjectList';
-import { ButtonLink } from '@/components/ButtonLink';
+import { FeaturedProjects } from '@/components/FeaturedProjects';
 import { SocialMedia } from '@/components/SocialMedia';
 import { Footer } from '@/components/Footer';
-import styles from './HomePage.module.css';
 
 const HomePage = () => {
-  const featuredProjects = projects.items.filter((project) => project.featured);
-
   return (
     <>
       <SEO
@@ -25,13 +19,7 @@ const HomePage = () => {
         <Hero />
         <Marquee />
 
-        <section className={styles.projects}>
-          <ProjectList projects={featuredProjects} />
-
-          <ButtonLink to={PATHS.PROJECTS.INDEX} variant="outline">
-            Ver todos os projetos
-          </ButtonLink>
-        </section>
+        <FeaturedProjects />
 
         <SocialMedia />
       </main>
