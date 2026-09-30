@@ -1,18 +1,18 @@
 import { Camera, Cat, SquareSigma } from 'lucide-react';
 import { contact } from '@/data/contact';
-import { Heading } from '../Heading';
+import { Heading } from '@/components/Heading';
 import styles from './SocialMedia.module.css';
 
 // fix: add nova lib de icon
 const SocialMedia = () => {
   const socials = [
-    { name: 'LinkedIn', icon: SquareSigma, url: contact.socials.linkedIn },
-    { name: 'GitHub', icon: Cat, url: contact.socials.github },
-    { name: 'Instagram', icon: Camera, url: contact.socials.instagram },
+    { name: 'LinkedIn', url: contact.socials.linkedIn, icon: SquareSigma },
+    { name: 'GitHub', url: contact.socials.github, icon: Cat },
+    { name: 'Instagram', url: contact.socials.instagram, icon: Camera },
   ];
 
   return (
-    <section className={`container ${styles.section}`}>
+    <section className="container">
       <Heading as="h2" className={styles.title}>
         Redes sociais
       </Heading>
@@ -21,7 +21,7 @@ const SocialMedia = () => {
       </p>
 
       <ul className={styles.list}>
-        {socials.map(({ name, icon: Icon, url }) => (
+        {socials.map(({ name, url, icon: Icon }) => (
           <li key={name}>
             <a
               href={url}

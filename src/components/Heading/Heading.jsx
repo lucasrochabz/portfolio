@@ -4,7 +4,9 @@ import styles from './Heading.module.css';
 const Heading = ({ as: Component = 'h1', variant, className, children }) => {
   return (
     <Component
-      className={[styles[variant], className].filter(Boolean).join(' ')}
+      className={[styles.heading, styles[variant], className]
+        .filter(Boolean)
+        .join(' ')}
     >
       {children}
     </Component>
