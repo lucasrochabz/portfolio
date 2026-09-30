@@ -11,7 +11,6 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  gap: var(--space-md);
   margin: 0 auto;
 }
 
@@ -19,7 +18,7 @@
   .headerBg {
     padding-inline: var(--container-padding);
   }
-  .mailto {
+  .mailto, .navigation {
     display: none;
   }
 }

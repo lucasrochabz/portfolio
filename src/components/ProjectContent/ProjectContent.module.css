@@ -42,4 +42,14 @@
   .section {
     grid-template-columns: minmax(0, 1fr);
   }
+  .figure {
+    overflow: visible;
+    border-radius: 0;
+  }
+  .list {
+    padding-inline: var(--container-padding);
+  }
+  .content {
+    padding-inline: var(--container-padding);
+  }
 }

@@ -1,4 +1,6 @@
-import lucas3 from '@/assets/images/lucas3.jpg';
+import { useState } from 'react';
+import profile2 from '@/assets/images/profile-02.jpg';
+import profile3 from '@/assets/images/profile-03.jpg';
 import { experiences } from '@/data/experiences';
 import { SEO } from '@/components/SEO';
 import { Heading } from '@/components/Heading';
@@ -7,7 +9,15 @@ import { ExperienceList } from '@/components/ExperienceList';
 import { LanguageList } from '@/components/LanguageList';
 import styles from './AboutPage.module.css';
 
+const profileImages = [profile2, profile3];
+
 const AboutPage = () => {
+  const [currentImage, setCurrentImage] = useState(0);
+
+  const handleImageClick = () => {
+    setCurrentImage((prev) => (prev + 1) % profileImages.length);
+  };
+
   return (
     <>
       <SEO
@@ -19,7 +29,12 @@ const AboutPage = () => {
       <p className="subtitle">Aprendizado contínuo, evolução constante</p>
 
       <section className={styles.about}>
-        <img src={lucas3} alt="Lucas Rocha" />
+        <img
+          src={profileImages[currentImage]}
+          alt="Lucas Rocha"
+          className={styles.profileImage}
+          onClick={handleImageClick}
+        />
 
         <div>
           <div className={styles.info}>

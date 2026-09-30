@@ -1,4 +1,8 @@
+/* fix: add class display e subtitle ou outro */
+.heading {
+  line-height: 1.1;
+}
+
 .title {
   font-size: var(--font-size-xl);
-  line-height: 1.1;
 }
