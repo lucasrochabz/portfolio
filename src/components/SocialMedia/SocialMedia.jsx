@@ -17,7 +17,7 @@ const SocialMedia = () => {
         Redes sociais
       </Heading>
       <p className={styles.description}>
-        Acompanhe meu trabalho, meus projetos e um pouco do que venho fazendo.
+        Acompanhe meu trabalho, meus projetos e um pouco do que venho fazendo
       </p>
 
       <ul className={styles.list}>

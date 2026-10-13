@@ -15,7 +15,7 @@ const FeaturedProjects = () => {
       </Heading>
 
       <p className={styles.description}>
-        Projetos que representam meu trabalho, habilidades e evolução.
+        Projetos que representam meu trabalho, habilidades e evolução
       </p>
 
       <div className={styles.projects}>

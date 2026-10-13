@@ -3,10 +3,10 @@ import { useState } from 'react';
 import { getImage } from '@/utils/getImage';
 import { ProjectGallery } from '@/components/ProjectGallery';
 import { Heading } from '@/components/Heading';
-import { ToolList } from '@/components/ToolList';
 import { ButtonLink } from '@/components/ButtonLink';
 import styles from './ProjectContent.module.css';
 
+// fix: corrigir esse componente. Acho que tenho que add sections
 export const ProjectContent = ({ project }) => {
   const [selectedImage, setSelectedImage] = useState(project.images[0]);
   const imagePath = getImage(selectedImage);
@@ -29,21 +29,37 @@ export const ProjectContent = ({ project }) => {
       <div className={styles.content}>
         <Heading variant="title">{project.name}</Heading>
 
-        <ToolList tools={project.tools} />
-
         <p className={styles.summary}>{project.summary}</p>
 
-        <nav className={styles.nav}>
+        <div className={styles.tools}>
+          <h2>Ferramentas</h2>
+          <ul>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>React Router</li>
+          </ul>
+        </div>
+
+        <div className={styles.hosting}>
+          <h2>Hospedagem</h2>
+          <ul>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>React Router</li>
+          </ul>
+        </div>
+
+        <nav className={styles.links}>
+          <ButtonLink href={project.links.demo} external>
+            Ver site
+          </ButtonLink>
+
           <ButtonLink
             href={project.links.repository}
             variant="outline"
             external
           >
             Ver código
-          </ButtonLink>
-
-          <ButtonLink href={project.links.demo} external>
-            Ver site
           </ButtonLink>
         </nav>
       </div>
