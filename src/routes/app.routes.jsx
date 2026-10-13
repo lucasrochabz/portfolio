@@ -1,6 +1,7 @@
 import { PATHS } from '@/constants/paths';
 import { LayoutRoot } from '@/layouts/LayoutRoot';
 import { MainLayout } from '@/layouts/MainLayout';
+import { FullWidthLayout } from '@/layouts/FullWidthLayout';
 import { HomePage } from '@/pages/HomePage';
 import { ProjectsPage } from '@/pages/ProjectsPage';
 import { ProjectPage } from '@/pages/ProjectPage';
@@ -18,12 +19,15 @@ export const routes = [
         element: <MainLayout />,
         children: [
           { path: PATHS.PROJECTS.INDEX, element: <ProjectsPage /> },
-          { path: PATHS.PROJECTS.DETAILS, element: <ProjectPage /> },
           { path: PATHS.ABOUT, element: <AboutPage /> },
           { path: PATHS.COURSE, element: <CoursePage /> },
           { path: PATHS.CHANGELOG, element: <ChangelogPage /> },
           { path: '*', element: <NotFoundPage /> },
         ],
+      },
+      {
+        element: <FullWidthLayout />,
+        children: [{ path: PATHS.PROJECTS.DETAILS, element: <ProjectPage /> }],
       },
     ],
   },

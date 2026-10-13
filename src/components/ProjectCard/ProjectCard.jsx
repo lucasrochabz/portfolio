@@ -2,17 +2,17 @@ import PropTypes from 'prop-types';
 import { PATHS } from '@/constants/paths';
 import { getImage } from '@/utils/getImage';
 import { Heading } from '@/components/Heading';
-import { ToolList } from '@/components/ToolList';
 import { ButtonLink } from '@/components/ButtonLink';
 import { LearnMore } from '@/components/LearnMore';
 import styles from './ProjectCard.module.css';
 
+// fix: atualizar esse componente
 const ProjectCard = ({ project }) => {
   const imagePath = getImage(project.images[0]);
 
   return (
     <article className={styles.card}>
-      <figure className={styles.figure}>
+      <figure>
         <img src={imagePath} alt={project.name} />
       </figure>
 
@@ -20,8 +20,6 @@ const ProjectCard = ({ project }) => {
         <Heading as="h2" className={styles.name}>
           {project.name}
         </Heading>
-
-        <ToolList tools={project.tools} />
 
         <p className={styles.summary}>{project.summary}</p>
 
@@ -42,7 +40,6 @@ ProjectCard.propTypes = {
     images: PropTypes.arrayOf(PropTypes.string).isRequired,
     name: PropTypes.string.isRequired,
     slug: PropTypes.string.isRequired,
-    tools: PropTypes.arrayOf(PropTypes.string).isRequired,
     links: PropTypes.shape({
       demo: PropTypes.string.isRequired,
     }),

@@ -1,6 +1,6 @@
 body {
   background-color: var(--color-base);
-  color: var(--color-text);
+  color: var(--color-text-primary);
 }
 
 a {

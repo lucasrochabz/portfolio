@@ -1,20 +1,19 @@
+/* fix: corrigir esse css colocar var() */
 .section {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
   gap: var(--space-xl);
 }
 
 .figure {
   border: 1px solid var(--color-border);
-  overflow: hidden;
   border-radius: 12px;
-  margin-bottom: 2rem;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  margin-bottom: 1rem;
 }
 
 .figure img {
-  /* height: 500px; */
-  /* width: 100%; */
-  aspect-ratio: 16 / 9;
   object-fit: cover;
 }
 
@@ -33,13 +32,37 @@
   margin-bottom: 2rem;
 }
 
-.nav {
+.tools, .hosting {
+  margin-bottom: 2rem;
   display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.tools h2, .hosting h2 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   gap: 1rem;
 }
 
 @media (max-width: 800px) {
   .section {
     grid-template-columns: minmax(0, 1fr);
+  }
+  .figure {
+    overflow: visible;
+    border-radius: 0;
+  }
+  .list {
+    padding-inline: var(--container-padding);
+  }
+  .content {
+    padding-inline: var(--container-padding);
   }
 }

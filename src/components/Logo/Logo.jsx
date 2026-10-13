@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import logoWhite from '@/assets/images/logo-white.svg';
+import logoLight from '@/assets/images/logo-light.svg';
 import { PATHS } from '@/constants/paths';
 import styles from './Logo.module.css';
 
@@ -9,12 +9,12 @@ const Logo = ({ isHeader }) => {
   if (isHeader) {
     return (
       <Link to={PATHS.HOME} className={styles.logo}>
-        <img src={logoWhite} alt="Lucas Rocha" />
+        <img src={logoLight} alt="Lucas Rocha" />
       </Link>
     );
   }
 
-  return <img src={logoWhite} alt="Lucas Rocha" />;
+  return <img src={logoLight} alt="Lucas Rocha" />;
 };
 
 Logo.propTypes = {

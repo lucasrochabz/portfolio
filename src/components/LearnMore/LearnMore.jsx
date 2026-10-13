@@ -7,7 +7,7 @@ import styles from './LearnMore.module.css';
 const LearnMore = ({ to }) => {
   return (
     <Link to={to} className={styles.button}>
-      <span>Saiba Mais</span>
+      <span>Ver detalhes</span>
       <ChevronRight />
     </Link>
   );
